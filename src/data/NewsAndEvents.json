@@ -5,5 +5,12 @@
     "description": "Hey, this is Hello World",
     "image": "https://www.mlmgroup.com/wp-content/uploads/2017/03/services-buildings-mlm.jpg",
     "tags": "News"
+  },
+  {
+    "id": "smallworld-02",
+    "title": "Hello World",
+    "description": "Hey, this is Hello World",
+    "image": "https://www.mlmgroup.com/wp-content/uploads/2017/03/services-buildings-mlm.jpg",
+    "tags": "Events"
   }
 ]

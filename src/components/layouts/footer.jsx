@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -9,56 +10,43 @@ const Footer = () => {
             <div className="ui stackable four column grid">
               <div className="column">
                 <div className="ftsize">
-                  <a href="#">
-                    <p>Opportunities</p>
-                  </a>
-                  <a href="#">
+                  <Link to="/news-and-events">
                     <p>News &amp; events</p>
-                  </a>
-                  <a href="#">
-                    <p>Useful links</p>
-                  </a>
-                  <a href="#">
+                  </Link>
+                  <Link to="/contact-us">
                     <p>Contac Us</p>
-                  </a>
+                  </Link>
                 </div>
               </div>
-              <div className="column">
-                <a href="#">
-                  <p>Tern &amp; Condition</p>
-                </a>
-                <a href="#">
-                  <p>Policy Uses</p>
-                </a>
-                <a href="#">
-                  <p>Legal System</p>
-                </a>
-              </div>
+              <div className="column" />
               <div className="column" />
               <div className="column">
-                <a href="#">
+                <a href="telegram">
                   <div className="ui header footerIcon">
                     <img
                       className="ui image  footerIcon"
                       src="/images/socialMedia/telegram.svg"
+                      alt="SmallWorld-Venture"
                     />
                     <div className="content ">Telegram</div>
                   </div>
                 </a>
-                <a href="#">
+                <a href="https://www.facebook.com/smallworld.kh/">
                   <div className="ui header footerIcon">
                     <img
                       className="ui image  footerIcon"
                       src="/images/socialMedia/facebook.svg"
+                      alt="SmallWorld-Venture Facebook"
                     />
                     <div className="content ">Facebook</div>
                   </div>
                 </a>
-                <a href="#">
+                <a href="https://twitter.com/smallworldvc">
                   <div className="ui header footerIcon">
                     <img
                       className="ui image  footerIcon"
                       src="/images/socialMedia/twitter.svg"
+                      alt="SmallWorld Twitter"
                     />
                     <div className="content ">Twitter</div>
                   </div>
@@ -74,6 +62,7 @@ const Footer = () => {
                   <img
                     src="/images/logo/Logo_SW_Gray.png"
                     className="imgfooter"
+                    alt="SmallWorld"
                   />
                 </center>
               </div>

@@ -4,10 +4,14 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
   return (
     <div className="hd sw-navbar">
-      <div className="ui secondary container menu computer only ">
+      <div className="ui secondary container menu">
         <div className="menu left">
           <NavLink to="/home">
-            <img src="/images/logo/sw-green.png" className="logonav" />
+            <img
+              src="/images/logo/sw-green.png"
+              className="logonav"
+              alt="SmallWorld"
+            />
           </NavLink>
         </div>
         <div className="menu right asize">

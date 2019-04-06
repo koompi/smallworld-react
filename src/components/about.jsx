@@ -3,10 +3,14 @@ import Navbar from "./layouts/navbar";
 import Footer from "./layouts/footer";
 import Member from "../data/member.json";
 import Partner from "../data/partner.json";
+import { Helmet } from "react-helmet";
 
 const AboutPage = () => {
   return (
     <React.Fragment>
+      <Helmet>
+        <title>About SmallWorld Venture</title>
+      </Helmet>
       <Navbar />
       <div>
         <div>
@@ -31,21 +35,23 @@ const AboutPage = () => {
           <div className="ui container">
             <div className="ui stackable two column grid centerme">
               <div className="column">
-                <h1>What is SmallWorld</h1>
+                <h1>What is SmallWorld Venture?</h1>
                 <p>
-                  What is it like to run a business in Estonia? How to benefit
-                  from the e-solutions and the efficiency of our business
-                  culture? What are the opportunities in specific sectors?
-                </p>
-                <p>
-                  What is it like to run a business in Estonia? How to benefit
-                  from the e-solutions and the efficiency of our business
-                  culture? What are the opportunities in specific sectors?
+                  Found in December 2011, a collaborative workspace by a group
+                  of progressing young cambodians to pilot their business ideas
+                  in an affordable, friendly and open work environment. Now,
+                  works best as a technology venture to help spin off startups.
+                  Endeavor the most pressing problems that could ease our future
+                  for both business and well-being of our live.
                 </p>
               </div>
               <div className="column">
                 <div className="mobile">
-                  <img src="/images/banner-3.png" />
+                  <img
+                    src="/images/banner-3.png"
+                    alt="SmallWorld Venture"
+                    className="imageAbout"
+                  />
                 </div>
               </div>
             </div>
@@ -56,19 +62,16 @@ const AboutPage = () => {
             <div className="ui stackable two column grid centerme">
               <div className="column">
                 <div className="mobileimg">
-                  <img src="/images/banner-4.png" />
+                  <img src="/images/banner-4.png" alt="SmallWorld Venture" />
                 </div>
                 <div className="descTitle">
                   <h1>Investment Portfolio</h1>
                   <p>
-                    What is it like to run a business in Estonia? How to benefit
-                    from the e-solutions and the efficiency of our business
-                    culture? What are the opportunities in specific sectors?
-                  </p>
-                  <p>
-                    What is it like to run a business in Estonia? How to benefit
-                    from the e-solutions and the efficiency of our business
-                    culture? What are the opportunities in specific sectors?
+                    SmallWorld with reserved resources is designated to invest
+                    in the external startups with support from angel & seeds
+                    funders. While, working on the main mission to develop and
+                    support the potential projects within the internal ventures
+                    startups & teams
                   </p>
                 </div>
               </div>
@@ -87,7 +90,7 @@ const AboutPage = () => {
                   </p>
                 </div>
                 <div className="mobileimg1">
-                  <img src="/images/banner-4.png" />
+                  <img src="/images/banner-4.png" alt="SmallWorld Venture" />
                 </div>
               </div>
             </div>
@@ -105,7 +108,7 @@ const AboutPage = () => {
               <div className="ui stackable four column grid">
                 {Member.map(data => {
                   return (
-                    <div className="column">
+                    <div className="column" key={data.id}>
                       <img
                         src={data.image}
                         className="ui fluid image "
@@ -144,21 +147,6 @@ const AboutPage = () => {
                       </div>
                     );
                   })}
-                  {/* <div className="column logo">
-                    <a className="newsDetail">
-                      <img src="/images/doers-lgoo.png" className="ui image" />
-                    </a>
-                  </div>
-                  <div className="column logo">
-                    <a className="newsDetail">
-                      <img src="/images/ISI_GROUP.png" className="ui image" />
-                    </a>
-                  </div>
-                  <div className="column logo">
-                    <a className="newsDetail">
-                      <img src="/images/Sabay.png" className="ui image" />
-                    </a>
-                  </div> */}
                 </div>
               </div>
             </center>

@@ -23,7 +23,7 @@ i.icon.bars {
 h1,
 h2,
 h3 {
-  color: #95a5a6;
+  color: #762cc7;
   font-weight: 500;
 }
 .ui.secondary.menu .item {
@@ -44,6 +44,9 @@ a:hover {
 img.logonav {
   height: 70px;
 }
+p {
+  font-size: 18px !important;
+}
 .ui.secondary.menu .active.item {
   border-bottom: none;
   border-radius: 0;
@@ -55,6 +58,9 @@ img.logonav {
 .backAbout a {
   color: green;
   text-decoration: underline !important;
+}
+.hd {
+  position: relative;
 }
 /* navbarbar1 */
 
@@ -111,11 +117,70 @@ img.logonav {
 .backAbout p {
   color: #95a5a6;
   width: 95%;
-  font-size: 18px;
+  font-size: 20px !important;
 }
-.mobile img {
+.ui.menu {
+  margin-top: 0px !important;
+}
+.menu-icons {
+  margin-top: 36px;
+}
+.ui.visible.left.overlay.sidebar {
+  position: fixed;
+  top: 0;
+  width: 60%;
+  background-color: #4c1b82;
+}
+.imageAbout {
+  transform: scale(1.1);
+}
+
+.ui.visible.left.overlay.sidebar.hide {
+  visibility: hidden;
+}
+
+.ui.visible.left.overlay.sidebar.slideIn {
+  animation-name: slideIn;
+  transition: all 0.2s;
+  /* animation-timing-function: ease-in; */
+  animation-duration: 0.2s;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.ui.visible.left.overlay.sidebar.slideOut {
+  animation-name: slideOut;
+  animation-duration: 0.2s;
+  visibility: hidden;
+}
+
+@keyframes slideOut {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+}
+
+.ui.visible.left.overlay.sidebar.show {
+  visibility: visible;
+}
+
+.ui.labeled.icon.menu .item {
+  text-align: left !important;
+}
+/* .mobile img {
   width: 100%;
-}
+} */
 .mobileimg img {
   width: 100%;
 }
@@ -130,6 +195,20 @@ img.logonav {
 }
 .investorfooter p {
   padding-bottom: 3%;
+  color: #959494;
+}
+.btnSubmit {
+  border-radius: 30px !important;
+  padding: 13px 60px !important;
+  color: #ffffff !important;
+  font-size: 15px;
+  background: #4d1c83 !important;
+  box-shadow: 0 4px 8px 0 rgba(77, 28, 131, 0.8) !important;
+  font-weight: 500 !important;
+  transition: 0.5s !important;
+}
+.ui.form .field > label {
+  font-weight: 400;
 }
 
 .mapsize {
@@ -137,7 +216,7 @@ img.logonav {
   margin-bottom: -6%;
 }
 .column.backFineus {
-  background-color: green;
+  background-color: #4d1c83;
   height: 400px;
 }
 .column .backFineus h2 {
@@ -183,8 +262,10 @@ img.logonav {
   color: rgb(102, 102, 102);
   font-weight: 500;
 }
-.ui.positive.button {
-  background-color: #008000;
+.ui.positive.button,
+.ui.positive.button:hover {
+  background-color: #4d1c83;
+  border-radius: 30px;
 }
 .modalBack {
   background-color: rgba(0, 0, 0, 0.8);
@@ -242,10 +323,14 @@ button.ui.button.right.floated.positive {
 }
 
 .backMember img {
-  padding: 4%;
+  padding: 0%;
   border-radius: 100%;
   width: 200px !important;
   height: 200px !important;
+  transition: 0.2s;
+}
+.backMember img:hover {
+  box-shadow: 0 10px 28px 0 hsla(269, 64%, 48%, 0.37);
 }
 
 .menu .item {
@@ -264,7 +349,7 @@ button.ui.button.right.floated.positive {
   font-weight: 500;
 }
 .bannerContent .paragraph {
-  font-size: 20px;
+  font-size: 20px !important;
   padding: 30px 0px;
   color: #edecec;
 }
@@ -272,11 +357,20 @@ button.ui.button.right.floated.positive {
   padding-left: 20%;
 }
 .ui.basic.btnLearnMore {
-  border-radius: 30px;
-  padding: 15px 50px;
-  border: 1px solid #fff;
-  color: #fff !important;
-  font-size: 18px;
+  border-radius: 30px !important;
+  padding: 13px 40px !important;
+  /* border: 1px solid #fff !important; */
+  color: #531e8c !important;
+  font-size: 15px;
+  /* margin-left: 20px; */
+  background: #fff !important;
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.21);
+  font-weight: 500;
+  transition: 0.5s !important;
+}
+.ui.basic.btnLearnMore:hover {
+  box-shadow: none;
+  transition: 0.3s !important;
 }
 /* newsandevent */
 
@@ -315,36 +409,54 @@ button.ui.button.right.floated.positive {
 
 .aboutsmall h1 {
   padding-top: 10%;
+  margin-bottom: 20px;
   font-size: 30px;
   font-weight: 500 !important;
 }
 .aboutsmall p {
   color: #919090;
   width: 95%;
+  font-size: 20px !important;
+}
+.marginInformation h2 {
+  font-weight: 600;
 }
 
 .ui.basic.btnInformation {
   border-radius: 30px !important;
   padding: 13px 25px !important;
-  border: 1px solid #fff !important;
-  color: #fff !important;
+  /* border: 1px solid #fff !important; */
+  color: #0072bc !important;
   font-size: 15px;
   /* margin-left: 20px; */
+  background: #fff !important;
   transition: 0.3s;
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.21);
+  font-weight: 500;
+}
+.ui.basic.btnInformation:hover {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.21);
+  color: #762cc7 !important;
 }
 
 .newsDetailo h4 {
   text-align: center;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 24px;
   text-transform: capitalize;
-  color: #979a9a !important;
+  color: #762cc7 !important;
+  line-height: 28px;
 }
 .newsDetailo p {
   text-align: center;
   color: #979a9a !important;
 }
 
+.shadowIndex {
+  box-shadow: 0 28px 40px 0 hsla(149, 7%, 68%, 0.2);
+  padding: 10px 0 24px 0;
+  border-radius: 0 0 10px 10px;
+}
 .footer a p {
   font-size: 20px;
   color: #95a5a6 !important;
@@ -366,7 +478,39 @@ button.ui.button.right.floated.positive {
   margin-bottom: 15px !important;
   font-weight: normal !important;
 }
+.backgroundEvent {
+  /* background-color: #e4e4e4; */
+  padding: 0px 10px 10px 10px !important;
+  color: #fff !important;
+  border-radius: 0px 0px 5px 5px;
+  box-shadow: 0 10px 28px 0 hsla(210, 8%, 54%, 0.2);
+}
+.eventImage {
+  border-radius: 5px 5px 0px 0px;
+}
+.backgroundEvent h3 {
+  color: #762cc7;
+  padding-top: 20px;
+}
+.badge {
+  background-color: #762cc7;
+  display: inline-block;
+  padding: 0px 10px;
+  border-radius: 4px;
+  color: #fff !important;
+  font-size: 13px !important;
+}
 
+.backgroundEvent p {
+  color: #616161;
+}
+p {
+  font-size: 16px !important;
+}
+.indexShadow:hover {
+  box-shadow: 0 6px 20px rgba(64, 5, 112, 0.2);
+  transition: 0.2s;
+}
 .footerIcon img {
   height: 1.4em !important;
   position: relative;
@@ -483,8 +627,8 @@ img.imgfooter {
     padding-left: 0%;
   }
   img.logonav {
-    height: 65px;
-    padding-right: 2%;
+    height: 100px;
+    margin-left: 15px;
   }
   .menu.right.asize a {
     position: relative;
@@ -587,7 +731,7 @@ img.imgfooter {
     display: block;
   }
   .hd {
-    display: none;
+    display: block;
   }
   .backBanner {
     height: 142vw !important;
@@ -718,4 +862,69 @@ img.imgfooter {
 .slideInDown {
   -webkit-animation-name: slideInDown;
   animation-name: slideInDown;
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 767px) {
+  [class*="mobile hidden"],
+  [class*="tablet only"]:not(.mobile),
+  [class*="computer only"]:not(.mobile),
+  [class*="large monitor only"]:not(.mobile),
+  [class*="widescreen monitor only"]:not(.mobile),
+  [class*="or lower hidden"] {
+    display: none !important;
+  }
+}
+
+/* Tablet / iPad Portrait */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  [class*="mobile only"]:not(.tablet),
+  [class*="tablet hidden"],
+  [class*="computer only"]:not(.tablet),
+  [class*="large monitor only"]:not(.tablet),
+  [class*="widescreen monitor only"]:not(.tablet),
+  [class*="or lower hidden"]:not(.mobile) {
+    display: none !important;
+  }
+}
+
+/* Computer / Desktop / iPad Landscape */
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  [class*="mobile only"]:not(.computer),
+  [class*="tablet only"]:not(.computer),
+  [class*="computer hidden"],
+  [class*="large monitor only"]:not(.computer),
+  [class*="widescreen monitor only"]:not(.computer),
+  [class*="or lower hidden"]:not(.tablet):not(.mobile) {
+    display: none !important;
+  }
+}
+
+/* Large Monitor */
+
+@media only screen and (min-width: 1200px) and (max-width: 1919px) {
+  [class*="mobile only"]:not([class*="large monitor"]),
+  [class*="tablet only"]:not([class*="large monitor"]),
+  [class*="computer only"]:not([class*="large monitor"]),
+  [class*="large monitor hidden"],
+  [class*="widescreen monitor only"]:not([class*="large monitor"]),
+  [class*="or lower hidden"]:not(.computer):not(.tablet):not(.mobile) {
+    display: none !important;
+  }
+}
+
+/* Widescreen Monitor */
+
+@media only screen and (min-width: 1920px) {
+  [class*="mobile only"]:not([class*="widescreen monitor"]),
+  [class*="tablet only"]:not([class*="widescreen monitor"]),
+  [class*="computer only"]:not([class*="widescreen monitor"]),
+  [class*="large monitor only"]:not([class*="widescreen monitor"]),
+  [class*="widescreen monitor hidden"],
+  [class*="widescreen monitor or lower hidden"] {
+    display: none !important;
+  }
 }
