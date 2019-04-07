@@ -28,26 +28,28 @@ class Index extends Component {
             }}
           >
             <div>
-              <div
-                className={
-                  this.state.toggleMenu
-                    ? "ui left demo vertical inverted labeled icon sidebar menu overlay visible mobile only slideIn"
-                    : "ui left demo vertical inverted labeled icon sidebar menu overlay visible mobile only slideOut"
-                }
-                style={{}}
-              >
-                <Link to="/about" className="item">
-                  About
-                </Link>
-                <Link to="/what-we-can-do" className="item">
-                  What We Can Do
-                </Link>
-                <Link to="/about" className="item">
-                  News & Events
-                </Link>
-                <Link to="/about" className="item">
-                  Contact Us
-                </Link>
+              <div className={this.state.toggleMenu ? "phone-background-navbar" : ""}>
+                <div
+                  className={
+                    this.state.toggleMenu
+                      ? "ui left demo vertical inverted labeled icon sidebar menu overlay visible mobile only slideIn"
+                      : "ui left demo vertical inverted labeled icon sidebar menu overlay visible mobile only slideOut"
+                  }
+                  style={{}}
+                >
+                  <Link to="/about" className="item">
+                    About
+                  </Link>
+                  <Link to="/what-we-can-do" className="item">
+                    What We Can Do
+                  </Link>
+                  <Link to="/about" className="item">
+                    News & Events
+                  </Link>
+                  <Link to="/about" className="item">
+                    Contact Us
+                  </Link>
+                </div>
               </div>
               <div className="hd">
                 <div className="ui secondary container menu mobile only">
@@ -62,7 +64,7 @@ class Index extends Component {
                   </div>
                   <div className="menu right asize">
                     <img
-                      src="/images/menu.svg"
+                      src={this.state.toggleMenu ? "/images/close.png" : "/images/menu.svg" }
                       className="menu-icons"
                       height="30px"
                       alt=""
@@ -120,7 +122,11 @@ class Index extends Component {
                 <div className="column">
                   <center>
                     <div className="newsDetailo">
-                      <img src="/images/blurb-1.png" alt="SmallWorld Venture" />
+                      <img
+                        src="/images/blurb-1.png"
+                        className="ui fluid image imageIndex"
+                        alt="SmallWorld Venture"
+                      />
                       <div className="shadowIndex">
                         <h4>Buildings Startup Community</h4>
                         <p>
@@ -134,7 +140,11 @@ class Index extends Component {
                 <div className="column">
                   <center>
                     <div className="newsDetailo">
-                      <img src="/images/blurb-2.png" alt="SmallWorld Venture" />
+                      <img
+                        src="/images/blurb-2.png"
+                        alt="SmallWorld Venture"
+                        className="ui fluid image imageIndex"
+                      />
                       <div className="shadowIndex">
                         <h4>Investment Portfolio</h4>
                         <p>
@@ -148,7 +158,11 @@ class Index extends Component {
                 <div className="column">
                   <center>
                     <div className="newsDetailo">
-                      <img src="/images/blurb-3.png" alt="SmallWorld Venture" />
+                      <img
+                        src="/images/blurb-3.png"
+                        className="ui fluid image imageIndex"
+                        alt="SmallWorld Venture"
+                      />
                       <div className="shadowIndex">
                         <h4>Internal Venture Building</h4>
                         <p>
@@ -162,7 +176,11 @@ class Index extends Component {
                 <div className="column">
                   <center>
                     <div className="newsDetailo">
-                      <img src="/images/blurb-4.png" alt="SmallWorld Venture" />
+                      <img
+                        src="/images/blurb-4.png"
+                        className="ui fluid image imageIndex"
+                        alt="SmallWorld Venture"
+                      />
                       <div className="shadowIndex">
                         <h4>Invest Long-term Reforest</h4>
                         <p>

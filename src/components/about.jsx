@@ -13,24 +13,6 @@ const AboutPage = () => {
       </Helmet>
       <Navbar />
       <div>
-        <div>
-          <div className="imenu">
-            <i
-              className="icon bars"
-              style={{
-                color: "rgb(255, 255, 255)",
-                top: "0px",
-                width: "50px",
-                background: "none",
-                position: "absolute",
-                lineHeight: "50px",
-                border: "none",
-                height: "50px",
-                left: "0px"
-              }}
-            />
-          </div>
-        </div>
         <div className="aboutsmall">
           <div className="ui container">
             <div className="ui stackable two column grid centerme">
@@ -45,7 +27,7 @@ const AboutPage = () => {
                   for both business and well-being of our live.
                 </p>
               </div>
-              <div className="column">
+              <div className="column mobile hidden">
                 <div className="mobile">
                   <img
                     src="/images/banner-3.png"

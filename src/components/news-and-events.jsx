@@ -17,26 +17,29 @@ const News = () => {
         <br />
         <div className="ui container margin-buttons">
           <div className="ui stackable four column grid">
-            {Data.map((data, News) => {
-              return (
-                <div className="column" key={data.id}>
-                  <a className="newsDetail" href="/about">
-                    <img
-                      src={data.image}
-                      className="ui fluid image"
-                      alt={data.title}
-                    />
-                    <br />
-                    <center>
-                      <h3>{data.title}</h3>
-                    </center>
-                    <br />
-                    <p>{data.description}</p>
-                    <p>{data.tags}</p>
-                  </a>
-                </div>
-              );
-            })}
+          {Data.map((data, index) => {
+                return (
+                  <div className="column" key={data.id}>
+                    <div className="indexShadow">
+                      <a className="newsDetail" href="https://medium.com/">
+                        <img
+                          src={data.image}
+                          className="ui fluid image eventImage"
+                          alt={data.title}
+                        />
+                        <div className="backgroundEvent">
+                          <center>
+                            <h3>{data.title}</h3>
+                          </center>
+                          <br />
+                          <p>{data.description}</p>
+                          <p className="badge">{data.tags}</p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                );
+              })}
           </div>
         </div>
       </div>
