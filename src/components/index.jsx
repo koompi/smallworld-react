@@ -28,7 +28,11 @@ class Index extends Component {
             }}
           >
             <div>
-              <div className={this.state.toggleMenu ? "phone-background-navbar" : ""}>
+              <div
+                className={
+                  this.state.toggleMenu ? "phone-background-navbar" : ""
+                }
+              >
                 <div
                   className={
                     this.state.toggleMenu
@@ -41,13 +45,13 @@ class Index extends Component {
                     About
                   </Link>
                   <Link to="/what-we-can-do" className="item">
-                    What We Can Do
+                    Works
                   </Link>
                   <Link to="/about" className="item">
-                    News & Events
+                    News
                   </Link>
                   <Link to="/about" className="item">
-                    Contact Us
+                    Contact
                   </Link>
                 </div>
               </div>
@@ -64,7 +68,11 @@ class Index extends Component {
                   </div>
                   <div className="menu right asize">
                     <img
-                      src={this.state.toggleMenu ? "/images/close.png" : "/images/menu.svg" }
+                      src={
+                        this.state.toggleMenu
+                          ? "/images/close.png"
+                          : "/images/menu.svg"
+                      }
                       className="menu-icons"
                       height="30px"
                       alt=""
@@ -87,13 +95,13 @@ class Index extends Component {
                       About
                     </Link>
                     <Link to="/what-we-can-do" className="item">
-                      What We Can Do
+                      Works
                     </Link>
                     <Link to="/about" className="item">
-                      News & Events
+                      News
                     </Link>
                     <Link to="/about" className="item">
-                      Contact Us
+                      Contact
                     </Link>
                   </div>
                 </div>

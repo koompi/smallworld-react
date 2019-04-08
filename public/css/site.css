@@ -19,7 +19,7 @@
 h1,
 h2,
 h3 {
-  color: #762cc7;
+  color: #063e63;
   font-weight: 500;
 }
 .ui.secondary.menu .item {
@@ -72,7 +72,7 @@ p {
 /* navbarbar2 */
 
 .ui.secondary.menu.navbars {
-  background-color: #7426bc;
+  background-color: #063e63;
 }
 .ui.secondary.menu.navbars a {
   font-weight: bold;
@@ -80,8 +80,6 @@ p {
 .ui.secondary.menu.navbars img {
   height: 114px;
   padding-left: 4%;
-}
-.ui.secondary.menu.navbars a:hover {
 }
 
 .ft-background {
@@ -137,7 +135,7 @@ p {
 .ui.visible.left.overlay.sidebar.hide {
   visibility: hidden;
 }
-.phone-background-navbar{
+.phone-background-navbar {
   background-color: #272727a6;
   position: fixed;
   height: 100%;
@@ -151,7 +149,7 @@ p {
   transition: all 0.2s;
   /* animation-timing-function: ease-in; */
   animation-duration: 0.2s;
-  background-color: (0,0,0,.2);
+  background-color: (0, 0, 0, 0.2);
 }
 
 @keyframes slideIn {
@@ -210,7 +208,7 @@ p {
   padding: 13px 60px !important;
   color: #ffffff !important;
   font-size: 15px;
-  background: #4d1c83 !important;
+  background: #063e63 !important;
   box-shadow: 0 4px 8px 0 rgba(77, 28, 131, 0.8) !important;
   font-weight: 500 !important;
   transition: 0.5s !important;
@@ -224,7 +222,7 @@ p {
   margin-bottom: -6%;
 }
 .column.backFineus {
-  background-color: #4d1c83;
+  background-color: #063e63;
   height: 400px;
 }
 .column .backFineus h2 {
@@ -260,7 +258,7 @@ p {
   padding: 0px;
 }
 .descTitle1 button:hover {
-  color: #7426bc;
+  color: #063e63;
   padding: 0px;
 }
 .ui.accordion .title:not(.ui) {
@@ -272,7 +270,7 @@ p {
 }
 .ui.positive.button,
 .ui.positive.button:hover {
-  background-color: #4d1c83;
+  background-color: #063e63;
   border-radius: 30px;
 }
 .modalBack {
@@ -338,7 +336,7 @@ button.ui.button.right.floated.positive {
   height: 200px !important;
   transition: 0.2s;
 }
-.backMember img{
+.backMember img {
   transition: 0.3s;
 }
 .backMember img:hover {
@@ -373,7 +371,7 @@ button.ui.button.right.floated.positive {
   border-radius: 30px !important;
   padding: 13px 40px !important;
   /* border: 1px solid #fff !important; */
-  color: #531e8c !important;
+  color: #063e63 !important;
   font-size: 15px;
   /* margin-left: 20px; */
   background: #fff !important;
@@ -450,8 +448,8 @@ button.ui.button.right.floated.positive {
 }
 .ui.basic.btnInformation:hover {
   box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.21);
-  color: #762cc7 !important;
-  transform: translateY(-4px)
+  color: #063e63 !important;
+  transform: translateY(-4px);
 }
 
 .newsDetailo h4 {
@@ -459,7 +457,7 @@ button.ui.button.right.floated.positive {
   font-weight: 500;
   font-size: 24px;
   text-transform: capitalize;
-  color: #762cc7 !important;
+  color: #063e63 !important;
   line-height: 28px;
 }
 .newsDetailo p {
@@ -504,11 +502,11 @@ button.ui.button.right.floated.positive {
   border-radius: 5px 5px 0px 0px;
 }
 .backgroundEvent h3 {
-  color: #762cc7;
+  color: #063e63;
   padding-top: 20px;
 }
 .badge {
-  background-color: #762cc7;
+  background-color: #063e63;
   display: inline-block;
   padding: 0px 10px;
   border-radius: 4px;
@@ -522,7 +520,7 @@ button.ui.button.right.floated.positive {
 p {
   font-size: 16px !important;
 }
-.indexShadow{
+.indexShadow {
   transition: 0.3s;
 }
 .indexShadow:hover {
@@ -547,7 +545,7 @@ p {
   top: 35px;
   left: 0;
 }
-.ui.menu.mobile-navbar{
+.ui.menu.mobile-navbar {
   background-color: #47278a;
   margin: 0px !important;
   padding: 0px !important;
@@ -562,7 +560,7 @@ img.imgfooter {
 }
 
 .sw-navbar {
-  background-color: #4d1c83;
+  background-color: #063e63;
 }
 
 @media only screen and (max-width: 1920px) {
@@ -734,7 +732,7 @@ img.imgfooter {
     width: 200px !important;
     height: 200px !important;
   }
-  .shadowIndex{
+  .shadowIndex {
     box-shadow: none;
   }
   .imageAbout {
@@ -744,10 +742,10 @@ img.imgfooter {
     padding-top: 8%;
     padding-bottom: 5%;
   }
-  .aboutsmall p{
-    font-size: 16px !important
+  .aboutsmall p {
+    font-size: 16px !important;
   }
-  .descTitle1 h1{
+  .descTitle1 h1 {
     margin-top: -80px;
   }
 }
@@ -756,7 +754,7 @@ img.imgfooter {
   .newsAndEvent {
     padding: 8% 0 6% 0;
   }
-  .backInformation{
+  .backInformation {
     background-image: linear-gradient(to bottom, #3498db, #2980b9);
   }
   .imenu {
@@ -775,7 +773,7 @@ img.imgfooter {
   .bannerContent {
     width: 100%;
   }
-  .bannerContent h2{
+  .bannerContent h2 {
     font-size: 24px !important;
     margin: 0px;
   }
@@ -809,17 +807,17 @@ img.imgfooter {
   .column .backFineus p {
     margin-left: 10%;
   }
-  .backInformation h1{
-    font-size: 21px!important;
+  .backInformation h1 {
+    font-size: 21px !important;
   }
-  .backInformation p{
-    font-size: 16px!important;
-    color: rgba(255, 255, 255, 0.82)!important;
+  .backInformation p {
+    font-size: 16px !important;
+    color: rgba(255, 255, 255, 0.82) !important;
   }
-  .imageIndex{
+  .imageIndex {
     padding: 0px 15% !important;
   }
-  p{
+  p {
     font-size: 16px !important;
   }
 }
