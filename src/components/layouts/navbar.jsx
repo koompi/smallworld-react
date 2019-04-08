@@ -30,13 +30,13 @@ class Navbar extends Component {
                 About
               </Link>
               <Link to="/what-we-can-do" className="item">
-                What We Can Do
+                Works
               </Link>
               <Link to="/about" className="item">
-                News & Events
+                News
               </Link>
               <Link to="/about" className="item">
-                Contact Us
+                Contact
               </Link>
             </div>
           </div>
@@ -91,21 +91,21 @@ class Navbar extends Component {
                 activeClassName="item active"
                 className="item"
               >
-                What We Can Do
+                Works
               </NavLink>
               <NavLink
                 to="/news-and-events"
                 activeClassName="item active"
                 className="item"
               >
-                News & Events
+                News
               </NavLink>
               <NavLink
                 to="/contact-us"
                 activeClassName="item active"
                 className="item"
               >
-                Contact Us
+                Contact
               </NavLink>
             </div>
           </div>
