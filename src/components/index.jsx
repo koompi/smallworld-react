@@ -17,7 +17,7 @@ class Index extends Component {
     return (
       <div>
         <Helmet>
-          <title>SmallWorld Venture</title>
+          <title>SmallWorld Venture | a homegrown startup community based in Phnom Penh</title>
         </Helmet>
         <div>
           <div
@@ -109,12 +109,11 @@ class Index extends Component {
             </div>
             <div className="ui container">
               <div className="bannerContent">
-                <h2>SMALLWORLD Venture</h2>
+                <h2>SmallWorld Venture</h2>
                 <p className="paragraph">
-                  SmallWorld as a collaborative workspace is a Cambodia's first
-                  homegrown startup community. SmallWorld is an idea and our
-                  ideas are grander than owning a physical space. Community |
-                  Startups Investment | R&D
+                  SmallWorld Venture is a homegrown startup community based in Phnom Penh.
+                  We started as a collaborative workspace environtment back in 2011.
+                  Present focus are in <b>Community Development</b>, <b> Seeds Investment</b>, <b>Venture Building and R&D, and Afforestation. </b>
                 </p>
                 <Link to="/about">
                   <button className="ui basic button btnLearnMore">
@@ -136,10 +135,9 @@ class Index extends Component {
                         alt="SmallWorld Venture"
                       />
                       <div className="shadowIndex">
-                        <h4>Buildings Startup Community</h4>
+                        <h4>Startup Community</h4>
                         <p>
-                          Estonia’s Icefire: the fine art of financial
-                          technology
+                          Build startup community is 
                         </p>
                       </div>
                     </div>
@@ -154,7 +152,7 @@ class Index extends Component {
                         className="ui fluid image imageIndex"
                       />
                       <div className="shadowIndex">
-                        <h4>Investment Portfolio</h4>
+                        <h4>Seeds & Portfolio</h4>
                         <p>
                           Estonia’s Icefire: the fine art of financial
                           technology
@@ -172,7 +170,7 @@ class Index extends Component {
                         alt="SmallWorld Venture"
                       />
                       <div className="shadowIndex">
-                        <h4>Internal Venture Building</h4>
+                        <h4>Venture Building</h4>
                         <p>
                           Estonia’s Icefire: the fine art of financial
                           technology
@@ -190,10 +188,9 @@ class Index extends Component {
                         alt="SmallWorld Venture"
                       />
                       <div className="shadowIndex">
-                        <h4>Invest Long-term Reforest</h4>
+                        <h4>Afforestation </h4>
                         <p>
-                          Estonia’s Icefire: the fine art of financial
-                          technology
+                          Our hope to see
                         </p>
                       </div>
                     </div>
@@ -223,7 +220,7 @@ class Index extends Component {
             </div>
           </div>
           <div className="ui container margin-buttons">
-            <h2 className="newsAndEvent">News &amp; Events</h2>
+            <h2 className="newsAndEvent">Community Update</h2>
             <div className="ui stackable four column grid">
               {Data.map((data, index) => {
                 return (
@@ -250,6 +247,35 @@ class Index extends Component {
               })}
             </div>
           </div>
+          <div className="ui container margin-buttons">
+            <h2 className="newsAndEvent">KOOMPI News</h2>
+            <div className="ui stackable four column grid">
+              {Data.map((data, index) => {
+                return (
+                  <div className="column" key={data.id}>
+                    <div className="indexShadow">
+                      <a className="newsDetail" href="https://medium.com/">
+                        <img
+                          src={data.image}
+                          className="ui fluid image eventImage"
+                          alt={data.title}
+                        />
+                        <div className="backgroundEvent">
+                          <center>
+                            <h3>{data.title}</h3>
+                          </center>
+                          <br />
+                          <p>{data.description}</p>
+                          <p className="badge">{data.tags}</p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+
         </div>
         <Footer />
       </div>
