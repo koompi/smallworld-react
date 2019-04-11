@@ -137,7 +137,7 @@ class Index extends Component {
                       <div className="shadowIndex">
                         <h4>Startup Community</h4>
                         <p>
-                          Build startup community is 
+                          We commit to be one of the catalyst to help build startup community Cambodia 
                         </p>
                       </div>
                     </div>
@@ -154,8 +154,7 @@ class Index extends Component {
                       <div className="shadowIndex">
                         <h4>Seeds & Portfolio</h4>
                         <p>
-                          Estonia’s Icefire: the fine art of financial
-                          technology
+                          We invest in seed funding stage under $25,000, while we leave some room for exception.
                         </p>
                       </div>
                     </div>
@@ -172,8 +171,7 @@ class Index extends Component {
                       <div className="shadowIndex">
                         <h4>Venture Building</h4>
                         <p>
-                          Estonia’s Icefire: the fine art of financial
-                          technology
+                          Venture Buidling is our R&D Lap that aim to incubate great team internally to spin off new ventures.
                         </p>
                       </div>
                     </div>
@@ -190,7 +188,7 @@ class Index extends Component {
                       <div className="shadowIndex">
                         <h4>Afforestation </h4>
                         <p>
-                          Our hope to see
+                          Live more in harmony with nature, real estate development with nature philosophy.
                         </p>
                       </div>
                     </div>
@@ -203,13 +201,15 @@ class Index extends Component {
             <div className="ui container">
               <div className="ui stackable two column grid">
                 <div className="column">
-                  <h1>Need More Information?</h1>
+                  <h1>Have some ideas for new venture?</h1>
                   <p>
-                    What is it like to run a business in Estonia? How to benefit
-                    from the e-solutions and the efficiency of our business
-                    culture? What are the opportunities in specific sectors?
+                    We look for new ideas and approach for new venture. Or you have a set of skills that might 
+                    be able to join one of a venture that SmallWorld is building. 
                   </p>
-                  <p>What is it like to run a business in Estonia?</p>
+                  <p>We are very open to anything regardless age, gender, or country of origin. 
+                    As long as, you are willing to stay where your start up needed to be.
+                  </p>
+                  <p>Send us a message!</p>
                   <Link to="/contact-us">
                     <button className="ui basic button btnInformation">
                       CONTACT US
