@@ -51,11 +51,7 @@ const AboutPage = () => {
                 <div className="descTitle">
                   <h1>Venture Building</h1>
                   <p>
-                    SmallWorld with reserved resources is designated to invest
-                    in the external startups with support from angel & seeds
-                    funders. While, working on the main mission to develop and
-                    support the potential projects within the internal ventures
-                    startups & teams
+                    Add logo of startup, such as KOOMPI, Grood, Zeetomic
                   </p>
                 </div>
               </div>
@@ -63,14 +59,7 @@ const AboutPage = () => {
                 <div className="descTitle1">
                   <h1>Portfolio</h1>
                   <p>
-                    What is it like to run a business in Estonia? How to benefit
-                    from the e-solutions and the efficiency of our business
-                    culture? What are the opportunities in specific sectors?
-                  </p>
-                  <p>
-                    What is it like to run a business in Estonia? How to benefit
-                    from the e-solutions and the efficiency of our business
-                    culture? What are the opportunities in specific sectors?
+                  add logo such as Codingate, Toursanak, BookMeBus, Seaphovjiveth, Fado
                   </p>
                 </div>
                 <div className="mobileimg1">
