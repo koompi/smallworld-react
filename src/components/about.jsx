@@ -17,14 +17,16 @@ const AboutPage = () => {
           <div className="ui container">
             <div className="ui stackable two column grid centerme">
               <div className="column">
-                <h1>What is SmallWorld Venture?</h1>
+                <h1>What is SmallWorld?</h1>
                 <p>
-                  Found in December 2011, a collaborative workspace by a group
-                  of progressing young cambodians to pilot their business ideas
-                  in an affordable, friendly and open work environment. Now,
-                  works best as a technology venture to help spin off startups.
-                  Endeavor the most pressing problems that could ease our future
-                  for both business and well-being of our live.
+                Founded in 2011 as SmallWorld Cambodia, a shared professional workspace 
+                where young progressive individuals could pursue their business aspirations 
+                and develop their ideas a reality. 
+                </p>
+                <p>
+                SmallWorld, reorganized to SmallWorld Venture in 2017, with a 
+                focus on <b>building tech community, seeds stage investment, ventures building,
+                and afforestation </b> effort to be aligned with nature philosophy and the green business movement.
                 </p>
               </div>
               <div className="column mobile hidden">
@@ -47,7 +49,7 @@ const AboutPage = () => {
                   <img src="/images/banner-4.png" alt="SmallWorld Venture" />
                 </div>
                 <div className="descTitle">
-                  <h1>Investment Portfolio</h1>
+                  <h1>Venture Building</h1>
                   <p>
                     SmallWorld with reserved resources is designated to invest
                     in the external startups with support from angel & seeds
@@ -59,7 +61,7 @@ const AboutPage = () => {
               </div>
               <div className="column">
                 <div className="descTitle1">
-                  <h1>Investment Portfolio</h1>
+                  <h1>Portfolio</h1>
                   <p>
                     What is it like to run a business in Estonia? How to benefit
                     from the e-solutions and the efficiency of our business
@@ -81,7 +83,7 @@ const AboutPage = () => {
         <div className="backMember">
           <div className="ui container">
             <center>
-              <h1>Our Board Member</h1>
+              <h1>Board Members</h1>
               <p>
                 During the past five years, smallworld has worked side-by-side
                 <br />
@@ -108,7 +110,7 @@ const AboutPage = () => {
         <div className="investorfooter">
           <div className="ui container">
             <center>
-              <h1>Our Investor &amp; Partner</h1>
+              <h1>Our Partners</h1>
               <p>
                 During the past five years, smallworld has worked side-by-side
                 <br />
