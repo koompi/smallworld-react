@@ -19,7 +19,7 @@ class Contact extends Component {
             <div className="ui container">
               <div className="ui stackable two column grid contact">
                 <div className="column marginInformation">
-                  <h2>Request e-Consulting</h2>
+                  <h2>Inquiries Request</h2>
                   <form className="ui form">
                     <div className="field">
                       <label>Name</label>
@@ -45,7 +45,7 @@ class Contact extends Component {
                   </form>
                 </div>
                 <div className="column marginInformation">
-                  <h2>Frequently Asked Questions</h2>
+                  <h2>FAQ</h2>
                   <h4>Hello World</h4>
                   <p>This is hello world from SAN Vuthy.</p>
                 </div>
@@ -60,19 +60,20 @@ class Contact extends Component {
                     <div className="column" />
                     <div className="column">
                       <div className="paddingsize">
-                        <h2>Fine Us</h2>
+                        <h2>Trigon Startup Village</h2>
                         <p>
-                          The Cambodia Investment Agency (EIA), a part of
-                          Enterprise Cambodia, is a goverment agency promoting
-                          foreign investments in Cambodia and assiting internal
-                          components in finding business opportunities in
-                          Cambodia
+                          We look forward to welcome you at any working hour. 
+                          Though, most of the time there are someone at SmallWorld.
+                          There are several startups in the same building, so make sure 
+                          you know who you are looking for. Otherwise, be prepare for 
+                          a little adventure.
                         </p>
                         <p>
-                          What is it like to run a business in Estonia? How to
-                          benefit from the e-solutions and the efficiency of our
-                          business culture? What are the opportunities in
-                          specific sectors?
+                          Look at the map, between the street 600, 602, and 313! 
+                          We have a crazy idea. Maybe not too crazy, but we plan 
+                          to nurture to be a cozy little startup village, called TK Trigon.
+                          Want to help us make it happen? Come walk around and feel it yourself.
+                          
                         </p>
                       </div>
                     </div>

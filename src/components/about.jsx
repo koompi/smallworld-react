@@ -74,10 +74,12 @@ const AboutPage = () => {
             <center>
               <h1>Board Members</h1>
               <p>
-                During the past five years, smallworld has worked side-by-side
+                We are very honored and proud to have courageous and kind people
                 <br />
-                with emerging young business leaders, encouraging
+                to be our board of director
               </p>
+
+              <p> Rithy THUL CEO & Chairman, Ms. Chea Serey Independent Director, Mr. Lin Willson - Board Member, Mr. Sila Chy - Board Member, Mr. Sen Kang - Board Member  </p>
               <div className="ui stackable four column grid">
                 {Member.map(data => {
                   return (
@@ -99,12 +101,13 @@ const AboutPage = () => {
         <div className="investorfooter">
           <div className="ui container">
             <center>
-              <h1>Our Partners</h1>
+              <h1>Strategic  Partners</h1>
               <p>
-                During the past five years, smallworld has worked side-by-side
-                <br />
-                with emerging young business leaders, encouraging
+                We are also proud to have forward thinkers and leaders in their field <br /> 
+                as our strategic partners
               </p>
+
+              <p> Doers - Sabay - ISI Logo (3)</p>
               <div className="logome">
                 <div className="ui three column grid">
                   {Partner.map(data => {

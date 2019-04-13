@@ -31,7 +31,7 @@ const Footer = () => {
                     <div className="content ">Telegram</div>
                   </div>
                 </a>
-                <a href="https://www.facebook.com/smallworld.kh/">
+                <a href="https://www.facebook.com/smallworldventure/">
                   <div className="ui header footerIcon">
                     <img
                       className="ui image  footerIcon"
