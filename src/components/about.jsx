@@ -78,8 +78,6 @@ const AboutPage = () => {
                 <br />
                 to be our board of director
               </p>
-
-              <p> Rithy THUL CEO & Chairman, Ms. Chea Serey Independent Director, Mr. Lin Willson - Board Member, Mr. Sila Chy - Board Member, Mr. Sen Kang - Board Member  </p>
               <div className="ui stackable four column grid">
                 {Member.map(data => {
                   return (

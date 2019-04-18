@@ -21,7 +21,7 @@ const Footer = () => {
               <div className="column" />
               <div className="column" />
               <div className="column">
-                <a href="telegram">
+                <a href="https://t.me/smallworldventure">
                   <div className="ui header footerIcon">
                     <img
                       className="ui image  footerIcon"
