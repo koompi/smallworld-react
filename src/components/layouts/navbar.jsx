@@ -29,7 +29,7 @@ class Navbar extends Component {
               <Link to="/about" className="item">
                 About
               </Link>
-              <Link to="/what-we-can-do" className="item">
+              <Link to="/what-we-do" className="item">
                 Works
               </Link>
               <Link to="/about" className="item">
@@ -80,14 +80,14 @@ class Navbar extends Component {
             </div>
             <div className="menu right asize">
               <NavLink
-                to="/about"
+                to="/about-us"
                 activeClassName="item active"
                 className="item"
               >
                 About
               </NavLink>
               <NavLink
-                to="/what-we-can-do"
+                to="/what-we-do"
                 activeClassName="item active"
                 className="item"
               >

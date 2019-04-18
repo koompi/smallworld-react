@@ -17,7 +17,10 @@ class Index extends Component {
     return (
       <div>
         <Helmet>
-          <title>SmallWorld Venture | a homegrown startup community based in Phnom Penh</title>
+          <title>
+            SmallWorld Venture | a homegrown startup community based in Phnom
+            Penh
+          </title>
         </Helmet>
         <div>
           <div
@@ -44,7 +47,7 @@ class Index extends Component {
                   <Link to="/about" className="item">
                     About
                   </Link>
-                  <Link to="/what-we-can-do" className="item">
+                  <Link to="/what-we-do" className="item">
                     Works
                   </Link>
                   <Link to="/about" className="item">
@@ -91,16 +94,16 @@ class Index extends Component {
                     </Link>
                   </div>
                   <div className="menu right asize">
-                    <Link to="/about" className="item">
+                    <Link to="/about-us" className="item">
                       About
                     </Link>
-                    <Link to="/what-we-can-do" className="item">
+                    <Link to="/what-we-do" className="item">
                       Works
                     </Link>
-                    <Link to="/about" className="item">
+                    <Link to="/news-and-events" className="item">
                       News
                     </Link>
-                    <Link to="/about" className="item">
+                    <Link to="/contact-us" className="item">
                       Contact
                     </Link>
                   </div>
@@ -111,9 +114,11 @@ class Index extends Component {
               <div className="bannerContent">
                 <h2>SmallWorld Venture</h2>
                 <p className="paragraph">
-                  SmallWorld Venture is a homegrown startup community based in Phnom Penh.
-                  We started as a collaborative workspace environtment back in 2011.
-                  Present focus are in <b>Community Development</b>, <b> Seeds Investment</b>, <b>Venture Building and R&D, and Afforestation. </b>
+                  SmallWorld Venture is a homegrown startup community based in
+                  Phnom Penh. We started as a collaborative workspace
+                  environtment back in 2011. Present focus are in{" "}
+                  <b>Community Development</b>, <b> Seeds Investment</b>,{" "}
+                  <b>Venture Building and R&D, and Afforestation. </b>
                 </p>
                 <Link to="/about">
                   <button className="ui basic button btnLearnMore">
@@ -137,7 +142,8 @@ class Index extends Component {
                       <div className="shadowIndex">
                         <h4>Startup Community</h4>
                         <p>
-                          We commit to be one of the catalyst to help build startup community Cambodia 
+                          We commit to be one of the catalyst to help build
+                          startup community Cambodia
                         </p>
                       </div>
                     </div>
@@ -154,7 +160,8 @@ class Index extends Component {
                       <div className="shadowIndex">
                         <h4>Seeds & Portfolio</h4>
                         <p>
-                          We invest in seed funding stage under $25,000, while we leave some room for exception.
+                          We invest in seed funding stage under $25,000, while
+                          we leave some room for exception.
                         </p>
                       </div>
                     </div>
@@ -171,7 +178,8 @@ class Index extends Component {
                       <div className="shadowIndex">
                         <h4>Venture Building</h4>
                         <p>
-                          Venture Buidling is our R&D Lap that aim to incubate great team internally to spin off new ventures.
+                          Venture Buidling is our R&D Lap that aim to incubate
+                          great team internally to spin off new ventures.
                         </p>
                       </div>
                     </div>
@@ -188,7 +196,8 @@ class Index extends Component {
                       <div className="shadowIndex">
                         <h4>Afforestation </h4>
                         <p>
-                          Live more in harmony with nature, real estate development with nature philosophy.
+                          Live more in harmony with nature, real estate
+                          development with nature philosophy.
                         </p>
                       </div>
                     </div>
@@ -203,11 +212,14 @@ class Index extends Component {
                 <div className="column">
                   <h1>Have some ideas for new venture?</h1>
                   <p>
-                    We look for new ideas and approach for new venture. Or you have a set of skills that might 
-                    be able to join one of a venture that SmallWorld is building. 
+                    We look for new ideas and approach for new venture. Or you
+                    have a set of skills that might be able to join one of a
+                    venture that SmallWorld is building.
                   </p>
-                  <p>We are very open to anything regardless age, gender, or country of origin. 
-                    As long as, you are willing to stay where your start up needed to be.
+                  <p>
+                    We are very open to anything regardless age, gender, or
+                    country of origin. As long as, you are willing to stay where
+                    your start up needed to be.
                   </p>
                   <p>Send us a message!</p>
                   <Link to="/contact-us">
@@ -275,7 +287,6 @@ class Index extends Component {
               })}
             </div>
           </div>
-
         </div>
         <Footer />
       </div>

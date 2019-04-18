@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Navbar from "./layouts/navbar";
 import { Helmet } from "react-helmet";
+import Footer from "./layouts/footer";
 
 class Contact extends Component {
   state = {};
@@ -62,18 +63,18 @@ class Contact extends Component {
                       <div className="paddingsize">
                         <h2>Trigon Startup Village</h2>
                         <p>
-                          We look forward to welcome you at any working hour. 
-                          Though, most of the time there are someone at SmallWorld.
-                          There are several startups in the same building, so make sure 
-                          you know who you are looking for. Otherwise, be prepare for 
-                          a little adventure.
+                          We look forward to welcome you at any working hour.
+                          Though, most of the time there are someone at
+                          SmallWorld. There are several startups in the same
+                          building, so make sure you know who you are looking
+                          for. Otherwise, be prepare for a little adventure.
                         </p>
                         <p>
-                          Look at the map, between the street 600, 602, and 313! 
-                          We have a crazy idea. Maybe not too crazy, but we plan 
-                          to nurture to be a cozy little startup village, called TK Trigon.
-                          Want to help us make it happen? Come walk around and feel it yourself.
-                          
+                          Look at the map, between the street 600, 602, and 313!
+                          We have a crazy idea. Maybe not too crazy, but we plan
+                          to nurture to be a cozy little startup village, called
+                          TK Trigon. Want to help us make it happen? Come walk
+                          around and feel it yourself.
                         </p>
                       </div>
                     </div>
@@ -90,6 +91,7 @@ class Contact extends Component {
             </div>
           </div>
         </div>
+        <Footer />
       </React.Fragment>
     );
   }

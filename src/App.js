@@ -13,8 +13,8 @@ class App extends Component {
         <Switch>
           <Route exact path="/" component={Index} />
           <Route exact path="/home" component={Index} />
-          <Route exact path="/about" component={AboutPage} />
-          <Route exact path="/what-we-can-do" component={WhatWeCanDo} />
+          <Route exact path="/about-us" component={AboutPage} />
+          <Route exact path="/what-we-do" component={WhatWeCanDo} />
           <Route exact path="/news-and-events" component={News} />
           <Route exact path="/contact-us" component={Contact} />
         </Switch>

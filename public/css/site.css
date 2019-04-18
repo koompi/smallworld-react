@@ -209,7 +209,7 @@ p {
   color: #ffffff !important;
   font-size: 15px;
   background: #063e63 !important;
-  box-shadow: 0 4px 8px 0 rgba(77, 28, 131, 0.8) !important;
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.21) !important;
   font-weight: 500 !important;
   transition: 0.5s !important;
 }
@@ -472,13 +472,13 @@ button.ui.button.right.floated.positive {
   border-radius: 0 0 10px 10px;
 }
 .footer a p {
-  font-size: 20px;
+  font-size: 20px !important;
   color: #95a5a6 !important;
 }
 .footer p {
   margin-top: 2.3%;
   padding-bottom: 4%;
-  font-size: 20px;
+  font-size: 20px !important;
 }
 
 .footer a {
