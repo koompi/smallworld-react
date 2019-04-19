@@ -1,13 +1,39 @@
 import React, { Component } from "react";
 import Footer from "./layouts/footer";
 import { Link } from "react-router-dom";
-import Data from "../data/NewsAndEvents.json";
 import { Helmet } from "react-helmet";
+import axios from "axios";
+
+function strip_html_tags(str) {
+  if (str === null || str === "") return false;
+  else str = str.toString();
+  return str.replace(/<[^>]*>/g, "");
+}
 
 class Index extends Component {
   state = {
-    toggleMenu: false
+    toggleMenu: false,
+    koompi: [],
+    smallworld: []
   };
+  componentDidMount() {
+    axios
+      .get(
+        "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@koompi"
+      )
+      .then(res => {
+        this.setState({ koompi: res.data.items });
+      });
+    axios
+      .get(
+        "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@smallworldventure"
+      )
+      .then(res => {
+        this.setState({
+          smallworld: res.data.items
+        });
+      });
+  }
   toggleMenuState = () => {
     this.setState({
       toggleMenu: !this.state.toggleMenu
@@ -234,23 +260,47 @@ class Index extends Component {
           <div className="ui container margin-buttons">
             <h2 className="newsAndEvent">Community Update</h2>
             <div className="ui stackable four column grid">
-              {Data.map((data, index) => {
+              {this.state.smallworld.slice(0, 4).map((data, index) => {
                 return (
-                  <div className="column" key={data.id}>
+                  <div className="column" key={data.title}>
                     <div className="indexShadow">
-                      <a className="newsDetail" href="https://medium.com/">
-                        <img
-                          src={data.image}
-                          className="ui fluid image eventImage"
-                          alt={data.title}
-                        />
+                      <a
+                        className="newsDetail"
+                        href={data.guid}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {data.thumbnail.match(/[^/]+(jpg|png|gif|jpeg)$/) ? (
+                          <div
+                            style={{
+                              backgroundImage: `url(${data.thumbnail})`,
+                              height: "200px",
+                              backgroundPosition: "center center",
+                              backgroundSize: "cover"
+                            }}
+                          />
+                        ) : (
+                          <div
+                            style={{
+                              backgroundImage: `url("/images/default_img.png")`,
+                              height: "200px",
+                              backgroundPosition: "center center",
+                              backgroundSize: "cover"
+                            }}
+                          />
+                        )}
+
                         <div className="backgroundEvent">
                           <center>
                             <h3>{data.title}</h3>
                           </center>
                           <br />
-                          <p>{data.description}</p>
-                          <p className="badge">{data.tags}</p>
+                          <p>
+                            {strip_html_tags(
+                              data.content.substring(0, 110) + "..."
+                            )}
+                          </p>
+                          <p className="badge">{data.author}</p>
                         </div>
                       </a>
                     </div>
@@ -262,23 +312,31 @@ class Index extends Component {
           <div className="ui container margin-buttons">
             <h2 className="newsAndEvent">KOOMPI News</h2>
             <div className="ui stackable four column grid">
-              {Data.map((data, index) => {
+              {console.log(this.state.smallworld)}
+              {this.state.koompi.slice(0, 4).map((data, index) => {
                 return (
-                  <div className="column" key={data.id}>
+                  <div className="column" key={data.title}>
                     <div className="indexShadow">
-                      <a className="newsDetail" href="https://medium.com/">
-                        <img
-                          src={data.image}
-                          className="ui fluid image eventImage"
-                          alt={data.title}
+                      <a className="newsDetail" href={data.guid}>
+                        <div
+                          style={{
+                            backgroundImage: `url(${data.thumbnail})`,
+                            height: "200px",
+                            backgroundPosition: "center center",
+                            backgroundSize: "cover"
+                          }}
                         />
                         <div className="backgroundEvent">
                           <center>
                             <h3>{data.title}</h3>
                           </center>
                           <br />
-                          <p>{data.description}</p>
-                          <p className="badge">{data.tags}</p>
+                          <p>
+                            {strip_html_tags(
+                              data.content.substring(0, 110) + "..."
+                            )}
+                          </p>
+                          <p className="badge">{data.author}</p>
                         </div>
                       </a>
                     </div>
