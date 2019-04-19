@@ -56,11 +56,11 @@ class News extends Component {
           <br />
           <div className="ui container margin-buttons">
             <h2 className="newsAndEvent">Community Update</h2>
-            <div className="ui stackable three column grid">
+            <div className="ui stackable three column equal height stretched grid">
               {this.state.smallworld.slice(0, 6).map((data, index) => {
                 return (
                   <div className="column" key={data.title}>
-                    <div className="indexShadow">
+                    <div className="shadowEvent">
                       <a
                         className="newsDetail"
                         href={data.guid}
@@ -123,12 +123,12 @@ class News extends Component {
           </div>
           <div className="ui container margin-buttons">
             <h2 className="newsAndEvent">KOOMPI News</h2>
-            <div className="ui stackable three column grid">
+            <div className="ui stackable three column equal height stretched grid">
               {/* {console.log(this.state.smallworld)} */}
               {this.state.koompi.slice(0, 6).map((data, index) => {
                 return (
                   <div className="column" key={data.title}>
-                    <div className="indexShadow">
+                    <div className="shadowEvent">
                       <a className="newsDetail" href={data.guid}>
                         <div
                           style={{
