@@ -11,6 +11,6 @@ app.get("*", function(req, res) {
 
 /* istanbul ignore next */
 if (!module.parent) {
-  app.listen(5000);
-  console.log("Express started on port 5000");
+  app.listen(5051);
+  console.log("Express started on port 5051");
 }
