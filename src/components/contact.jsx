@@ -47,8 +47,8 @@ class Contact extends Component {
                 </div>
                 <div className="column marginInformation">
                   <h2>FAQ</h2>
-                  <h4>Hello World</h4>
-                  <p>This is hello world from SAN Vuthy.</p>
+                  {/* <h4>Hello World</h4>
+                  <p>This is hello world from SAN Vuthy.</p> */}
                 </div>
               </div>
             </div>

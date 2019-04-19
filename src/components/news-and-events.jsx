@@ -105,6 +105,21 @@ class News extends Component {
                 );
               })}
             </div>
+            <br /> <br />
+            <center>
+              <a
+                href="https://medium.com/@smallworldventure"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <button
+                  className="ui button floated positive btnSubmit"
+                  type="submit"
+                >
+                  Load More
+                </button>
+              </a>
+            </center>
           </div>
           <div className="ui container margin-buttons">
             <h2 className="newsAndEvent">KOOMPI News</h2>
@@ -141,8 +156,24 @@ class News extends Component {
                 );
               })}
             </div>
+            <br /> <br />
+            <center>
+              <a
+                href="https://medium.com/@koompi"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <button
+                  className="ui button floated positive btnSubmit"
+                  type="submit"
+                >
+                  Load More
+                </button>
+              </a>
+            </center>
           </div>
         </div>
+
         <Footer />
       </div>
     );

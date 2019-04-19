@@ -259,8 +259,8 @@ class Index extends Component {
           </div>
           <div className="ui container margin-buttons">
             <h2 className="newsAndEvent">Community Update</h2>
-            <div className="ui stackable four column grid">
-              {this.state.smallworld.slice(0, 4).map((data, index) => {
+            <div className="ui stackable three column grid">
+              {this.state.smallworld.slice(0, 3).map((data, index) => {
                 return (
                   <div className="column" key={data.title}>
                     <div className="indexShadow">
@@ -311,9 +311,9 @@ class Index extends Component {
           </div>
           <div className="ui container margin-buttons">
             <h2 className="newsAndEvent">KOOMPI News</h2>
-            <div className="ui stackable four column grid">
+            <div className="ui stackable three column grid">
               {console.log(this.state.smallworld)}
-              {this.state.koompi.slice(0, 4).map((data, index) => {
+              {this.state.koompi.slice(0, 3).map((data, index) => {
                 return (
                   <div className="column" key={data.title}>
                     <div className="indexShadow">
