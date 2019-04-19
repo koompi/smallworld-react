@@ -3,6 +3,7 @@ import Navbar from "./layouts/navbar";
 import Footer from "./layouts/footer";
 import Member from "../data/member.json";
 import Partner from "../data/partner.json";
+import Portfolio from "../data/portfolio.json";
 import { Helmet } from "react-helmet";
 
 const AboutPage = () => {
@@ -19,14 +20,19 @@ const AboutPage = () => {
               <div className="column">
                 <h1>What is SmallWorld?</h1>
                 <p>
-                Founded in 2011 as SmallWorld Cambodia, a shared professional workspace 
-                where young progressive individuals could pursue their business aspirations 
-                and develop their ideas a reality. 
+                  Founded in 2011 as SmallWorld Cambodia, a shared professional
+                  workspace where young progressive individuals could pursue
+                  their business aspirations and develop their ideas a reality.
                 </p>
                 <p>
-                SmallWorld, reorganized to SmallWorld Venture in 2017, with a 
-                focus on <b>building tech community, seeds stage investment, ventures building,
-                and afforestation </b> effort to be aligned with nature philosophy and the green business movement.
+                  SmallWorld, reorganized to SmallWorld Venture in 2017, with a
+                  focus on{" "}
+                  <b>
+                    building tech community, seeds stage investment, ventures
+                    building, and afforestation{" "}
+                  </b>{" "}
+                  effort to be aligned with nature philosophy and the green
+                  business movement.
                 </p>
               </div>
               <div className="column mobile hidden">
@@ -50,17 +56,31 @@ const AboutPage = () => {
                 </div>
                 <div className="descTitle">
                   <h1>Venture Building</h1>
-                  <p>
-                    Add logo of startup, such as KOOMPI, Grood, Zeetomic
-                  </p>
+                  <p>Add logo of startup, such as KOOMPI, Grood, Zeetomic</p>
                 </div>
               </div>
               <div className="column">
                 <div className="descTitle1">
                   <h1>Portfolio</h1>
-                  <p>
-                  add logo such as Codingate, Toursanak, BookMeBus, Seaphovjiveth, Fado
-                  </p>
+                  <div className="ui three column grid">
+                    {Portfolio.map(res => {
+                      return (
+                        <div className="column" key={res.id}>
+                          <a
+                            href={res.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <img
+                              src={res.logo}
+                              className="ui image fluid"
+                              alt={res.name}
+                            />
+                          </a>
+                        </div>
+                      );
+                    })}
+                  </div>
                 </div>
                 <div className="mobileimg1">
                   <img src="/images/banner-4.png" alt="SmallWorld Venture" />
@@ -78,7 +98,7 @@ const AboutPage = () => {
                 <br />
                 to be our board of director
               </p>
-              <div className="ui stackable four column grid">
+              <div className="ui stackable five column grid">
                 {Member.map(data => {
                   return (
                     <div className="column" key={data.id}>
@@ -88,7 +108,9 @@ const AboutPage = () => {
                         alt={data.name}
                       />
                       <h3>{data.name}</h3>
-                      <p>{data.position}</p>
+                      <span>{data.position}</span>
+                      <br />
+                      <span>{data.company}</span>
                     </div>
                   );
                 })}
@@ -99,19 +121,21 @@ const AboutPage = () => {
         <div className="investorfooter">
           <div className="ui container">
             <center>
-              <h1>Strategic  Partners</h1>
+              <h1>Strategic Partners</h1>
               <p>
-                We are also proud to have forward thinkers and leaders in their field <br /> 
+                We are also proud to have forward thinkers and leaders in their
+                field <br />
                 as our strategic partners
               </p>
-
-              <p> Doers - Sabay - ISI Logo (3)</p>
               <div className="logome">
                 <div className="ui three column grid">
                   {Partner.map(data => {
                     return (
                       <div className="column logo" key={data.id}>
-                        <a className="newsDetail" href={data.link}>
+                        <a
+                          className="newsDetail ui small image"
+                          href={data.link}
+                        >
                           <img
                             src={data.image}
                             className="ui image"

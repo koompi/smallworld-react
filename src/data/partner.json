@@ -1,7 +1,17 @@
 [
   {
     "id": "smallworld-partner-01",
-    "image": "/images/ISI_GROUP.png",
+    "image": "/images/company-logo/Doer.png",
+    "link": "https://isisteel.com.kh/"
+  },
+  {
+    "id": "smallworld-partner-01",
+    "image": "/images/company-logo/sabay.png",
+    "link": "https://isisteel.com.kh/"
+  },
+  {
+    "id": "smallworld-partner-01",
+    "image": "/images/company-logo/ISI.png",
     "link": "https://isisteel.com.kh/"
   }
 ]

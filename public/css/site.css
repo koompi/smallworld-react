@@ -199,6 +199,9 @@ p {
 .investorfooter {
   padding-top: 4%;
 }
+.investorfooter .container {
+  width: 50% !important;
+}
 .investorfooter p {
   padding-bottom: 3%;
   color: #959494;
@@ -296,6 +299,8 @@ button.ui.button.right.floated.positive {
 }
 .backMember {
   background-color: #f0f1f3;
+  padding-bottom: 80px;
+  padding-top: 40px;
 }
 .backMember h1 {
   padding: 40px 0px 20px 0;
@@ -303,9 +308,14 @@ button.ui.button.right.floated.positive {
   font-size: 30px;
   font-weight: 500;
 }
-.backMember p {
+.backMember span {
   color: #919090;
   padding-bottom: 3%;
+  font-size: 17px !important;
+  line-height: 25px;
+}
+.backMember p {
+  padding-bottom: 30px;
 }
 .teams {
   padding: 2% 0px 4% 0px;
@@ -340,7 +350,7 @@ button.ui.button.right.floated.positive {
   transition: 0.3s;
 }
 .backMember img:hover {
-  box-shadow: 0 10px 28px 0 hsla(269, 64%, 48%, 0.37);
+  box-shadow: 0 10px 28px 0 hsla(0, 0%, 30%, 0.42);
   transform: translateY(-5px);
 }
 
@@ -525,7 +535,7 @@ p {
   transition: 0.3s;
 }
 .indexShadow:hover {
-  box-shadow: 0 6px 20px rgba(64, 5, 112, 0.2);
+  box-shadow: 0 6px 20px rgba(189, 189, 189, 0.2);
   transform: translateY(-10px);
 }
 .footerIcon img {
