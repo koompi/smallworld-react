@@ -706,10 +706,13 @@ img.imgfooter {
   }
 
   .imenu.main {
-    background: rgb(91, 32, 152);
+    background: #0072bc;
   }
   center.moblenav.main {
-    background: rgb(91, 32, 152) !important;
+    background: #0072bc !important;
+  }
+  .investorfooter .container {
+    width: 100% !important;
   }
 }
 
