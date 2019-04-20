@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, Redirect } from "react-router-dom";
 import Index from "./components/index";
 import AboutPage from "./components/about";
 import WhatWeCanDo from "./components/what-we-can-do";
@@ -17,6 +17,7 @@ class App extends Component {
           <Route exact path="/what-we-do" component={WhatWeCanDo} />
           <Route exact path="/news-and-events" component={News} />
           <Route exact path="/contact-us" component={Contact} />
+          <Route exact path="/" component={Index} />
         </Switch>
       </div>
     );

@@ -595,6 +595,11 @@ img.imgfooter {
   border-radius: 5px;
   transform: translateY(-5px);
 }
+.contactFontSize{
+  font-size: 22px !important;
+  position: relative;
+  /* top: -15px; */
+}
 
 @media only screen and (max-width: 1920px) {
   .descTitle {
