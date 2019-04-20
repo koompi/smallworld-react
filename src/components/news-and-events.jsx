@@ -17,16 +17,16 @@ class News extends Component {
     smallworld: []
   };
   componentDidMount() {
-    fetch(
-      "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@smallworldventure"
-    )
-      .then(res => res.json())
-      .then(data => {
-        // Fillter the array
-        const res = data.items; //This is an array with the content. No feed, no info about author etc..
-        this.setState({ smallworld: res });
-        // const posts = res.filter(item => item.categories.length > 0); // That's the main trick* !
-      });
+    // fetch(
+    //   "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@smallworldventure"
+    // )
+    //   .then(res => res.json())
+    //   .then(data => {
+    //     // Fillter the array
+    //     const res = data.items; //This is an array with the content. No feed, no info about author etc..
+    //     this.setState({ smallworld: res });
+    //     // const posts = res.filter(item => item.categories.length > 0); // That's the main trick* !
+    //   });
     axios
       .get(
         "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@koompi"
@@ -34,15 +34,15 @@ class News extends Component {
       .then(res => {
         this.setState({ koompi: res.data.items });
       });
-    // axios
-    //   .get(
-    //     "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@smallworldventure"
-    //   )
-    //   .then(res => {
-    //     this.setState({
-    //       smallworld: res.data.items
-    //     });
-    //   });
+    axios
+      .get(
+        "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40smallworldventure"
+      )
+      .then(res => {
+        this.setState({
+          smallworld: res.data.items
+        });
+      });
   }
   render() {
     return (
@@ -109,7 +109,7 @@ class News extends Component {
           <div className="ui container margin-buttons">
             <h2 className="newsAndEvent">KOOMPI News</h2>
             <div className="ui stackable three column grid">
-              {/* {console.log(this.state.smallworld)} */}
+              {console.log(this.state.smallworld)}
               {this.state.koompi.slice(0, 6).map((data, index) => {
                 return (
                   <div className="column" key={data.title}>
