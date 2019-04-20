@@ -17,16 +17,6 @@ class News extends Component {
     smallworld: []
   };
   componentDidMount() {
-    // fetch(
-    //   "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@smallworldventure"
-    // )
-    //   .then(res => res.json())
-    //   .then(data => {
-    //     // Fillter the array
-    //     const res = data.items; //This is an array with the content. No feed, no info about author etc..
-    //     this.setState({ smallworld: res });
-    //     // const posts = res.filter(item => item.categories.length > 0); // That's the main trick* !
-    //   });
     axios
       .get(
         "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@koompi"
@@ -44,6 +34,7 @@ class News extends Component {
         });
       });
   }
+
   render() {
     return (
       <div>
@@ -56,11 +47,11 @@ class News extends Component {
           <br />
           <div className="ui container margin-buttons">
             <h2 className="newsAndEvent">Community Update</h2>
-            <div className="ui stackable three column grid">
+            <div className="ui stackable three column equal height stretched grid">
               {this.state.smallworld.slice(0, 6).map((data, index) => {
                 return (
                   <div className="column" key={data.title}>
-                    <div className="indexShadow">
+                    <div className="shadowEvent">
                       <a
                         className="newsDetail"
                         href={data.guid}
@@ -105,15 +96,30 @@ class News extends Component {
                 );
               })}
             </div>
+            <br /> <br />
+            <center>
+              <a
+                href="https://medium.com/@smallworldventure"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <button
+                  className="ui button floated positive btnSubmit"
+                  type="submit"
+                >
+                  Load More
+                </button>
+              </a>
+            </center>
           </div>
           <div className="ui container margin-buttons">
             <h2 className="newsAndEvent">KOOMPI News</h2>
-            <div className="ui stackable three column grid">
-              {console.log(this.state.smallworld)}
+            <div className="ui stackable three column equal height stretched grid">
+              {/* {console.log(this.state.smallworld)} */}
               {this.state.koompi.slice(0, 6).map((data, index) => {
                 return (
                   <div className="column" key={data.title}>
-                    <div className="indexShadow">
+                    <div className="shadowEvent">
                       <a className="newsDetail" href={data.guid}>
                         <div
                           style={{
@@ -141,8 +147,24 @@ class News extends Component {
                 );
               })}
             </div>
+            <br /> <br />
+            <center>
+              <a
+                href="https://medium.com/@koompi"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <button
+                  className="ui button floated positive btnSubmit"
+                  type="submit"
+                >
+                  Load More
+                </button>
+              </a>
+            </center>
           </div>
         </div>
+
         <Footer />
       </div>
     );

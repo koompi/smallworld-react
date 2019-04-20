@@ -70,16 +70,16 @@ class Index extends Component {
                   }
                   style={{}}
                 >
-                  <Link to="/about" className="item">
+                  <Link to="/about-us" className="item">
                     About
                   </Link>
                   <Link to="/what-we-do" className="item">
                     Works
                   </Link>
-                  <Link to="/about" className="item">
+                  <Link to="/news-and-events" className="item">
                     News
                   </Link>
-                  <Link to="/about" className="item">
+                  <Link to="/contact-us" className="item">
                     Contact
                   </Link>
                 </div>
@@ -259,11 +259,11 @@ class Index extends Component {
           </div>
           <div className="ui container margin-buttons">
             <h2 className="newsAndEvent">Community Update</h2>
-            <div className="ui stackable three column grid">
+            <div className="ui stackable three column equal height stretched grid">
               {this.state.smallworld.slice(0, 3).map((data, index) => {
                 return (
                   <div className="column" key={data.title}>
-                    <div className="indexShadow">
+                    <div className="shadowEvent">
                       <a
                         className="newsDetail"
                         href={data.guid}
@@ -311,12 +311,12 @@ class Index extends Component {
           </div>
           <div className="ui container margin-buttons">
             <h2 className="newsAndEvent">KOOMPI News</h2>
-            <div className="ui stackable three column grid">
-              {console.log(this.state.smallworld)}
+            <div className="ui stackable three column equal height stretched grid">
+              {/* {console.log(this.state.smallworld)} */}
               {this.state.koompi.slice(0, 3).map((data, index) => {
                 return (
                   <div className="column" key={data.title}>
-                    <div className="indexShadow">
+                    <div className="shadowEvent">
                       <a className="newsDetail" href={data.guid}>
                         <div
                           style={{

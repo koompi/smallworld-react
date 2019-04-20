@@ -26,16 +26,16 @@ class Navbar extends Component {
               }
               style={{}}
             >
-              <Link to="/about" className="item">
+              <Link to="/about-us" className="item">
                 About
               </Link>
               <Link to="/what-we-do" className="item">
                 Works
               </Link>
-              <Link to="/about" className="item">
+              <Link to="/news-and-events" className="item">
                 News
               </Link>
-              <Link to="/about" className="item">
+              <Link to="/contact-us" className="item">
                 Contact
               </Link>
             </div>
