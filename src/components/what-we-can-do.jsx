@@ -95,7 +95,7 @@ const WhatWeCanDo = () => {
                   <p>
                     The projects which focus its attention on decentralized &
                     P2P Application, Tokenization projects, hardware & software,
-                    robotic & automation, materials scient study.
+                    robotic & automation, materials science study.
                   </p>
                   <p>
                     Some idea become a venture and go to the market, for example
@@ -108,7 +108,7 @@ const WhatWeCanDo = () => {
                       KOOMPI
                     </a>
                     . In 2019, we hope to release a few more. Some of which are
-                    GROOD and Zeetomic.
+                    <b>GROOD</b> and <b>Zeetomic</b>.
                   </p>
                 </div>
               </div>
@@ -138,43 +138,41 @@ const WhatWeCanDo = () => {
               </div>
               <div className="column nine wide">
                 <div className="descTitle1">
-                  <h1>Afforestation</h1>
+                  <h1>Afforestation & Reforestation</h1>
                   <p>
-                    Not to be confused with Reforestation, Afforestation is the
-                    establishment of a forest or stand of trees (forestation) in
-                    an area where there was no previous tree cover.
+                  Not to be confused with Reforestation, Afforestation is the 
+                  establishment of a forest or stand of trees (forestation) 
+                  in an area where there was no previous tree cover.
                   </p>
                   <p>
-                    We directly engage in programs of afforestation to create
-                    forests, increase carbon capture and sequestration, and help
-                    to improve biodiversity.
+                  We directly engage in programs of afforestation to create forests, 
+                  increase carbon capture and sequestration, and help to improve biodiversity.
+
                   </p>
                   <p>
-                    This is our wildest dream. We would love to change our
-                    generation forward, not only to become engineers but to be a
-                    nature keeper.
+                  This is our wildest dream. We would love to change our generation forward, 
+                  not only to become engineers but to be a nature keeper.
                   </p>
                   <p>
-                    Economic challenge, we want to see our generation forward
-                    become trees planter to make money as oppose to the other
-                    way around.
+                  Economic challenge, we want to see our generation forward become 
+                  trees planter to make money as opposed to the other way around.
                   </p>
                   <p>
-                    We want to start our development around and with nature -
-                    not against it.
+                  We want to start our development around and with nature - 
+                  not against it.
                   </p>
                   <p>
-                    VitaminAir is one of the internal project that will take on
-                    this challenge very serously in the year to come.
+                  VitaminAir is one of the internal project that will take on 
+                  this challenge very seriously in the year to come.
                   </p>
                   <p>
-                    Part of the afforestation also, we hope we will start using
-                    renewale energy and newable material, so we can keep the
-                    earth clean and nice to live.
+                  Part of the afforestation also, we hope we will start using 
+                  renewable energy and renewable material, 
+                  so we can keep the earth clean and nice to live. 
                   </p>
                   <p>
-                    Then, learn how to mine none-renewble - not from earth, if
-                    we must, but from space.
+                  Then, learn how to mine nonrenewable - not from earth, 
+                  if we must, but from space..
                   </p>
                 </div>
                 <div className="mobileimg1">
