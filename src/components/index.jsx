@@ -146,7 +146,7 @@ class Index extends Component {
                   <b>Community Development</b>, <b> Seeds Investment</b>,{" "}
                   <b>Venture Building and R&D, and Afforestation. </b>
                 </p>
-                <Link to="/about">
+                <Link to="/about-us">
                   <button className="ui basic button btnLearnMore">
                     LEARN MORE
                   </button>
