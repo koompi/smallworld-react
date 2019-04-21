@@ -53,7 +53,7 @@ class Contact extends Component {
                       alt="contact address"
                     />
                     <span className="contactFontSize">
-                      #35, Street 600bis, Toul Kork, Phnom Penh, Cambodia{" "}
+                      House 35, Street 600bis, Toul Kork, <br /> &nbsp; &nbsp; &nbsp;&nbsp; Phnom Penh, Cambodia{" "}
                     </span>
                   </p>
                   <p>
@@ -63,7 +63,24 @@ class Contact extends Component {
                     />
                     <span className="contactFontSize">
                       {" "}
-                      smallworldventure@gmail.com
+                      smallworldventure[at]gmail.com
+                    </span>
+                  </p>
+                  <p>
+                    <img
+                      src="https://img.icons8.com/carbon-copy/40/000000/paper-plane.png"
+                      alt="contact telegram"
+                    />
+                    <span className="contactFontSize">
+                      {" "}
+                      <a
+                      href="https://t.me/smallworldventure"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {" "}
+                      t.me/smallworldventure
+                    </a>
                     </span>
                   </p>
                 </div>
