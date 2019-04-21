@@ -48,12 +48,23 @@ class Contact extends Component {
                 <div className="column marginInformation">
                   <h2>Our Office</h2>
                   <p>
-                    <img src="https://img.icons8.com/wired/40/000000/user-location.png" />
-                    <span className="contactFontSize">#35, Street 600bis, Toul Kork, Phnom Penh, Cambodia </span>
+                    <img
+                      src="https://img.icons8.com/wired/40/000000/user-location.png"
+                      alt="contact address"
+                    />
+                    <span className="contactFontSize">
+                      #35, Street 600bis, Toul Kork, Phnom Penh, Cambodia{" "}
+                    </span>
                   </p>
                   <p>
-                    <img src="https://img.icons8.com/carbon-copy/40/000000/paper-plane.png" />
-                    <span className="contactFontSize"> smallworldventure@gmail.com</span>
+                    <img
+                      src="https://img.icons8.com/carbon-copy/40/000000/paper-plane.png"
+                      alt="contact email"
+                    />
+                    <span className="contactFontSize">
+                      {" "}
+                      smallworldventure@gmail.com
+                    </span>
                   </p>
                 </div>
               </div>

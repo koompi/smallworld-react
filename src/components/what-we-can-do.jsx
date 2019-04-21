@@ -12,6 +12,8 @@ const WhatWeCanDo = () => {
       <Navbar />
       <div>
         <div className="backAbout">
+          <br />
+          <br />
           <div className="ui container">
             <div className="ui stackable two column grid centerme">
               <div className="column nine wide">

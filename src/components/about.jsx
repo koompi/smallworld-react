@@ -30,11 +30,11 @@ class AboutPage extends Component {
                     aspirations while transforming ideas into reality.
                   </p>
                   <p>
-                    SmallWorld, reorganized to SmallWorld Venture in 2017, with
-                    a focus on{" "}
+                    With five years of steady growth, SmallWorld then
+                    reorganized into SmallWorld Venture with focus on{" "}
                     <b>
                       building tech community, seeds stage investment, ventures
-                      building, and afforestation{" "}
+                      building, and afforestation
                     </b>{" "}
                     effort to be aligned with nature philosophy and the green
                     business movement.
