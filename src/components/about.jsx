@@ -24,10 +24,10 @@ class AboutPage extends Component {
                 <div className="column">
                   <h1>What is SmallWorld?</h1>
                   <p>
-                    Founded in 2011 as SmallWorld Cambodia, a shared
-                    professional workspace where young progressive individuals
-                    could pursue their business aspirations and develop their
-                    ideas a reality.
+                    Founded in 2011 as SmallWorld Cambodia, we created a shared
+                    professional workspace where progressive young business
+                    minded individuals could explore and pursue their
+                    aspirations while transforming ideas into reality.
                   </p>
                   <p>
                     SmallWorld, reorganized to SmallWorld Venture in 2017, with
@@ -99,10 +99,9 @@ class AboutPage extends Component {
               <center>
                 <h1>Board Members</h1>
                 <p>
-                  We are very honored and proud to have courageous and kind
-                  people
-                  <br />
-                  to be our board of director
+                  We are proud and honored to have courageous and insightful
+                  business and community <br /> leaders to serve on our Board of
+                  Directors.
                 </p>
                 <div className="ui stackable five column grid">
                   {Member.map(data => {
@@ -129,9 +128,8 @@ class AboutPage extends Component {
               <center>
                 <h1>Strategic Partners</h1>
                 <p>
-                  We are also proud to have forward thinkers and leaders in
-                  their field <br />
-                  as our strategic partners
+                  We are especially pleased to have built strategic partnerships
+                  with forward thinking <br /> leaders in the business world.
                 </p>
                 <div className="logome">
                   <div className="ui three column grid">
