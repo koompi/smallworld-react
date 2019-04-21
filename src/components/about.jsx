@@ -66,7 +66,10 @@ class AboutPage extends Component {
                 </div>
                 <div className="column">
                   <div className="descTitle1">
-                    <h1>Portfolio</h1>
+                    <h1>Portfolios</h1>
+                    <p> We started our investment experiment since 2013. After all these years, 
+                      below are some of startups and team we are proudly to be with them since 
+                      their inception.</p>
                     <div className="ui three column grid">
                       {Portfolio.map(res => {
                         return (
