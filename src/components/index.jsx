@@ -184,7 +184,7 @@ class Index extends Component {
                         className="ui fluid image imageIndex"
                       />
                       <div className="shadowIndex">
-                        <h4>Seeds & Portfolio</h4>
+                        <h4>Seed Investment</h4>
                         <p>
                           We invest in seed funding stage under $25,000, while
                           we leave some room for exception.
