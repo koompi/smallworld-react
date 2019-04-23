@@ -33,7 +33,7 @@ const WhatWeCanDo = () => {
                   <img
                     src="/images/startup-com.png"
                     alt="SmallWorld Venture"
-                    className="ui fluid image"
+                    className="ui image fliud"
                   />
                 </div>
               </div>
@@ -48,7 +48,7 @@ const WhatWeCanDo = () => {
                   <img
                     src="/images/investment.png"
                     alt="SmallWorld Venture"
-                    className="ui fluid image"
+                    className=" imageCenter"
                   />
                 </div>
               </div>
@@ -75,7 +75,7 @@ const WhatWeCanDo = () => {
                   <img
                     src="/images/investment.png"
                     alt="SmallWorld Venture"
-                    className="ui fluid image"
+                    className=" imageCenter"
                   />
                 </div>
               </div>
@@ -128,7 +128,7 @@ const WhatWeCanDo = () => {
                   <img
                     src="/images/venture-building.png"
                     alt="SmallWorld Venture"
-                    className="ui fluid image"
+                    className=" imageCenter"
                   />
                 </div>
               </div>
@@ -143,7 +143,7 @@ const WhatWeCanDo = () => {
                   <img
                     src="/images/reforest.png"
                     alt="SmallWorld Venture"
-                    className="ui fluid image"
+                    className=" imageCenter"
                   />
                 </div>
               </div>
@@ -179,7 +179,11 @@ const WhatWeCanDo = () => {
                   </p>
                 </div>
                 <div className="mobileimg1">
-                  <img src="/images/reforest.png" alt="SmallWorld Venture" />
+                  <img
+                    src="/images/reforest.png"
+                    alt="SmallWorld Venture"
+                    className="imageCenter"
+                  />
                 </div>
               </div>
             </div>
