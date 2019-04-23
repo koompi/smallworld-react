@@ -47,42 +47,65 @@ class Contact extends Component {
                 </div>
                 <div className="column marginInformation">
                   <h2>Our Office</h2>
-                  <p>
-                    <img
-                      src="https://img.icons8.com/wired/40/000000/user-location.png"
-                      alt="contact address"
-                    />
-                    <span className="contactFontSize">
-                      House 35, Street 600bis, Toul Kork, <br /> &nbsp; &nbsp; &nbsp;&nbsp; Phnom Penh, Cambodia{" "}
-                    </span>
-                  </p>
-                  <p>
-                    <img
-                      src="https://img.icons8.com/carbon-copy/40/000000/paper-plane.png"
-                      alt="contact email"
-                    />
-                    <span className="contactFontSize">
-                      {" "}
-                      smallworldventure[at]gmail.com
-                    </span>
-                  </p>
-                  <p>
-                    <img
-                      src="https://img.icons8.com/carbon-copy/40/000000/paper-plane.png"
-                      alt="contact telegram"
-                    />
-                    <span className="contactFontSize">
-                      {" "}
-                      <a
-                      href="https://t.me/smallworldventure"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {" "}
-                      t.me/smallworldventure
-                    </a>
-                    </span>
-                  </p>
+                  <div class="ui grid">
+                    <div class="two wide column">
+                      <center>
+                        <img
+                          src="https://img.icons8.com/ios/50/000000/order-delivered.png"
+                          className="ui image fluid"
+                          alt="Address"
+                        />
+                      </center>
+                    </div>
+                    <div class="fourteen wide column">
+                      <span className="contactFontSize">
+                        Address: House 35, Street 600bis, Toul Kork, Phnom Penh,
+                        Cambodia{" "}
+                      </span>
+                    </div>
+                  </div>
+                  <div class="ui grid">
+                    <div class="two wide column">
+                      <center>
+                        <img
+                          src="https://img.icons8.com/ios/50/000000/gmail-filled.png"
+                          className="ui image fluid contactIcon"
+                          alt="Address"
+                        />
+                      </center>
+                    </div>
+                    <div class="twelve wide column">
+                      <span className="contactFontSize">
+                        {" "}
+                        smallworldventure@gmail.com
+                      </span>
+                    </div>
+                  </div>
+                  <div class="ui grid">
+                    <div class="two wide column">
+                      <center>
+                        <img
+                          src="https://img.icons8.com/ios/50/000000/paper-plane.png"
+                          className="ui image fluid contactIcon"
+                          alt="Email"
+                        />
+                      </center>
+                    </div>
+                    <div class="twelve wide column">
+                      <span className="contactFontSize">
+                        <a
+                          href="https://t.me/smallworldventure"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          {" "}
+                          <p className="contactFontSize">
+                            t.me/smallworldventure
+                          </p>
+                        </a>
+                      </span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

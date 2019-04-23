@@ -138,13 +138,20 @@ class Index extends Component {
             </div>
             <div className="ui container">
               <div className="bannerContent">
-                <h2>SmallWorld Venture</h2>
+                <h3>
+                  <span>{"<"}</span> {"Homegrown Startup Community"}{" "}
+                  <span>{"/>"}</span>
+                </h3>
                 <p className="paragraph">
-                  SmallWorld Venture is a homegrown startup community based in
-                  Phnom Penh. We started as a collaborative workspace
-                  environtment back in 2011. Present focus are in{" "}
-                  <b>Community Development</b>, <b> Seeds Investment</b>,{" "}
-                  <b>Venture Building and R&D, and Afforestation. </b>
+                  We began in 2011 by providing a collaborative workspace
+                  environment for entrepreneurs, and then quickly moved forward
+                  raising investment capital to fund new startup projects.
+                </p>
+                <p className="paragraph">
+                  With a variety of research and development projects in motion
+                  today, we're involved in startup venture building through
+                  community supported seed equity investments, together with
+                  rural ecovillage development and long-term land management.
                 </p>
                 <Link to="/about-us">
                   <button className="ui basic button btnLearnMore">
@@ -156,39 +163,50 @@ class Index extends Component {
           </div>
           <div className="cvcolor">
             <div className="ui container margin-top">
-              <div className="ui stackable four column grid">
-                <div className="column">
+              <div className="ui four column doubling stackable grid container">
+                <div className="column ">
                   <center>
                     <div className="newsDetailo">
                       <img
                         src="/images/blurb-1.png"
-                        className="ui fluid image imageIndex"
+                        className="imageIndex"
                         alt="SmallWorld Venture"
                       />
                       <div className="shadowIndex">
                         <h4>Startup Community</h4>
                         <p>
-                          We commit to be one of the catalyst to help build
-                          startup community Cambodia
+                          SmallWorld Ventures is committed to becoming the
+                          number one catalyst for funding and assisting startups
+                          in Cambodia.
                         </p>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
                       </div>
                     </div>
                   </center>
                 </div>
+
                 <div className="column">
                   <center>
                     <div className="newsDetailo">
                       <img
                         src="/images/blurb-2.png"
                         alt="SmallWorld Venture"
-                        className="ui fluid image imageIndex"
+                        className="imageIndex"
                       />
                       <div className="shadowIndex">
-                        <h4>Seed Investment</h4>
+                        <h4>Seed Equity Investments</h4>
                         <p>
-                          We invest in seed funding stage under $25,000, while
-                          we leave some room for exception.
+                          Seed Equity Investments are provided to promising
+                          startup teams with projects ranging between 5,000 to
+                          25,000 USD.
                         </p>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
                       </div>
                     </div>
                   </center>
@@ -198,15 +216,19 @@ class Index extends Component {
                     <div className="newsDetailo">
                       <img
                         src="/images/blurb-3.png"
-                        className="ui fluid image imageIndex"
+                        className="imageIndex"
                         alt="SmallWorld Venture"
                       />
                       <div className="shadowIndex">
                         <h4>Venture Building</h4>
                         <p>
-                          Venture Buidling is our R&D Lap that aim to incubate
-                          great team internally to spin off new ventures.
+                          Smallworld Ventures has built an internal team of
+                          technicians engaged in research and development
+                          projects with an aim to spin off new ventures.
                         </p>
+                        <br />
+                        <br />
+                        <br />
                       </div>
                     </div>
                   </center>
@@ -216,14 +238,16 @@ class Index extends Component {
                     <div className="newsDetailo">
                       <img
                         src="/images/blurb-4.png"
-                        className="ui fluid image imageIndex"
+                        className="imageIndex"
                         alt="SmallWorld Venture"
                       />
                       <div className="shadowIndex">
-                        <h4>Afforestation </h4>
+                        <h4>Ecovillage Development </h4>
                         <p>
-                          Live more in harmony with nature, real estate
-                          development with nature philosophy.
+                          At our rural ecovillage project, we're building a
+                          hands-on learning, working, and living environment
+                          with a balance among the natural world, education,
+                          economics, and sustainable living practices.
                         </p>
                       </div>
                     </div>
@@ -238,14 +262,17 @@ class Index extends Component {
                 <div className="column">
                   <h1>Have some ideas for new venture?</h1>
                   <p>
-                    We look for new ideas and approach for new venture. Or you
-                    have a set of skills that might be able to join one of a
-                    venture that SmallWorld is building.
+                    We're looking for new approaches to problem solving and
+                    creating business.Do you have an innovative idea for a
+                    startup venture?
                   </p>
                   <p>
-                    We are very open to anything regardless age, gender, or
-                    country of origin. As long as, you are willing to stay where
-                    your start up needed to be.
+                    Or maybe you have a skillset in mind that you want to
+                    develop as you work within our existing SmallWorld venture.
+                  </p>
+                  <p>
+                    We're open to discussing your own startup ideas, however
+                    unconventional, regardless of age, gender, or nationality.
                   </p>
                   <p>Send us a message!</p>
                   <Link to="/contact-us">

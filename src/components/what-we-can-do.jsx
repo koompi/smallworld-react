@@ -20,11 +20,11 @@ const WhatWeCanDo = () => {
                 <div className="descTitle1">
                   <h1>Startup Community</h1>
                   <p>
-                    Since our inception in 2011, SmallWorld has remained focused
-                    on their vision of building a strong, sturdy and vibrant
-                    startup community in Phnom Penh by partnering with other
-                    workspaces to offer greater value and accessibility to early
-                    stage startup teams and entrepreneurs.
+                    Since 2011, SmallWorld has remained focused on their vision
+                    of building a vibrant startup community in Phnom Penh
+                    through partnering with other area workspace groups to offer
+                    greater value and accessibility to early stage startup teams
+                    and entrepreneurs.
                   </p>
                 </div>
               </div>
@@ -54,20 +54,20 @@ const WhatWeCanDo = () => {
               </div>
               <div className="column nine wide">
                 <div className="descTitle1">
-                  <h1>Seed Capital Investments</h1>
+                  <h1>Seed Equity Investments</h1>
                   <p>
-                    Seed Capital Investments are the most important ingredient
-                    for building a strong startup community. <br /> <br />{" "}
-                    During our formative years, we gained insightful experience
-                    working with dozen of innovative startups, and now provide
-                    Seed Capital Investments for five new startup teams each
-                    year. <br />
-                    <br />
-                    With a funding range between 5 to 25 thousand US dollars per
-                    team, our Seed Capital Investments are not a loan, but
-                    equity based. <br />
+                    Seed Equity Investments are used to form equity investment
+                    partnerships which serve as the foundation for building a
+                    strong startup community. <br />
+                    <br /> During our formative years we've gained insightful
+                    experience by working with dozens of innovative startups and
+                    we now provide Seed Equity Investments for five new startup
+                    teams each year. <br />
+                    <br /> With a funding range between 5,000 to 25,000 USD per
+                    team, our Seed Equity Investments are not loans, but equity
+                    based investments. <br />
                     <br /> Local co-investor equity participation is encouraged
-                    and generated through seminars and presentations to the
+                    and generated through seminars and presentations within the
                     greater Phnom Penh business community.
                   </p>
                 </div>
@@ -87,28 +87,39 @@ const WhatWeCanDo = () => {
             <div className="ui stackable two column grid centerme">
               <div className="column nine wide">
                 <div className="descTitle1">
-                  <h1>Venture Building and R&D</h1>
+                  <h1>Venture Building</h1>
                   <p>
-                    In the pursuit for the greater good, the cornerstone of
-                    SmallWorld mission is our Venture Building and R&D.
+                    Our branded KOOMPI system is one among several exciting
+                    ventures in our portfolio. <br /> <br />
+                    We've produced a practical, affordable, and effective
+                    entry-level notebook designed for future engineers,
+                    inventors, organizers, developers, and freethinkers. <br />
+                    <br />
+                    The KOOMPI notebook computer is a slim, elegant, high-end,
+                    portable, personal productivity environment designed to
+                    perform well at work, school, or with managing any small
+                    business. <br />
+                    <br />
+                    Powering the KOOMPI notebook is KOSMOS, which is our own
+                    version of the popular open-source Linux operating system,
+                    with KramaOS specifically tailored for the Cambodian
+                    marketplace.
                   </p>
+                  <h1>Research and Development</h1>
                   <p>
-                    The projects which focus its attention on decentralized &
-                    P2P Application, Tokenization projects, hardware & software,
-                    robotic & automation, materials science study.
-                  </p>
-                  <p>
-                    Some idea become a venture and go to the market, for example
-                    <a
-                      href="https://koompi.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {" "}
-                      KOOMPI
-                    </a>
-                    . In 2019, we hope to release a few more. Some of which are
-                    <b>GROOD</b> and <b>Zeetomic</b>.
+                    The cornerstone of SmallWorld Ventures is to promote Venture
+                    Building with a key focus on Research and Development (R&D).{" "}
+                    <br />
+                    <br />
+                    We're engaged in both hardware and software R&D projects
+                    related to decentralized peer-to-peer applications,
+                    tokenization, robotics, artificial intelligence, and
+                    automation. <br />
+                    <br />
+                    Beyond hardware and software, we're building an all natural
+                    outdoor learning, living, work, and play environment using
+                    industrial hemp and bamboo design as the fundamental basis
+                    for production.
                   </p>
                 </div>
               </div>
@@ -138,41 +149,33 @@ const WhatWeCanDo = () => {
               </div>
               <div className="column nine wide">
                 <div className="descTitle1">
-                  <h1>Afforestation & Reforestation</h1>
+                  <h1>Environmental Stewardship</h1>
                   <p>
-                  Not to be confused with Reforestation, Afforestation is the 
-                  establishment of a forest or stand of trees (forestation) 
-                  in an area where there was no previous tree cover.
-                  </p>
-                  <p>
-                  We directly engage in programs of afforestation to create forests, 
-                  increase carbon capture and sequestration, and help to improve biodiversity.
-
-                  </p>
-                  <p>
-                  This is our wildest dream. We would love to change our generation forward, 
-                  not only to become engineers but to be a nature keeper.
-                  </p>
-                  <p>
-                  Economic challenge, we want to see our generation forward become 
-                  trees planter to make money as opposed to the other way around.
-                  </p>
-                  <p>
-                  We want to start our development around and with nature - 
-                  not against it.
-                  </p>
-                  <p>
-                  VitaminAir is one of the internal project that will take on 
-                  this challenge very seriously in the year to come.
-                  </p>
-                  <p>
-                  Part of the afforestation also, we hope we will start using 
-                  renewable energy and renewable material, 
-                  so we can keep the earth clean and nice to live. 
-                  </p>
-                  <p>
-                  Then, learn how to mine nonrenewable - not from earth, 
-                  if we must, but from space..
+                    Environmental stewardship means the responsible use and
+                    protection of our natural resources through conservation and
+                    sustainable practice. <br />
+                    <br />
+                    We strive to be aware and knowledgeable of the natural world
+                    around us and to do as little as possible to negatively
+                    impact that world.
+                    <br />
+                    <br />
+                    VitaminAir is our planned ecovillage project located on 100+
+                    hectares of rural land 100 kilometers east of Phnom Penh
+                    beneath Phnom Pich Nil near the base of the Dâmrei
+                    Mountains.
+                    <br />
+                    <br />
+                    At our VitaminAir project and the surrounding protected
+                    areas, we are directly engaged in small scale agriculture
+                    and reforestation, along with nature and wildlife
+                    preservation programs.
+                    <br />
+                    <br />
+                    In addition, we are creating a hands-on learning, working
+                    and living environment with an appropriate balance among
+                    economic opportunity, environmental protection, and
+                    sustainable living practices.
                   </p>
                 </div>
                 <div className="mobileimg1">

@@ -26,18 +26,18 @@ class AboutPage extends Component {
                   <p>
                     Founded in 2011 as SmallWorld Cambodia, we created a shared
                     professional workspace where progressive young business
-                    minded individuals could explore and pursue their
-                    aspirations while transforming ideas into reality.
+                    minds could explore and pursue their aspirations while
+                    transforming ideas into reality.{" "}
                   </p>
                   <p>
-                    With five years of steady growth, SmallWorld then
-                    reorganized into SmallWorld Venture with focus on{" "}
-                    <b>
-                      building tech community, seeds stage investment, ventures
-                      building, and afforestation
-                    </b>{" "}
-                    effort to be aligned with nature philosophy and the green
-                    business movement.
+                    After five years of steady growth, SmallWorld Cambodia
+                    reorganized into SmallWorld Ventures to focus on venture
+                    building, information technologies, and the environment.
+                  </p>
+                  <p>
+                    Through equity investment partnerships, we're building a
+                    land-based technical, business, and academic community based
+                    on natural philosophy and ecologically sensitive practices.
                   </p>
                 </div>
                 <div className="column mobile hidden">
@@ -67,9 +67,11 @@ class AboutPage extends Component {
                 <div className="column">
                   <div className="descTitle1">
                     <h1>Portfolios</h1>
-                    <p> We started our investment experiment since 2013. After all these years, 
-                      below are some of startups and team we are proudly to be with them since 
-                      their inception.</p>
+                    <p>
+                      We began experimenting with equity investment partnerships
+                      in 2013, and since then we've listed a few startup teams
+                      we're proud to be partnered with from their inception.
+                    </p>
                     <div className="ui three column grid">
                       {Portfolio.map(res => {
                         return (
@@ -100,11 +102,11 @@ class AboutPage extends Component {
           <div className="backMember">
             <div className="ui container">
               <center>
-                <h1>Board Members</h1>
+                <h1>Board of Directors</h1>
                 <p>
-                  We are proud and honored to have courageous and insightful
-                  business and community <br /> leaders to serve on our Board of
-                  Directors.
+                  We're honored to have courageous and insightful business and{" "}
+                  <br />
+                  community leaders to serve on our Board of Directors.
                 </p>
                 <div className="ui stackable five column grid">
                   {Member.map(data => {
@@ -131,8 +133,9 @@ class AboutPage extends Component {
               <center>
                 <h1>Strategic Partners</h1>
                 <p>
-                  We are especially pleased to have built strategic partnerships
-                  with forward thinking <br /> leaders in the business world.
+                  We're especially pleased to have built strategic partnerships{" "}
+                  <br />
+                  with forward thinking leaders in the business world.
                 </p>
                 <div className="logome">
                   <div className="ui three column grid">
