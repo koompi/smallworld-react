@@ -642,13 +642,13 @@ img.imgfooter {
 
 @media only screen and (max-width: 1440px) {
   .backBanner {
-    height: 160vw !important;
+    height: 40vw !important;
     background: #053f64 !important;
   }
   .bannerContent {
     width: 50%;
     padding-top: 0%;
-    padding-left: 8%;
+    padding-left: 0%;
   }
   .bannerContent h3 {
     font-size: 44px;
@@ -662,6 +662,9 @@ img.imgfooter {
   button.ui.basic.button.btnLearnMore {
     padding: 13px 30px;
     font-size: 14px;
+  }
+  .bannerContent {
+    width: 60% !important;
   }
 }
 
@@ -696,9 +699,16 @@ img.imgfooter {
     width: 70%;
     margin: -11%;
   }
+  .backBanner {
+    height: 70vw !important;
+    background: #053f64 !important;
+  }
 }
 
 @media only screen and (max-width: 979px) {
+  .bannerContent {
+    width: 100% !important;
+  }
   .imageCenter {
     position: relative !important;
     top: 0 !important;
@@ -765,7 +775,7 @@ img.imgfooter {
     display: block;
   }
   .backBanner {
-    height: 160vw !important;
+    height: 100vw !important;
     background: #053f64 !important;
   }
   .bannerContent {
