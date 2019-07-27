@@ -19,7 +19,7 @@ class News extends Component {
   componentDidMount() {
     axios
       .get(
-        "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@koompi"
+        "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/koompi"
       )
       .then(res => {
         this.setState({ koompi: res.data.items });

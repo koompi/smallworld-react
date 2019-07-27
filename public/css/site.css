@@ -181,6 +181,24 @@ p {
   visibility: visible;
 }
 
+.fade-enter {
+  opacity: 0.01;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
+
 .ui.labeled.icon.menu .item {
   text-align: left !important;
 }
@@ -229,7 +247,7 @@ p {
   height: 400px;
 }
 .column .backFineus h2 {
-  padding-top: 15%;
+  padding-top: 5%;
   margin-left: -15%;
   color: white !important;
 }
