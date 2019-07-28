@@ -181,13 +181,16 @@ p {
   visibility: visible;
 }
 
+/* simple - enter transition 300ms, exit 150ms */
+.fade-appear,
 .fade-enter {
-  opacity: 0.01;
+  opacity: 0;
+  z-index: 1;
 }
-
+.fade-appear-active,
 .fade-enter.fade-enter-active {
   opacity: 1;
-  transition: opacity 300ms ease-in;
+  transition: opacity 300ms linear 150ms;
 }
 
 .fade-exit {
@@ -195,8 +198,8 @@ p {
 }
 
 .fade-exit.fade-exit-active {
-  opacity: 0.01;
-  transition: opacity 300ms ease-in;
+  opacity: 0;
+  transition: opacity 150ms linear;
 }
 
 .ui.labeled.icon.menu .item {

@@ -12,19 +12,15 @@ class App extends Component {
     window.scrollTo(0, 0);
     return (
       <div className="App">
-        <TransitionGroup>
-          <CSSTransition classNames="fade" key={window.location} timeout={200}>
-            <Switch>
-              <Route exact path="/" component={Index} />
-              <Route exact path="/home" component={Index} />
-              <Route exact path="/about-us" component={AboutPage} />
-              <Route exact path="/what-we-do" component={WhatWeCanDo} />
-              <Route exact path="/news-and-events" component={News} />
-              <Route exact path="/contact-us" component={Contact} />
-              <Redirect to="/" component={Index} />
-            </Switch>
-          </CSSTransition>
-        </TransitionGroup>
+        <Switch>
+          <Route exact path="/" component={Index} />
+          <Route exact path="/home" component={Index} />
+          <Route exact path="/about-us" component={AboutPage} />
+          <Route exact path="/what-we-do" component={WhatWeCanDo} />
+          <Route exact path="/news-and-events" component={News} />
+          <Route exact path="/contact-us" component={Contact} />
+          <Redirect to="/" component={Index} />
+        </Switch>
       </div>
     );
   }
