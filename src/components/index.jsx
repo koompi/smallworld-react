@@ -19,14 +19,14 @@ class Index extends Component {
   componentDidMount() {
     axios
       .get(
-        "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@koompi"
+        "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/koompi"
       )
       .then(res => {
         this.setState({ koompi: res.data.items });
       });
     axios
       .get(
-        "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40smallworldventure"
+        "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/smallworldvc"
       )
       .then(res => {
         this.setState({
