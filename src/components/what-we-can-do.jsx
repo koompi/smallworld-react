@@ -9,9 +9,9 @@ const WhatWeCanDo = () => {
       <Helmet>
         <title>What We Do | SmallWorld Venture</title>
         <meta
-      name="description"
-      content="Startup Community, Seed Equity Investments, Venture Building, Research and Development, Environmental Stewardship"
-    />
+          name="description"
+          content="Startup Community, Seed Equity Investments, Venture Building, Research and Development, Environmental Stewardship"
+        />
       </Helmet>
       <Navbar />
       <div>

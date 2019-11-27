@@ -45,10 +45,7 @@ class News extends Component {
       <div>
         <Helmet>
           <title>News and Events</title>
-          <meta
-      name="description"
-      content="Community Update, KOOMPI News"
-    />
+          <meta name="description" content="Community Update, KOOMPI News" />
         </Helmet>
         <div>
           <Navbar />

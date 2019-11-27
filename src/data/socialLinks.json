@@ -1,23 +1,23 @@
 [
-    {
-        "id": "1",
-        "name": "Telegram",
-        "srcImage": "/images/socialMedia/telegram.svg",
-        "alt": "SmallWorld-Venture Telegram",
-        "link":"https://t.me/smallworldventure"
-    },
-    {
-        "id": "2",
-        "name": "Facebook",
-        "srcImage": "/images/socialMedia/facebook.svg",
-        "alt": "SmallWorld-Venture Telegram",
-        "link":"https://www.facebook.com/smallworldventure/"
-    },
-    {
-        "id": "3",
-        "name": "Twitter",
-        "srcImage": "/images/socialMedia/twitter.svg",
-        "alt": "SmallWorld Twitter",
-        "link":"https://twitter.com/smallworldvc"
-    }
+  {
+    "id": "1",
+    "name": "Telegram",
+    "srcImage": "/images/socialMedia/telegram.svg",
+    "alt": "SmallWorld-Venture Telegram",
+    "link": "https://t.me/smallworldventure"
+  },
+  {
+    "id": "2",
+    "name": "Facebook",
+    "srcImage": "/images/socialMedia/facebook.svg",
+    "alt": "SmallWorld-Venture Telegram",
+    "link": "https://www.facebook.com/smallworldventure/"
+  },
+  {
+    "id": "3",
+    "name": "Twitter",
+    "srcImage": "/images/socialMedia/twitter.svg",
+    "alt": "SmallWorld Twitter",
+    "link": "https://twitter.com/smallworldvc"
+  }
 ]

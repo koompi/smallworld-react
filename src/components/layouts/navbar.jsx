@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom"
 import { Link } from "react-router-dom"
 
 class Navbar extends Component {
-  constructor(props){
+  constructor(props) {
     super(props)
     this.state = {
       toggleMenu: false
@@ -57,9 +57,7 @@ class Navbar extends Component {
               </div>
               <div className="menu right asize">
                 <img
-                  src={
-                    toggleMenu ? "/images/close.png" : "/images/menu.svg"
-                  }
+                  src={toggleMenu ? "/images/close.png" : "/images/menu.svg"}
                   className="menu-icons"
                   height="30px"
                   alt=""

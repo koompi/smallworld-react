@@ -19,7 +19,7 @@ class Index extends Component {
       smallworld: []
     }
   }
-  
+
   componentDidMount() {
     axios
       .get(
@@ -44,7 +44,7 @@ class Index extends Component {
       toggleMenu: !this.state.toggleMenu
     })
   }
-  
+
   render() {
     return (
       <div>
@@ -52,7 +52,10 @@ class Index extends Component {
           <title>
             SmallWorld Venture | Homegrown startup community based in Phnom Penh
           </title>
-          <meta name="description" content="Homegrown Startup Community. We began in 2011 by providing a collaborative workspace environment for entrepreneurs, and then quickly moved forward raising investment capital to fund new startup projects." />
+          <meta
+            name="description"
+            content="Homegrown Startup Community. We began in 2011 by providing a collaborative workspace environment for entrepreneurs, and then quickly moved forward raising investment capital to fund new startup projects."
+          />
         </Helmet>
         <div>
           <div
