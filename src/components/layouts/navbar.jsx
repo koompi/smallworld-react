@@ -1,26 +1,30 @@
-import React, { Component } from "react";
-import { NavLink } from "react-router-dom";
-import { Link } from "react-router-dom";
+import React, { Component } from "react"
+import { NavLink } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 class Navbar extends Component {
-  state = {
-    toggleMenu: false
-  };
+  constructor(props){
+    super(props)
+    this.state = {
+      toggleMenu: false
+    }
+  }
+
   toggleMenuState = () => {
     this.setState({
       toggleMenu: !this.state.toggleMenu
-    });
-  };
+    })
+  }
+
   render() {
+    const { toggleMenu } = this.state
     return (
-      <React.Fragment>
+      <>
         <div>
-          <div
-            className={this.state.toggleMenu ? "phone-background-navbar" : ""}
-          >
+          <div className={toggleMenu ? "phone-background-navbar" : ""}>
             <div
               className={
-                this.state.toggleMenu
+                toggleMenu
                   ? "ui left demo vertical inverted labeled icon sidebar menu overlay visible mobile only slideIn"
                   : "ui left demo vertical inverted labeled icon sidebar menu overlay visible mobile only slideOut"
               }
@@ -54,9 +58,7 @@ class Navbar extends Component {
               <div className="menu right asize">
                 <img
                   src={
-                    this.state.toggleMenu
-                      ? "/images/close.png"
-                      : "/images/menu.svg"
+                    toggleMenu ? "/images/close.png" : "/images/menu.svg"
                   }
                   className="menu-icons"
                   height="30px"
@@ -79,11 +81,7 @@ class Navbar extends Component {
               </NavLink>
             </div>
             <div className="menu right asize">
-              <NavLink
-                to="/about-us"
-                activeClassName="item active"
-                className="item"
-              >
+              <NavLink to="/about-us" activeClassName="item active" className="item">
                 About
               </NavLink>
               <NavLink
@@ -110,9 +108,9 @@ class Navbar extends Component {
             </div>
           </div>
         </div>
-      </React.Fragment>
-    );
+      </>
+    )
   }
 }
 
-export default Navbar;
+export default Navbar

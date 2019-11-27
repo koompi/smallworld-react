@@ -1,44 +1,50 @@
-import React, { Component } from "react";
-import Footer from "./layouts/footer";
-import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet";
-import axios from "axios";
+import React, { Component } from "react"
+import Footer from "./layouts/footer"
+import { Link } from "react-router-dom"
+import { Helmet } from "react-helmet"
+import axios from "axios"
 
 function strip_html_tags(str) {
-  if (str === null || str === "") return false;
-  else str = str.toString();
-  return str.replace(/<[^>]*>/g, "");
+  if (str === null || str === "") return false
+  else str = str.toString()
+  return str.replace(/<[^>]*>/g, "")
 }
 
 class Index extends Component {
-  state = {
-    toggleMenu: false,
-    koompi: [],
-    smallworld: []
-  };
+  constructor(props) {
+    super(props)
+    this.state = {
+      toggleMenu: false,
+      koompi: [],
+      smallworld: []
+    }
+  }
+  
   componentDidMount() {
     axios
       .get(
         "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/koompi"
       )
-      .then(res => {
-        this.setState({ koompi: res.data.items });
-      });
+      .then((res) => {
+        this.setState({ koompi: res.data.items })
+      })
     axios
       .get(
         "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/smallworldvc"
       )
-      .then(res => {
+      .then((res) => {
         this.setState({
           smallworld: res.data.items
-        });
-      });
+        })
+      })
   }
+
   toggleMenuState = () => {
     this.setState({
       toggleMenu: !this.state.toggleMenu
-    });
-  };
+    })
+  }
+  
   render() {
     return (
       <div>
@@ -58,9 +64,7 @@ class Index extends Component {
           >
             <div>
               <div
-                className={
-                  this.state.toggleMenu ? "phone-background-navbar" : ""
-                }
+                className={this.state.toggleMenu ? "phone-background-navbar" : ""}
               >
                 <div
                   className={
@@ -143,15 +147,15 @@ class Index extends Component {
                   <span>{"/>"}</span>
                 </h3>
                 <p className="paragraph">
-                  We began in 2011 by providing a collaborative workspace
-                  environment for entrepreneurs, and then quickly moved forward
-                  raising investment capital to fund new startup projects.
+                  We began in 2011 by providing a collaborative workspace environment
+                  for entrepreneurs, and then quickly moved forward raising
+                  investment capital to fund new startup projects.
                 </p>
                 <p className="paragraph">
                   With a variety of research and development projects in motion
-                  today, we're involved in startup venture building through
-                  community supported seed equity investments, together with
-                  rural ecovillage development and long-term land management.
+                  today, we're involved in startup venture building through community
+                  supported seed equity investments, together with rural ecovillage
+                  development and long-term land management.
                 </p>
                 <Link to="/about-us">
                   <button className="ui basic button btnLearnMore">
@@ -175,9 +179,8 @@ class Index extends Component {
                       <div className="shadowIndex">
                         <h4>Startup Community</h4>
                         <p>
-                          SmallWorld Ventures is committed to becoming the
-                          number one catalyst for funding and assisting startups
-                          in Cambodia.
+                          SmallWorld Ventures is committed to becoming the number one
+                          catalyst for funding and assisting startups in Cambodia.
                         </p>
                         <br />
                         <br />
@@ -199,9 +202,8 @@ class Index extends Component {
                       <div className="shadowIndex">
                         <h4>Seed Equity Investments</h4>
                         <p>
-                          Seed Equity Investments are provided to promising
-                          startup teams with projects ranging between 5,000 to
-                          25,000 USD.
+                          Seed Equity Investments are provided to promising startup
+                          teams with projects ranging between 5,000 to 25,000 USD.
                         </p>
                         <br />
                         <br />
@@ -223,8 +225,8 @@ class Index extends Component {
                         <h4>Venture Building</h4>
                         <p>
                           Smallworld Ventures has built an internal team of
-                          technicians engaged in research and development
-                          projects with an aim to spin off new ventures.
+                          technicians engaged in research and development projects
+                          with an aim to spin off new ventures.
                         </p>
                         <br />
                         <br />
@@ -244,10 +246,10 @@ class Index extends Component {
                       <div className="shadowIndex">
                         <h4>Ecovillage Development </h4>
                         <p>
-                          At our rural ecovillage project, we're building a
-                          hands-on learning, working, and living environment
-                          with a balance among the natural world, education,
-                          economics, and sustainable living practices.
+                          At our rural ecovillage project, we're building a hands-on
+                          learning, working, and living environment with a balance
+                          among the natural world, education, economics, and
+                          sustainable living practices.
                         </p>
                         <br />
                         <br />
@@ -264,13 +266,12 @@ class Index extends Component {
                 <div className="column">
                   <h1>Have some ideas for new venture?</h1>
                   <p>
-                    We're looking for new approaches to problem solving and
-                    creating business.Do you have an innovative idea for a
-                    startup venture?
+                    We're looking for new approaches to problem solving and creating
+                    business.Do you have an innovative idea for a startup venture?
                   </p>
                   <p>
-                    Or maybe you have a skillset in mind that you want to
-                    develop as you work within our existing SmallWorld venture.
+                    Or maybe you have a skillset in mind that you want to develop as
+                    you work within our existing SmallWorld venture.
                   </p>
                   <p>
                     We're open to discussing your own startup ideas, however
@@ -325,16 +326,14 @@ class Index extends Component {
                           </center>
                           <br />
                           <p>
-                            {strip_html_tags(
-                              data.content.substring(0, 110) + "..."
-                            )}
+                            {strip_html_tags(data.content.substring(0, 110) + "...")}
                           </p>
                           <p className="badge">{data.author}</p>
                         </div>
                       </a>
                     </div>
                   </div>
-                );
+                )
               })}
             </div>
           </div>
@@ -361,24 +360,22 @@ class Index extends Component {
                           </center>
                           <br />
                           <p>
-                            {strip_html_tags(
-                              data.content.substring(0, 110) + "..."
-                            )}
+                            {strip_html_tags(data.content.substring(0, 110) + "...")}
                           </p>
                           <p className="badge">{data.author}</p>
                         </div>
                       </a>
                     </div>
                   </div>
-                );
+                )
               })}
             </div>
           </div>
         </div>
         <Footer />
       </div>
-    );
+    )
   }
 }
 
-export default Index;
+export default Index
