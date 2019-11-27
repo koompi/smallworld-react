@@ -43,7 +43,7 @@ class Navbar extends Component {
           <div className="navbar-menu">
             <div className="ui secondary container menu mobile only mobile-navbar">
               <div className="menu left">
-                <Link to="/home">
+                <Link to="/">
                   <img
                     src="/images/logo/sw-green.png"
                     className="logonav"
@@ -70,7 +70,7 @@ class Navbar extends Component {
         <div className="hd sw-navbar mobile hidden">
           <div className="ui secondary container menu">
             <div className="menu left">
-              <NavLink to="/home">
+              <NavLink to="/">
                 <img
                   src="/images/logo/sw-green.png"
                   className="logonav"

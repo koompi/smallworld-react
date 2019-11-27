@@ -13,9 +13,12 @@ class AboutPage extends Component {
     return (
       <React.Fragment>
         <Helmet>
-          <title>About SmallWorld Venture</title>
+          <title>About Us</title>
+          <meta
+      name="description"
+      content="Founded in 2011 as SmallWorld Cambodia, we created a shared professional workspace where progressive young business minds could explore and pursue their aspirations while transforming ideas into reality."
+    />
         </Helmet>
-        {console.log(this.state.koompi)}
         <Navbar />
         <div>
           <div className="aboutsmall">

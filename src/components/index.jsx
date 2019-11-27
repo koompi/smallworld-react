@@ -44,9 +44,9 @@ class Index extends Component {
       <div>
         <Helmet>
           <title>
-            SmallWorld Venture | a homegrown startup community based in Phnom
-            Penh
+            SmallWorld Venture | Homegrown startup community based in Phnom Penh
           </title>
+          <meta name="description" content="Homegrown Startup Community. We began in 2011 by providing a collaborative workspace environment for entrepreneurs, and then quickly moved forward raising investment capital to fund new startup projects." />
         </Helmet>
         <div>
           <div
@@ -87,7 +87,7 @@ class Index extends Component {
               <div className="hd">
                 <div className="ui secondary container menu mobile only">
                   <div className="menu left">
-                    <Link to="/home">
+                    <Link to="/">
                       <img
                         src="/images/logo/sw-green.png"
                         className="logonav"
@@ -111,7 +111,7 @@ class Index extends Component {
                 </div>
                 <div className="ui secondary container menu mobile hidden">
                   <div className="menu left">
-                    <Link to="/home">
+                    <Link to="/">
                       <img
                         src="/images/logo/sw-green.png"
                         className="logonav"
@@ -163,7 +163,7 @@ class Index extends Component {
           </div>
           <div className="cvcolor">
             <div className="ui container margin-top">
-              <div className="ui four column doubling stackable grid container">
+              <div className="ui four column doubling stackable grid">
                 <div className="column ">
                   <center>
                     <div className="newsDetailo">
@@ -249,6 +249,8 @@ class Index extends Component {
                           with a balance among the natural world, education,
                           economics, and sustainable living practices.
                         </p>
+                        <br />
+                        <br />
                       </div>
                     </div>
                   </center>

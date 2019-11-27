@@ -19,7 +19,7 @@
 h1,
 h2,
 h3 {
-  color: #063e63;
+  color: #015e98;
   font-weight: 500;
 }
 .ui.secondary.menu .item {
@@ -51,6 +51,9 @@ p {
 .cvcolor {
   background-color: whitesmoke;
 }
+.cvcolor .container{
+  width: 70% !important;
+}
 .backAbout a {
   color: green;
   text-decoration: underline !important;
@@ -72,7 +75,7 @@ p {
 /* navbarbar2 */
 
 .ui.secondary.menu.navbars {
-  background-color: #063e63;
+  background-color: #015e98;
 }
 .ui.secondary.menu.navbars a {
   font-weight: bold;
@@ -126,7 +129,7 @@ p {
   position: fixed;
   top: 0;
   width: 60% !important;
-  background-color: #063e63;
+  background-color: #015e98;
 }
 .imageAbout {
   transform: scale(1.1);
@@ -227,12 +230,20 @@ p {
   padding-bottom: 3%;
   color: #959494;
 }
+.investorfooter h1{
+  padding: 40px 0px 20px 0;
+  margin: 0;
+  font-size: 28px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
 .btnSubmit {
   border-radius: 30px !important;
   padding: 13px 60px !important;
-  color: #ffffff !important;
+  color: #015e98 !important;
   font-size: 15px;
-  background: #063e63 !important;
+  background: #015e986b !important;
   box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.21) !important;
   font-weight: 500 !important;
   transition: 0.5s !important;
@@ -246,7 +257,7 @@ p {
   margin-bottom: -6%;
 }
 .column.backFineus {
-  background-color: #063e63;
+  background-color: #015e98;
   height: 400px;
 }
 .column .backFineus h2 {
@@ -282,8 +293,13 @@ p {
   padding: 0px;
 }
 .descTitle1 button:hover {
-  color: #063e63;
+  color: #015e98;
   padding: 0px;
+}
+.descTitle1 h1{
+  font-weight: 600;
+  font-size: 26px;
+  text-transform: uppercase;
 }
 .ui.accordion .title:not(.ui) {
   padding: 0.5em 0;
@@ -294,7 +310,7 @@ p {
 }
 .ui.positive.button,
 .ui.positive.button:hover {
-  background-color: #063e63;
+  background-color: #015e98;
   border-radius: 30px;
 }
 .modalBack {
@@ -326,8 +342,15 @@ button.ui.button.right.floated.positive {
 .backMember h1 {
   padding: 40px 0px 20px 0;
   margin: 0;
-  font-size: 30px;
-  font-weight: 500;
+  font-size: 28px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.backMember h3{
+  color: #015e98;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 .backMember span {
   color: #919090;
@@ -413,7 +436,7 @@ button.ui.button.right.floated.positive {
   border-radius: 30px !important;
   padding: 13px 40px !important;
   /* border: 1px solid #fff !important; */
-  color: #063e63 !important;
+  color: #015e98 !important;
   font-size: 15px;
   /* margin-left: 20px; */
   background: #fff !important;
@@ -429,9 +452,10 @@ button.ui.button.right.floated.positive {
 /* newsandevent */
 
 .newsAndEvent {
-  padding: 6% 0 3% 0;
+  padding: 0% 0 3% 0;
   text-align: center;
-  font-weight: 500;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 .newsDetail p {
   color: #95a5a6;
@@ -464,8 +488,8 @@ button.ui.button.right.floated.positive {
 .aboutsmall h1 {
   padding-top: 10%;
   margin-bottom: 20px;
-  font-size: 30px;
-  font-weight: 500 !important;
+  font-size: 26px;
+  font-weight: 600 !important;
 }
 .aboutsmall p {
   color: #919090;
@@ -480,7 +504,7 @@ button.ui.button.right.floated.positive {
   border-radius: 30px !important;
   padding: 13px 25px !important;
   /* border: 1px solid #fff !important; */
-  color: #063e63 !important;
+  color: #015e98 !important;
   font-size: 15px;
   /* margin-left: 20px; */
   background: #fff !important;
@@ -490,7 +514,7 @@ button.ui.button.right.floated.positive {
 }
 .ui.basic.btnInformation:hover {
   box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.21);
-  color: #063e63 !important;
+  color: #015e98 !important;
   transform: translateY(-4px);
 }
 
@@ -499,7 +523,7 @@ button.ui.button.right.floated.positive {
   font-weight: 500;
   font-size: 24px;
   text-transform: capitalize;
-  color: #063e63 !important;
+  color: #015e98 !important;
   line-height: 28px;
 }
 .newsDetailo p {
@@ -515,6 +539,8 @@ button.ui.button.right.floated.positive {
 }
 .shadowIndex h4 {
   font-size: 20px !important;
+  letter-spacing: 1px;
+  font-weight: 600;
 }
 .shadowIndex p {
   text-align: left !important;
@@ -557,23 +583,24 @@ button.ui.button.right.floated.positive {
   border-radius: 5px 5px 0px 0px;
 }
 .backgroundEvent h3 {
-  color: #063e63;
+  color: #015e98;
   padding-top: 20px;
 }
-.badge {
-  background-color: #063e63;
-  display: inline-block;
-  padding: 0px 10px;
-  border-radius: 4px;
-  color: #fff !important;
-  font-size: 13px !important;
-}
 
-.backgroundEvent p {
-  color: #616161;
-}
 p {
   font-size: 18px !important;
+}
+.backgroundEvent p{
+  color: #616161;
+  font-size: 16px !important;
+}
+.backgroundEvent .badge {
+  background-color: #94bbd4;
+  display: inline-block;
+  padding: 1px 10px;
+  border-radius: 4px;
+  color: #015e98 !important;
+  font-size: 13px !important;
 }
 .indexShadow {
   transition: 0.3s;
@@ -602,7 +629,7 @@ p {
   left: 0;
 }
 .ui.menu.mobile-navbar {
-  background-color: #063e63;
+  background-color: #015e98;
   margin: 0px !important;
   padding: 0px !important;
 }
@@ -616,7 +643,7 @@ img.imgfooter {
 }
 
 .sw-navbar {
-  background-color: #063e63;
+  background-color: #015e98;
 }
 
 .shadowEvent {
@@ -633,9 +660,8 @@ img.imgfooter {
   transform: translateY(-5px);
 }
 .contactFontSize {
-  font-size: 18px !important;
-  position: relative;
-  /* top: -15px; */
+  font-size: 20px !important;
+  font-weight: 400;
 }
 .contactFontSize a {
   text-decoration: none;
@@ -775,10 +801,10 @@ img.imgfooter {
   }
 
   .imenu.main {
-    background: #063e63;
+    background: #015e98;
   }
   center.moblenav.main {
-    background: #063e63 !important;
+    background: #015e98 !important;
   }
   .investorfooter .container {
     width: 100% !important;

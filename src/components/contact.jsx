@@ -51,7 +51,7 @@ class Contact extends Component {
                     <div class="two wide column">
                       <center>
                         <img
-                          src="https://img.icons8.com/ios/50/000000/order-delivered.png"
+                          src="/images/socialMedia/address.png"
                           className="ui image fluid"
                           alt="Address"
                         />
@@ -68,7 +68,7 @@ class Contact extends Component {
                     <div class="two wide column">
                       <center>
                         <img
-                          src="https://img.icons8.com/ios/50/000000/gmail-filled.png"
+                          src="/images/socialMedia/email.png"
                           className="ui image fluid contactIcon"
                           alt="Address"
                         />
@@ -85,7 +85,7 @@ class Contact extends Component {
                     <div class="two wide column">
                       <center>
                         <img
-                          src="https://img.icons8.com/ios/50/000000/paper-plane.png"
+                          src="/images/socialMedia/telegram.png"
                           className="ui image fluid contactIcon"
                           alt="Email"
                         />

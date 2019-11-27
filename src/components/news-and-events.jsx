@@ -39,7 +39,11 @@ class News extends Component {
     return (
       <div>
         <Helmet>
-          <title>SmallWorld Venture</title>
+          <title>News and Events</title>
+          <meta
+      name="description"
+      content="Community Update, KOOMPI News"
+    />
         </Helmet>
         <div>
           <Navbar />
