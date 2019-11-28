@@ -64,8 +64,7 @@ class Contact extends Component {
                     </div>
                     <div className="fourteen wide column">
                       <span className="contactFontSize">
-                        Address: House 35, Street 600bis, Toul Kork, Phnom Penh,
-                        Cambodia
+                        #92 E1K, St.19m Doun Penh, Phnom Penh, Cambodia
                       </span>
                     </div>
                   </div>
