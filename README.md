@@ -38,3 +38,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 - Join us with Smallworld on [Telegram](https://t.me/smallworldventure)
 - Join us with Koompi on [Telegram](https://t.me/koompi)
+
+## License
+
+- [MIT license](LICENSE)
+- Copyright 2015 © [Smallworld](http://smallworldventure.com/)
