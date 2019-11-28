@@ -46,7 +46,10 @@ class Index extends Component {
           <title>
             SmallWorld Venture | Homegrown startup community based in Phnom Penh
           </title>
-          <meta name="description" content="Homegrown Startup Community. We began in 2011 by providing a collaborative workspace environment for entrepreneurs, and then quickly moved forward raising investment capital to fund new startup projects." />
+          <meta
+            name="description"
+            content="Homegrown Startup Community. We began in 2011 by providing a collaborative workspace environment for entrepreneurs, and then quickly moved forward raising investment capital to fund new startup projects."
+          />
         </Helmet>
         <div>
           <div
@@ -287,7 +290,9 @@ class Index extends Component {
             </div>
           </div>
           <div className="ui container margin-buttons">
-            <h2 className="newsAndEvent">Community Update</h2>
+            <h2 className="newsAndEvent" style={{ marginTop: "60px" }}>
+              Community Update
+            </h2>
             <div className="ui stackable three column equal height stretched grid">
               {this.state.smallworld.slice(0, 3).map((data, index) => {
                 return (
