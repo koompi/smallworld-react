@@ -1,14 +1,14 @@
-import React, { Component } from "react";
-import { Route, Switch, Redirect } from "react-router-dom";
-import Index from "./components/index";
-import AboutPage from "./components/about";
-import WhatWeCanDo from "./components/what-we-can-do";
-import Contact from "./components/contact";
-import News from "./components/news-and-events";
+import React, { Component } from "react"
+import { Route, Switch, Redirect } from "react-router-dom"
+import Index from "./components/index"
+import AboutPage from "./components/about"
+import WhatWeCanDo from "./components/what-we-can-do"
+import Contact from "./components/contact"
+import News from "./components/news-and-events"
 
 class App extends Component {
   render() {
-    window.scrollTo(0, 0);
+    window.scrollTo(0, 0)
     return (
       <div className="App">
         <Switch>
@@ -20,9 +20,8 @@ class App extends Component {
           <Redirect to="/" component={Index} />
         </Switch>
       </div>
-    );
+    )
   }
 }
 
-
-export default App;
+export default App

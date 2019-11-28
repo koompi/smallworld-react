@@ -1,49 +1,51 @@
-import React, { Component } from "react";
-import Footer from "./layouts/footer";
-import { Helmet } from "react-helmet";
-import Navbar from "./layouts/navbar";
-import axios from "axios";
+import React, { Component } from "react"
+import axios from "axios"
+import { Helmet } from "react-helmet"
+import Footer from "./layouts/footer"
+import Navbar from "./layouts/navbar"
 
-function strip_html_tags(str) {
-  if (str === null || str === "") return false;
-  else str = str.toString();
-  return str.replace(/<[^>]*>/g, "");
+function stripHtmlTags(str) {
+  if (str === null || str === "") return false
+  str = str.toString()
+  return str.replace(/<[^>]*>/g, "")
 }
 
 class News extends Component {
-  state = {
-    toggleMenu: false,
-    koompi: [],
-    smallworld: []
-  };
+  constructor(props) {
+    super(props)
+    this.state = {
+      toggleMenu: false,
+      koompi: [],
+      smallworld: []
+    }
+  }
+
   componentDidMount() {
     axios
       .get(
         "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/koompi"
       )
-      .then(res => {
-        this.setState({ koompi: res.data.items });
-      });
+      .then((res) => {
+        this.setState({ koompi: res.data.items })
+      })
     axios
       .get(
         "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/smallworldvc"
       )
-      .then(res => {
+      .then((res) => {
         this.setState({
           smallworld: res.data.items
-        });
-      });
+        })
+      })
   }
 
   render() {
+    const { smallworld, koompi } = this.state
     return (
       <div>
         <Helmet>
           <title>News and Events</title>
-          <meta
-      name="description"
-      content="Community Update, KOOMPI News"
-    />
+          <meta name="description" content="Community Update, KOOMPI News" />
         </Helmet>
         <div>
           <Navbar />
@@ -52,7 +54,7 @@ class News extends Component {
           <div className="ui container margin-buttons">
             <h2 className="newsAndEvent">Community Update</h2>
             <div className="ui stackable three column equal height stretched grid">
-              {this.state.smallworld.slice(0, 6).map((data, index) => {
+              {smallworld.slice(0, 6).map((data) => {
                 return (
                   <div className="column" key={data.title}>
                     <div className="shadowEvent">
@@ -88,16 +90,14 @@ class News extends Component {
                           </center>
                           <br />
                           <p>
-                            {strip_html_tags(
-                              data.content.substring(0, 110) + "..."
-                            )}
+                            {stripHtmlTags(`${data.content.substring(0, 110)}...`)}
                           </p>
                           <p className="badge">{data.author}</p>
                         </div>
                       </a>
                     </div>
                   </div>
-                );
+                )
               })}
             </div>
             <br /> <br />
@@ -119,8 +119,7 @@ class News extends Component {
           <div className="ui container margin-buttons">
             <h2 className="newsAndEvent">KOOMPI News</h2>
             <div className="ui stackable three column equal height stretched grid">
-              {/* {console.log(this.state.smallworld)} */}
-              {this.state.koompi.slice(0, 6).map((data, index) => {
+              {koompi.slice(0, 6).map((data) => {
                 return (
                   <div className="column" key={data.title}>
                     <div className="shadowEvent">
@@ -139,16 +138,14 @@ class News extends Component {
                           </center>
                           <br />
                           <p>
-                            {strip_html_tags(
-                              data.content.substring(0, 110) + "..."
-                            )}
+                            {stripHtmlTags(`${data.content.substring(0, 110)}...`)}
                           </p>
                           <p className="badge">{data.author}</p>
                         </div>
                       </a>
                     </div>
                   </div>
-                );
+                )
               })}
             </div>
             <br /> <br />
@@ -168,11 +165,10 @@ class News extends Component {
             </center>
           </div>
         </div>
-
         <Footer />
       </div>
-    );
+    )
   }
 }
 
-export default News;
+export default News

@@ -1,9 +1,10 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from "react"
+import { Link } from "react-router-dom"
+import SocialLink from "../../data/socialLinks.json"
 
 const Footer = () => {
   return (
-    <React.Fragment>
+    <>
       <div className="ft-background">
         <div className="ui container">
           <div className="footer">
@@ -27,36 +28,20 @@ const Footer = () => {
               <div className="column" />
               <div className="column" />
               <div className="column">
-                <a href="https://t.me/smallworldventure">
-                  <div className="ui header footerIcon">
-                    <img
-                      className="ui image  footerIcon"
-                      src="/images/socialMedia/telegram.svg"
-                      alt="SmallWorld-Venture"
-                    />
-                    <div className="content ">Telegram</div>
-                  </div>
-                </a>
-                <a href="https://www.facebook.com/smallworldventure/">
-                  <div className="ui header footerIcon">
-                    <img
-                      className="ui image  footerIcon"
-                      src="/images/socialMedia/facebook.svg"
-                      alt="SmallWorld-Venture Facebook"
-                    />
-                    <div className="content ">Facebook</div>
-                  </div>
-                </a>
-                <a href="https://twitter.com/smallworldvc">
-                  <div className="ui header footerIcon">
-                    <img
-                      className="ui image  footerIcon"
-                      src="/images/socialMedia/twitter.svg"
-                      alt="SmallWorld Twitter"
-                    />
-                    <div className="content ">Twitter</div>
-                  </div>
-                </a>
+                {SocialLink.map((data) => {
+                  return (
+                    <a href={data.link} key={data.id}>
+                      <div className="ui header footerIcon">
+                        <img
+                          className="ui image  footerIcon"
+                          src={data.srcImage}
+                          alt={data.alt}
+                        />
+                        <div className="content ">{data.name}</div>
+                      </div>
+                    </a>
+                  )
+                })}
               </div>
             </div>
             <div className="ui stackable four column grid centerme">
@@ -76,8 +61,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </React.Fragment>
-  );
-};
+    </>
+  )
+}
 
-export default Footer;
+export default Footer

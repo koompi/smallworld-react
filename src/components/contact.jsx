@@ -1,16 +1,21 @@
-import React, { Component } from "react";
-import Navbar from "./layouts/navbar";
-import { Helmet } from "react-helmet";
-import Footer from "./layouts/footer";
+import React, { Component } from "react"
+import { Helmet } from "react-helmet"
+import Navbar from "./layouts/navbar"
+import Footer from "./layouts/footer"
 
 class Contact extends Component {
-  state = {};
-  componentDidMount() {
-    window.scrollTo(0, 0);
+  constructor(props) {
+    super(props)
+    this.state = {}
   }
+
+  componentDidMount() {
+    window.scrollTo(0, 0)
+  }
+
   render() {
     return (
-      <React.Fragment>
+      <>
         <Helmet>
           <title>Contac Us | SmallWorld Venture</title>
         </Helmet>
@@ -47,8 +52,8 @@ class Contact extends Component {
                 </div>
                 <div className="column marginInformation">
                   <h2>Our Office</h2>
-                  <div class="ui grid">
-                    <div class="two wide column">
+                  <div className="ui grid">
+                    <div className="two wide column">
                       <center>
                         <img
                           src="/images/socialMedia/address.png"
@@ -57,14 +62,14 @@ class Contact extends Component {
                         />
                       </center>
                     </div>
-                    <div class="fourteen wide column">
+                    <div className="fourteen wide column">
                       <span className="contactFontSize">
                         #92 E1K, St.19m Doun Penh, Phnom Penh, Cambodia
                       </span>
                     </div>
                   </div>
-                  <div class="ui grid">
-                    <div class="two wide column">
+                  <div className="ui grid">
+                    <div className="two wide column">
                       <center>
                         <img
                           src="/images/socialMedia/email.png"
@@ -73,15 +78,14 @@ class Contact extends Component {
                         />
                       </center>
                     </div>
-                    <div class="twelve wide column">
+                    <div className="twelve wide column">
                       <span className="contactFontSize">
-                        {" "}
                         smallworldventure@gmail.com
                       </span>
                     </div>
                   </div>
-                  <div class="ui grid">
-                    <div class="two wide column">
+                  <div className="ui grid">
+                    <div className="two wide column">
                       <center>
                         <img
                           src="/images/socialMedia/telegram.png"
@@ -90,7 +94,7 @@ class Contact extends Component {
                         />
                       </center>
                     </div>
-                    <div class="twelve wide column">
+                    <div className="twelve wide column">
                       <span className="contactFontSize">
                         <a
                           href="https://t.me/smallworldventure"
@@ -98,9 +102,7 @@ class Contact extends Component {
                           rel="noopener noreferrer"
                         >
                           {" "}
-                          <p className="contactFontSize">
-                            t.me/smallworldventure
-                          </p>
+                          <p className="contactFontSize">t.me/smallworldventure</p>
                         </a>
                       </span>
                     </div>
@@ -119,18 +121,18 @@ class Contact extends Component {
                       <div className="paddingsize">
                         <h2>Trigon Startup Village</h2>
                         <p>
-                          We look forward to welcome you at any working hour.
-                          Though, most of the time there are someone at
-                          SmallWorld. There are several startups in the same
-                          building, so make sure you know who you are looking
-                          for. Otherwise, be prepare for a little adventure.
+                          We look forward to welcome you at any working hour. Though,
+                          most of the time there are someone at SmallWorld. There are
+                          several startups in the same building, so make sure you
+                          know who you are looking for. Otherwise, be prepare for a
+                          little adventure.
                         </p>
                         <p>
-                          Look at the map, between the street 600, 602, and 313!
-                          We have a crazy idea. Maybe not too crazy, but we plan
-                          to nurture to be a cozy little startup village, called
-                          TK Trigon. Want to help us make it happen? Come walk
-                          around and feel it yourself.
+                          Look at the map, between the street 600, 602, and 313! We
+                          have a crazy idea. Maybe not too crazy, but we plan to
+                          nurture to be a cozy little startup village, called TK
+                          Trigon. Want to help us make it happen? Come walk around
+                          and feel it yourself.
                         </p>
                       </div>
                     </div>
@@ -148,9 +150,9 @@ class Contact extends Component {
           </div>
         </div>
         <Footer />
-      </React.Fragment>
-    );
+      </>
+    )
   }
 }
 
-export default Contact;
+export default Contact
