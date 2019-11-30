@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import { BrowserRouter as Route, Switch, Redirect } from "react-router-dom"
+import { BrowserRouter as Router, Switch, Redirect, Route } from "react-router-dom"
 import Index from "./components/index"
 import AboutPage from "./components/about"
 import WhatWeCanDo from "./components/what-we-can-do"
@@ -9,7 +9,7 @@ import News from "./components/news-and-events"
 class App extends Component {
   render() {
     return (
-      <Route>
+      <Router>
         <Switch>
           <Route exact path="/" component={Index} />
           <Route exact path="/about-us" component={AboutPage} />
@@ -18,7 +18,7 @@ class App extends Component {
           <Route exact path="/contact-us" component={Contact} />
           <Redirect to="/" component={Index} />
         </Switch>
-      </Route>
+      </Router>
     )
   }
 }

@@ -361,6 +361,9 @@ button.ui.button.right.floated.positive {
 .backMember p {
   padding-bottom: 30px;
 }
+.member_p{
+  width: 55%;
+}
 .teams {
   padding: 2% 0px 4% 0px;
   background-color: #f0f1f3;

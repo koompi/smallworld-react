@@ -103,8 +103,8 @@ const AboutPage = () => {
           <div className="ui container">
             <center>
               <h1>Board of Directors</h1>
-              <p>
-                We&aposre honored to have courageous and insightful business and
+              <p className="member_p">
+                We're honored to have courageous and insightful business and
                 community leaders to serve on our Board of Directors.
               </p>
               <div className="ui stackable five column grid">
@@ -131,9 +131,9 @@ const AboutPage = () => {
           <div className="ui container">
             <center>
               <h1>Strategic Partners</h1>
-              <p>
-                We&aposre especially pleased to have built strategic partnerships
-                with forward thinking leaders in the business world.
+              <p className="member_p">
+                We're especially pleased to have built strategic partnerships with
+                forward thinking leaders in the business world.
               </p>
               <div className="logome">
                 <div className="ui three column grid">
