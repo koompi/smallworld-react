@@ -2,6 +2,8 @@ import React from "react"
 import { Helmet } from "react-helmet"
 import Navbar from "./layouts/navbar"
 import Footer from "./layouts/footer"
+
+// data
 import Member from "../data/member.json"
 import Partner from "../data/partner.json"
 import Portfolio from "../data/portfolio.json"
