@@ -1,0 +1,407 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About component about renders 1`] = `
+<Fragment>
+  <HelmetWrapper
+    defer={true}
+    encodeSpecialCharacters={true}
+  >
+    <title>
+      About Us
+    </title>
+    <meta
+      content="Founded in 2011 as SmallWorld Cambodia, we created a shared professional workspace where progressive young business minds could explore and pursue their aspirations while transforming ideas into reality."
+      name="description"
+    />
+  </HelmetWrapper>
+  <Navbar />
+  <div>
+    <div
+      className="aboutsmall"
+    >
+      <div
+        className="ui container"
+      >
+        <div
+          className="ui stackable two column grid centerme"
+        >
+          <div
+            className="column"
+          >
+            <h1>
+              What is SmallWorld?
+            </h1>
+            <p>
+              Founded in 2011 as SmallWorld Cambodia, we created a shared professional workspace where progressive young business minds could explore and pursue their aspirations while transforming ideas into reality.
+            </p>
+            <p>
+              After five years of steady growth, SmallWorld Cambodia reorganized into SmallWorld Ventures to focus on venture building, information technologies, and the environment.
+            </p>
+            <p>
+              Through equity investment partnerships, we're building a land-based technical, business, and academic community based on natural philosophy and ecologically sensitive practices.
+            </p>
+          </div>
+          <div
+            className="column mobile hidden"
+          >
+            <div
+              className="mobile"
+            >
+              <img
+                alt="SmallWorld Venture"
+                className="imageAbout"
+                src="/images/banner-3.png"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="aboutsmall"
+    >
+      <div
+        className="ui container"
+      >
+        <div
+          className="ui stackable two column grid centerme"
+        >
+          <div
+            className="column"
+          >
+            <div
+              className="mobileimg"
+            >
+              <img
+                alt="SmallWorld Venture"
+                src="/images/banner-4.png"
+              />
+            </div>
+            <div
+              className="descTitle"
+            >
+              <h1>
+                Venture Building
+              </h1>
+              <p>
+                Add logo of startup, such as KOOMPI, Grood, Zeetomic
+              </p>
+            </div>
+          </div>
+          <div
+            className="column"
+          >
+            <div
+              className="descTitle1"
+            >
+              <h1>
+                Portfolios
+              </h1>
+              <p>
+                We began experimenting with equity investment partnerships in 2013, and since then we've listed a few startup teams we're proud to be partnered with from their inception.
+              </p>
+              <div
+                className="ui three column grid"
+              >
+                <div
+                  className="column"
+                  key="portfolio-01"
+                >
+                  <a
+                    href="https://codingate.com"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <img
+                      alt="codigate"
+                      className="ui image fluid"
+                      src="/images/company-logo/cg.png"
+                    />
+                  </a>
+                </div>
+                <div
+                  className="column"
+                  key="portfolio-02"
+                >
+                  <a
+                    href="http://toursanak.com"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <img
+                      alt="Toursanak"
+                      className="ui image fluid"
+                      src="/images/company-logo/ts.png"
+                    />
+                  </a>
+                </div>
+                <div
+                  className="column"
+                  key="portfolio-03"
+                >
+                  <a
+                    href="https://bookmebus.com/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <img
+                      alt="BookMeBus"
+                      className="ui image fluid"
+                      src="/images/company-logo/BKB.png"
+                    />
+                  </a>
+                </div>
+                <div
+                  className="column"
+                  key="portfolio-04"
+                >
+                  <a
+                    href="http://seavphovjivet.com"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <img
+                      alt="Seaphovjiveth"
+                      className="ui image fluid"
+                      src="/images/company-logo/sv.png"
+                    />
+                  </a>
+                </div>
+                <div
+                  className="column"
+                  key="portfolio-05"
+                >
+                  <a
+                    href="http://fado168.com/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <img
+                      alt="Fado"
+                      className="ui image fluid"
+                      src="/images/company-logo/fado.png"
+                    />
+                  </a>
+                </div>
+                <div
+                  className="column"
+                  key="portfolio-06"
+                >
+                  <a
+                    href="https://koompi.com/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <img
+                      alt="Koompi"
+                      className="ui image fluid"
+                      src="/images/company-logo/KOOMPI.png"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              className="mobileimg1"
+            >
+              <img
+                alt="SmallWorld Venture"
+                src="/images/banner-4.png"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="backMember"
+    >
+      <div
+        className="ui container"
+      >
+        <center>
+          <h1>
+            Board of Directors
+          </h1>
+          <p
+            className="member_p"
+          >
+            We're honored to have courageous and insightful business and community leaders to serve on our Board of Directors.
+          </p>
+          <div
+            className="ui stackable five column grid"
+          >
+            <div
+              className="column"
+              key="sw-01"
+            >
+              <img
+                alt="Rithy THUL"
+                className="ui fluid image "
+                src="https://pbs.twimg.com/profile_images/903443282868314112/0KUwFFM5_400x400.jpg"
+              />
+              <h3>
+                Rithy THUL
+              </h3>
+              <span>
+                Co-Founder & CEO
+              </span>
+              <br />
+              <span>
+                SmallWorld Venture
+              </span>
+            </div>
+            <div
+              className="column"
+              key="sw-03"
+            >
+              <img
+                alt="Mr. Willson LIN"
+                className="ui fluid image "
+                src="/images/mr-lin-willson.jpg"
+              />
+              <h3>
+                Mr. Willson LIN
+              </h3>
+              <span>
+                Founder & CEO
+              </span>
+              <br />
+              <span>
+                DOERS Education Group
+              </span>
+            </div>
+            <div
+              className="column"
+              key="sw-02"
+            >
+              <img
+                alt="Ms. Ratana Phurik-Callebaut "
+                className="ui fluid image "
+                src="/images/Ratana.jpg"
+              />
+              <h3>
+                Ms. Ratana Phurik-Callebaut 
+              </h3>
+              <span>
+                Independent Director
+              </span>
+              <br />
+              <span />
+            </div>
+            <div
+              className="column"
+              key="sw-04"
+            >
+              <img
+                alt="Mr. Sila CHY"
+                className="ui fluid image "
+                src="/images/mr-sila-chy.jpeg"
+              />
+              <h3>
+                Mr. Sila CHY
+              </h3>
+              <span>
+                CEO
+              </span>
+              <br />
+              <span>
+                Sabay Digital Corp
+              </span>
+            </div>
+            <div
+              className="column"
+              key="sw-05"
+            >
+              <img
+                alt="Mr. Sen KANG"
+                className="ui fluid image "
+                src="/images/mr-sen-kang.jpeg"
+              />
+              <h3>
+                Mr. Sen KANG
+              </h3>
+              <span>
+                Managing Director
+              </span>
+              <br />
+              <span>
+                Fuxin Steel Building
+              </span>
+            </div>
+          </div>
+        </center>
+      </div>
+    </div>
+    <div
+      className="investorfooter"
+    >
+      <div
+        className="ui container"
+      >
+        <center>
+          <h1>
+            Strategic Partners
+          </h1>
+          <p
+            className="member_p"
+          >
+            We're especially pleased to have built strategic partnerships with forward thinking leaders in the business world.
+          </p>
+          <div
+            className="logome"
+          >
+            <div
+              className="ui three column grid"
+            >
+              <div
+                className="column logo"
+                key="smallworld-partner-01"
+              >
+                <a
+                  className="newsDetail ui small image"
+                  href="https://doersasean.com/"
+                >
+                  <img
+                    className="ui image"
+                    src="/images/company-logo/Doer.png"
+                  />
+                </a>
+              </div>
+              <div
+                className="column logo"
+                key="smallworld-partner-02"
+              >
+                <a
+                  className="newsDetail ui small image"
+                  href="http://sabay.com/"
+                >
+                  <img
+                    className="ui image"
+                    src="/images/company-logo/sabay.png"
+                  />
+                </a>
+              </div>
+              <div
+                className="column logo"
+                key="smallworld-partner-03"
+              >
+                <a
+                  className="newsDetail ui small image"
+                  href="https://isisteel.com.kh/"
+                >
+                  <img
+                    className="ui image"
+                    src="/images/company-logo/ISI.png"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </center>
+      </div>
+    </div>
+  </div>
+  <Footer />
+</Fragment>
+`;

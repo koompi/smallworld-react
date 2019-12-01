@@ -12,16 +12,16 @@ const Footer = () => {
               <div className="column">
                 <div className="ftsize">
                   <Link to="/news-and-events">
-                    <p>About Us</p>
+                    <p>About</p>
                   </Link>
                   <Link to="/what-we-do">
-                    <p>What We Do</p>
+                    <p>Works</p>
                   </Link>
                   <Link to="/news-and-events">
-                    <p>News and Events</p>
+                    <p>News</p>
                   </Link>
                   <Link to="/contact-us">
-                    <p>Contact Us</p>
+                    <p>Contact</p>
                   </Link>
                 </div>
               </div>

@@ -9,6 +9,8 @@
   ],
   "plugins": ["jsx-a11y", "prettier"],
   "rules": {
+    "jsx-a11y/label-has-associated-control": "off",
+    "react/no-unescaped-entities": 0,
     "semi": 0,
     "no-plusplus": "off",
     "react/jsx-filename-extension": [1, { "extensions": [".jsx", ".js"] }],
