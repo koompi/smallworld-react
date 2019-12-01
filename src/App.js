@@ -1,3 +1,4 @@
+/* eslint-disable react/prefer-stateless-function */
 import React, { Component } from "react"
 import { BrowserRouter as Router, Switch, Redirect, Route } from "react-router-dom"
 import Index from "./components/index"
