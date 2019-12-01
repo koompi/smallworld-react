@@ -2,6 +2,7 @@ import React from "react"
 import { Helmet } from "react-helmet"
 import Navbar from "./layouts/navbar"
 import Footer from "./layouts/footer"
+import { useTranslation } from 'react-i18next';
 
 // data
 import Member from "../data/member.json"
@@ -9,10 +10,13 @@ import Partner from "../data/partner.json"
 import Portfolio from "../data/portfolio.json"
 
 const AboutPage = () => {
+
+  const { t, i18n } = useTranslation("translations");
+
   return (
     <>
       <Helmet>
-        <title>About Us</title>
+        <title>About</title>
         <meta
           name="description"
           content="Founded in 2011 as SmallWorld Cambodia, we created a shared professional workspace where progressive young business minds could explore and pursue their aspirations while transforming ideas into reality."
@@ -26,10 +30,7 @@ const AboutPage = () => {
               <div className="column">
                 <h1>What is SmallWorld?</h1>
                 <p>
-                  Founded in 2011 as SmallWorld Cambodia, we created a shared
-                  professional workspace where progressive young business minds could
-                  explore and pursue their aspirations while transforming ideas into
-                  reality.
+                 {t("Introduction")}
                 </p>
                 <p>
                   After five years of steady growth, SmallWorld Cambodia reorganized

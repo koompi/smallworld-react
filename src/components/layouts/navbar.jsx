@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import { Link, NavLink } from "react-router-dom"
+import LanguageToggle from "../langs"
 
 class Navbar extends Component {
   constructor(props) {
@@ -18,8 +19,10 @@ class Navbar extends Component {
 
   render() {
     const { toggleMenu } = this.state
+
     return (
       <>
+        <LanguageToggle/>
         <div>
           <div className={toggleMenu ? "phone-background-navbar" : ""}>
             <div
