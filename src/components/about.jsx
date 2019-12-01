@@ -35,9 +35,9 @@ const AboutPage = () => {
                   technologies, and the environment.
                 </p>
                 <p>
-                  Through equity investment partnerships, we&aposre building a
-                  land-based technical, business, and academic community based on
-                  natural philosophy and ecologically sensitive practices.
+                  Through equity investment partnerships, we're building a land-based
+                  technical, business, and academic community based on natural
+                  philosophy and ecologically sensitive practices.
                 </p>
               </div>
               <div className="column mobile hidden">
@@ -69,8 +69,8 @@ const AboutPage = () => {
                   <h1>Portfolios</h1>
                   <p>
                     We began experimenting with equity investment partnerships in
-                    2013, and since then we&aposve listed a few startup teams
-                    we&aposre proud to be partnered with from their inception.
+                    2013, and since then we've listed a few startup teams we're proud
+                    to be partnered with from their inception.
                   </p>
                   <div className="ui three column grid">
                     {Portfolio.map((res) => {

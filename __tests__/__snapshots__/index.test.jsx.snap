@@ -85,6 +85,7 @@ exports[`Index component Index renders without crashing 1`] = `
                 className="menu-icons"
                 height="30px"
                 onClick={[Function]}
+                role="presentation"
                 src="/images/menu.svg"
               />
             </div>
@@ -168,6 +169,7 @@ exports[`Index component Index renders without crashing 1`] = `
           >
             <button
               className="ui basic button btnLearnMore"
+              type="button"
             >
               LEARN MORE
             </button>
@@ -332,6 +334,7 @@ exports[`Index component Index renders without crashing 1`] = `
             >
               <button
                 className="ui basic button btnInformation"
+                type="button"
               >
                 CONTACT US
               </button>

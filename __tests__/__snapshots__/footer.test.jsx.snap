@@ -24,28 +24,28 @@ exports[`Footer component Footer renders without crashing 1`] = `
                 to="/news-and-events"
               >
                 <p>
-                  About Us
+                  About
                 </p>
               </Link>
               <Link
                 to="/what-we-do"
               >
                 <p>
-                  What We Do
+                  Works
                 </p>
               </Link>
               <Link
                 to="/news-and-events"
               >
                 <p>
-                  News and Events
+                  News
                 </p>
               </Link>
               <Link
                 to="/contact-us"
               >
                 <p>
-                  Contact Us
+                  Contact
                 </p>
               </Link>
             </div>

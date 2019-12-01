@@ -63,6 +63,7 @@ exports[`Navbar component Navbar renders without crashing 1`] = `
             className="menu-icons"
             height="30px"
             onClick={[Function]}
+            role="presentation"
             src="/images/menu.svg"
           />
         </div>
