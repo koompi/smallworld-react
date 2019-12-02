@@ -8,7 +8,10 @@ class Contact extends Component {
     super(props)
     this.state = {}
   }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4c5426fa595f8b001c213312539cb9e0e45b7d3b
   render() {
     return (
       <>
