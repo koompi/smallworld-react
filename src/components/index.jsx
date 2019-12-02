@@ -1,12 +1,11 @@
 import React, { Component } from "react"
-import Footer from "./layouts/footer"
 import { Link } from "react-router-dom"
 import { Helmet } from "react-helmet"
 import axios from "axios"
+import Footer from "./layouts/footer"
 
-function strip_html_tags(str) {
+function stripHtmlTags(str) {
   if (str === null || str === "") return false
-  else str = str.toString()
   return str.replace(/<[^>]*>/g, "")
 }
 
@@ -39,13 +38,15 @@ class Index extends Component {
       })
   }
 
-  toggleMenuState = () => {
+  toggleMenuState() {
+    const { toggleMenu } = this.state
     this.setState({
-      toggleMenu: !this.state.toggleMenu
+      toggleMenu: !toggleMenu
     })
   }
 
   render() {
+    const { toggleMenu, koompi, smallworld } = this.state
     return (
       <div>
         <Helmet>
@@ -66,12 +67,10 @@ class Index extends Component {
             }}
           >
             <div>
-              <div
-                className={this.state.toggleMenu ? "phone-background-navbar" : ""}
-              >
+              <div className={toggleMenu ? "phone-background-navbar" : ""}>
                 <div
                   className={
-                    this.state.toggleMenu
+                    toggleMenu
                       ? "ui left demo vertical inverted labeled icon sidebar menu overlay visible mobile only slideIn"
                       : "ui left demo vertical inverted labeled icon sidebar menu overlay visible mobile only slideOut"
                   }
@@ -104,11 +103,8 @@ class Index extends Component {
                   </div>
                   <div className="menu right asize">
                     <img
-                      src={
-                        this.state.toggleMenu
-                          ? "/images/close.png"
-                          : "/images/menu.svg"
-                      }
+                      role="presentation"
+                      src={toggleMenu ? "/images/close.png" : "/images/menu.svg"}
                       className="menu-icons"
                       height="30px"
                       alt=""
@@ -161,7 +157,7 @@ class Index extends Component {
                   development and long-term land management.
                 </p>
                 <Link to="/about-us">
-                  <button className="ui basic button btnLearnMore">
+                  <button className="ui basic button btnLearnMore" type="button">
                     LEARN MORE
                   </button>
                 </Link>
@@ -282,7 +278,7 @@ class Index extends Component {
                   </p>
                   <p>Send us a message!</p>
                   <Link to="/contact-us">
-                    <button className="ui basic button btnInformation">
+                    <button className="ui basic button btnInformation" type="button">
                       CONTACT US
                     </button>
                   </Link>
@@ -295,7 +291,7 @@ class Index extends Component {
               Community Update
             </h2>
             <div className="ui stackable three column equal height stretched grid">
-              {this.state.smallworld.slice(0, 3).map((data, index) => {
+              {smallworld.slice(0, 3).map((data) => {
                 return (
                   <div className="column" key={data.title}>
                     <div className="shadowEvent">
@@ -331,7 +327,7 @@ class Index extends Component {
                           </center>
                           <br />
                           <p>
-                            {strip_html_tags(data.content.substring(0, 110) + "...")}
+                            {stripHtmlTags(`${data.content.substring(0, 110)}...`)}
                           </p>
                           <p className="badge">{data.author}</p>
                         </div>
@@ -345,8 +341,7 @@ class Index extends Component {
           <div className="ui container margin-buttons">
             <h2 className="newsAndEvent">KOOMPI News</h2>
             <div className="ui stackable three column equal height stretched grid">
-              {/* {console.log(this.state.smallworld)} */}
-              {this.state.koompi.slice(0, 3).map((data, index) => {
+              {koompi.slice(0, 3).map((data) => {
                 return (
                   <div className="column" key={data.title}>
                     <div className="shadowEvent">
@@ -365,7 +360,7 @@ class Index extends Component {
                           </center>
                           <br />
                           <p>
-                            {strip_html_tags(data.content.substring(0, 110) + "...")}
+                            {stripHtmlTags(`${data.content.substring(0, 110)}...`)}
                           </p>
                           <p className="badge">{data.author}</p>
                         </div>

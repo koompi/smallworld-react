@@ -63,7 +63,7 @@ const WhatWeCanDo = () => {
                     Seed Equity Investments are used to form equity investment
                     partnerships which serve as the foundation for building a strong
                     startup community. <br />
-                    <br /> During our formative years we&aposve gained insightful
+                    <br /> During our formative years we've gained insightful
                     experience by working with dozens of innovative startups and we
                     now provide Seed Equity Investments for five new startup teams
                     each year. <br />
@@ -95,9 +95,9 @@ const WhatWeCanDo = () => {
                   <p>
                     Our branded KOOMPI system is one among several exciting ventures
                     in our portfolio. <br /> <br />
-                    We&aposve produced a practical, affordable, and effective
-                    entry-level notebook designed for future engineers, inventors,
-                    organizers, developers, and freethinkers. <br />
+                    We've produced a practical, affordable, and effective entry-level
+                    notebook designed for future engineers, inventors, organizers,
+                    developers, and freethinkers. <br />
                     <br />
                     The KOOMPI notebook computer is a slim, elegant, high-end,
                     portable, personal productivity environment designed to perform
@@ -113,11 +113,11 @@ const WhatWeCanDo = () => {
                     Building with a key focus on Research and Development (R&D).{" "}
                     <br />
                     <br />
-                    We&aposre engaged in both hardware and software R&D projects
-                    related to decentralized peer-to-peer applications, tokenization,
+                    We're engaged in both hardware and software R&D projects related
+                    to decentralized peer-to-peer applications, tokenization,
                     robotics, artificial intelligence, and automation. <br />
                     <br />
-                    Beyond hardware and software, we&aposre building an all natural
+                    Beyond hardware and software, we're building an all natural
                     outdoor learning, living, work, and play environment using
                     industrial hemp and bamboo design as the fundamental basis for
                     production.

@@ -6,7 +6,6 @@ import Navbar from "./layouts/navbar"
 
 function stripHtmlTags(str) {
   if (str === null || str === "") return false
-  str = str.toString()
   return str.replace(/<[^>]*>/g, "")
 }
 
@@ -14,7 +13,6 @@ class News extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      toggleMenu: false,
       koompi: [],
       smallworld: []
     }

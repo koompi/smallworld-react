@@ -1,0 +1,149 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer component Footer renders without crashing 1`] = `
+<Fragment>
+  <div
+    className="ft-background"
+  >
+    <div
+      className="ui container"
+    >
+      <div
+        className="footer"
+      >
+        <div
+          className="ui stackable four column grid"
+        >
+          <div
+            className="column"
+          >
+            <div
+              className="ftsize"
+            >
+              <Link
+                to="/news-and-events"
+              >
+                <p>
+                  About
+                </p>
+              </Link>
+              <Link
+                to="/what-we-do"
+              >
+                <p>
+                  Works
+                </p>
+              </Link>
+              <Link
+                to="/news-and-events"
+              >
+                <p>
+                  News
+                </p>
+              </Link>
+              <Link
+                to="/contact-us"
+              >
+                <p>
+                  Contact
+                </p>
+              </Link>
+            </div>
+          </div>
+          <div
+            className="column"
+          />
+          <div
+            className="column"
+          />
+          <div
+            className="column"
+          >
+            <a
+              href="https://t.me/smallworldventure"
+              key="1"
+            >
+              <div
+                className="ui header footerIcon"
+              >
+                <img
+                  alt="SmallWorld-Venture Telegram"
+                  className="ui image  footerIcon"
+                  src="/images/socialMedia/telegram.svg"
+                />
+                <div
+                  className="content "
+                >
+                  Telegram
+                </div>
+              </div>
+            </a>
+            <a
+              href="https://www.facebook.com/smallworldventure/"
+              key="2"
+            >
+              <div
+                className="ui header footerIcon"
+              >
+                <img
+                  alt="SmallWorld-Venture Telegram"
+                  className="ui image  footerIcon"
+                  src="/images/socialMedia/facebook.svg"
+                />
+                <div
+                  className="content "
+                >
+                  Facebook
+                </div>
+              </div>
+            </a>
+            <a
+              href="https://twitter.com/smallworldvc"
+              key="3"
+            >
+              <div
+                className="ui header footerIcon"
+              >
+                <img
+                  alt="SmallWorld Twitter"
+                  className="ui image  footerIcon"
+                  src="/images/socialMedia/twitter.svg"
+                />
+                <div
+                  className="content "
+                >
+                  Twitter
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div
+          className="ui stackable four column grid centerme"
+        >
+          <div
+            className="column"
+          />
+          <div
+            className="column"
+          />
+          <div
+            className="column"
+          />
+          <div
+            className="column"
+          >
+            <center>
+              <img
+                alt="SmallWorld"
+                className="imgfooter"
+                src="/images/logo/Logo_SW_Gray.png"
+              />
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</Fragment>
+`;
