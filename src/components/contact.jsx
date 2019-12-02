@@ -9,11 +9,6 @@ class Contact extends Component {
     this.state = {}
   }
 
-  componentDidMount() {
-    // eslint-disable-next-line no-undef
-    window.scrollTo(0, 0)
-  }
-
   render() {
     return (
       <>
