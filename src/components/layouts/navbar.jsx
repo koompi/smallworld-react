@@ -22,7 +22,7 @@ class Navbar extends Component {
 
     return (
       <>
-        <LanguageToggle/>
+        <LanguageToggle />
         <div>
           <div className={toggleMenu ? "phone-background-navbar" : ""}>
             <div

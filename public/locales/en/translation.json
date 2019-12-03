@@ -1,0 +1,38 @@
+{
+  "about": {
+    "aboutTitle": "About",
+    "whatIsSmallworld": "What is SmallWorld?",
+    "founded": "Founded in 2011 as SmallWorld Cambodia, we created a shared professional workspace where progressive young business minds could explore and pursue their aspirations while transforming ideas into reality.",
+    "fiveYears": "After five years of steady growth, SmallWorld Cambodia reorganized into SmallWorld Ventures to focus on venture building, information technologies, and the environment.",
+    "equityInvestment": "Through equity investment partnerships, we're building a land-based technical, business, and academic community based on natural philosophy and ecologically sensitive practices."
+  },
+  "contact": {
+    "contactTitle": "Contact Us | SmallWorld Venture",
+    "inquiries": "Inquiries Request",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "submit": "Submit",
+    "trigonStartup": "Trigon Startup Village",
+    "trigonMessage": "We look forward to welcome you at any working hour. Though, most of the time there are someone at SmallWorld. There are several startups in the same building, so make sure you know who you are looking for. Otherwise, be prepare for a little adventure.",
+    "locationTrigon": "Look at the map, between the street 600, 602, and 313! We have a crazy idea. Maybe not too crazy, but we plan to nurture to be a cozy little startup village, called TK Trigon. Want to help us make it happen? Come walk around and feel it yourself."
+  },
+  "footer": {
+    "about": "About",
+    "work": "Works",
+    "news": "News",
+    "contact": "Contact"
+  },
+  "index":{
+
+  },
+  "navbar":{
+
+  },
+  "news":{
+
+  },
+  "whatWeCanDo": {
+
+  }
+}

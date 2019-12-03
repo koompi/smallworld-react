@@ -8,6 +8,7 @@ class Contact extends Component {
     super(props)
     this.state = {}
   }
+
   render() {
     return (
       <>

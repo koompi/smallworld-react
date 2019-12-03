@@ -1,8 +1,8 @@
 import React from "react"
 import { Helmet } from "react-helmet"
+import { useTranslation } from "react-i18next"
 import Navbar from "./layouts/navbar"
 import Footer from "./layouts/footer"
-import { useTranslation } from 'react-i18next';
 
 // data
 import Member from "../data/member.json"
@@ -10,13 +10,11 @@ import Partner from "../data/partner.json"
 import Portfolio from "../data/portfolio.json"
 
 const AboutPage = () => {
-
-  const { t, i18n } = useTranslation("translations");
-
+  const { t } = useTranslation()
   return (
     <>
       <Helmet>
-        <title>About</title>
+        <title>{t("about.aboutTitle")}</title>
         <meta
           name="description"
           content="Founded in 2011 as SmallWorld Cambodia, we created a shared professional workspace where progressive young business minds could explore and pursue their aspirations while transforming ideas into reality."
@@ -28,20 +26,10 @@ const AboutPage = () => {
           <div className="ui container">
             <div className="ui stackable two column grid centerme">
               <div className="column">
-                <h1>What is SmallWorld?</h1>
-                <p>
-                 {t("Introduction")}
-                </p>
-                <p>
-                  After five years of steady growth, SmallWorld Cambodia reorganized
-                  into SmallWorld Ventures to focus on venture building, information
-                  technologies, and the environment.
-                </p>
-                <p>
-                  Through equity investment partnerships, we're building a land-based
-                  technical, business, and academic community based on natural
-                  philosophy and ecologically sensitive practices.
-                </p>
+                <h1>{t("about.whatIsSmallworld")}</h1>
+                <p>{t("about.founded")}</p>
+                <p>{t("about.fiveYears")}</p>
+                <p>{t("about.equityInvestment")}</p>
               </div>
               <div className="column mobile hidden">
                 <div className="mobile">

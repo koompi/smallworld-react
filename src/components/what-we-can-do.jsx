@@ -1,9 +1,11 @@
 import React from "react"
 import { Helmet } from "react-helmet"
+import { useTranslation } from "react-i18next"
 import Navbar from "./layouts/navbar"
 import Footer from "./layouts/footer"
 
 const WhatWeCanDo = () => {
+  const { t } = useTranslation()
   return (
     <>
       <Helmet>
@@ -23,6 +25,7 @@ const WhatWeCanDo = () => {
               <div className="column nine wide">
                 <div className="descTitle1">
                   <h1>Startup Community</h1>
+                  <p>{t("Introduction")}</p>
                   <p>
                     Since 2011, SmallWorld has remained focused on their vision of
                     building a vibrant startup community in Phnom Penh through
