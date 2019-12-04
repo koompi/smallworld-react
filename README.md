@@ -1,6 +1,6 @@
 <p align="center">
   <a href="http://smallworldventure.com/">
-    <img width="300" src="public/images/logo/sw-greens.png">
+    <img width="250" src="client/public/images/logo/sw-greens.png">
   </a>
 </p>
 
