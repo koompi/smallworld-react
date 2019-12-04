@@ -1,6 +1,5 @@
 import React, { Component } from "react"
-import { NavLink } from "react-router-dom"
-import { Link } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom"
 
 class Navbar extends Component {
   constructor(props) {
@@ -10,9 +9,10 @@ class Navbar extends Component {
     }
   }
 
-  toggleMenuState = () => {
+  toggleMenuState() {
+    const { toggleMenu } = this.state
     this.setState({
-      toggleMenu: !this.state.toggleMenu
+      toggleMenu: !toggleMenu
     })
   }
 
@@ -57,6 +57,7 @@ class Navbar extends Component {
               </div>
               <div className="menu right asize">
                 <img
+                  role="presentation"
                   src={toggleMenu ? "/images/close.png" : "/images/menu.svg"}
                   className="menu-icons"
                   height="30px"
