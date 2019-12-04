@@ -1,8 +1,22 @@
 version: "3"
 services:
-  app:
-    container_name: smallworld-venture-site
-    restart: always
-    build: .
+  frontend:
+    container_name: smallworld-site
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    image: smallworld/smallworld-site
     ports:
-      - "4040:8080"
+      - "3000:3000"
+    volumes:
+      - ./client:/usr/src/app
+  backend:
+    container_name: smallworld_server
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    image: smallworld/smallworld_server
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./server:/usr/src/app
