@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import axios from "axios"
 import { Helmet } from "react-helmet"
+import { withTranslation } from "react-i18next"
 import Footer from "./layouts/footer"
 import Navbar from "./layouts/navbar"
 
@@ -39,10 +40,11 @@ class News extends Component {
 
   render() {
     const { smallworld, koompi } = this.state
+    const { t } = this.props
     return (
       <div>
         <Helmet>
-          <title>News and Events</title>
+          <title>{t("news.newsAndEvents")}</title>
           <meta name="description" content="Community Update, KOOMPI News" />
         </Helmet>
         <div>
@@ -50,7 +52,7 @@ class News extends Component {
           <br />
           <br />
           <div className="ui container margin-buttons">
-            <h2 className="newsAndEvent">Community Update</h2>
+            <h2 className="newsAndEvent">{t("news.communityUpdate")}</h2>
             <div className="ui stackable three column equal height stretched grid">
               {smallworld.slice(0, 6).map((data) => {
                 return (
@@ -109,13 +111,13 @@ class News extends Component {
                   className="ui button floated positive btnSubmit"
                   type="submit"
                 >
-                  Load More
+                  {t("news.loadMore")}
                 </button>
               </a>
             </center>
           </div>
           <div className="ui container margin-buttons">
-            <h2 className="newsAndEvent">KOOMPI News</h2>
+            <h2 className="newsAndEvent">{t("news.koompiNews")}</h2>
             <div className="ui stackable three column equal height stretched grid">
               {koompi.slice(0, 6).map((data) => {
                 return (
@@ -157,7 +159,7 @@ class News extends Component {
                   className="ui button floated positive btnSubmit"
                   type="submit"
                 >
-                  Load More
+                  {t("news.loadMore")}
                 </button>
               </a>
             </center>
@@ -169,4 +171,4 @@ class News extends Component {
   }
 }
 
-export default News
+export default withTranslation()(News)

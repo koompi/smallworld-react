@@ -1,7 +1,9 @@
 import React, { Component } from "react"
 import { Link } from "react-router-dom"
+import { withTranslation } from "react-i18next"
 import { Helmet } from "react-helmet"
 import axios from "axios"
+import Navbar from "./layouts/navbar"
 import Footer from "./layouts/footer"
 
 function stripHtmlTags(str) {
@@ -13,7 +15,6 @@ class Index extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      toggleMenu: false,
       koompi: [],
       smallworld: []
     }
@@ -38,21 +39,14 @@ class Index extends Component {
       })
   }
 
-  toggleMenuState() {
-    const { toggleMenu } = this.state
-    this.setState({
-      toggleMenu: !toggleMenu
-    })
-  }
 
   render() {
-    const { toggleMenu, koompi, smallworld } = this.state
+    const { koompi, smallworld } = this.state
+    const { t } = this.props
     return (
       <div>
         <Helmet>
-          <title>
-            SmallWorld Venture | Homegrown startup community based in Phnom Penh
-          </title>
+          <title>{t("index.smallworldTitle")}</title>
           <meta
             name="description"
             content="Homegrown Startup Community. We began in 2011 by providing a collaborative workspace environment for entrepreneurs, and then quickly moved forward raising investment capital to fund new startup projects."
@@ -66,99 +60,19 @@ class Index extends Component {
               height: "54vw"
             }}
           >
-            <div>
-              <div className={toggleMenu ? "phone-background-navbar" : ""}>
-                <div
-                  className={
-                    toggleMenu
-                      ? "ui left demo vertical inverted labeled icon sidebar menu overlay visible mobile only slideIn"
-                      : "ui left demo vertical inverted labeled icon sidebar menu overlay visible mobile only slideOut"
-                  }
-                  style={{}}
-                >
-                  <Link to="/about-us" className="item">
-                    About
-                  </Link>
-                  <Link to="/what-we-do" className="item">
-                    Works
-                  </Link>
-                  <Link to="/news-and-events" className="item">
-                    News
-                  </Link>
-                  <Link to="/contact-us" className="item">
-                    Contact
-                  </Link>
-                </div>
-              </div>
-              <div className="hd">
-                <div className="ui secondary container menu mobile only">
-                  <div className="menu left">
-                    <Link to="/">
-                      <img
-                        src="/images/logo/sw-green.png"
-                        className="logonav"
-                        alt="SmallWorld Venture"
-                      />
-                    </Link>
-                  </div>
-                  <div className="menu right asize">
-                    <img
-                      role="presentation"
-                      src={toggleMenu ? "/images/close.png" : "/images/menu.svg"}
-                      className="menu-icons"
-                      height="30px"
-                      alt=""
-                      onClick={this.toggleMenuState}
-                    />
-                  </div>
-                </div>
-                <div className="ui secondary container menu mobile hidden">
-                  <div className="menu left">
-                    <Link to="/">
-                      <img
-                        src="/images/logo/sw-green.png"
-                        className="logonav"
-                        alt="SmallWorld Venture"
-                      />
-                    </Link>
-                  </div>
-                  <div className="menu right asize">
-                    <Link to="/about-us" className="item">
-                      About
-                    </Link>
-                    <Link to="/what-we-do" className="item">
-                      Works
-                    </Link>
-                    <Link to="/news-and-events" className="item">
-                      News
-                    </Link>
-                    <Link to="/contact-us" className="item">
-                      Contact
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <Navbar />
             <div className="ui container">
               <div className="bannerContent">
                 <h3>
-                  <span>{"<"}</span> {"Homegrown Startup Community"}{" "}
+                  <span>{"<"}</span>
+                  {t("index.indexTitle")}
                   <span>{"/>"}</span>
                 </h3>
-                <p className="paragraph">
-                  We began in 2011 by providing a collaborative workspace environment
-                  for entrepreneurs, and then quickly moved forward raising
-                  investment capital to fund new startup projects.
-                </p>
-                <p className="paragraph">
-                  With a variety of research and development projects in motion
-                  today, we're involved in startup venture building through community
-                  supported seed equity investments, together with rural ecovillage
-                  development and long-term land management.
-                </p>
+                <p className="paragraph">{t("index.providing")}</p>
+                <p className="paragraph">{t("index.varietyResearchDev")}</p>
                 <Link to="/about-us">
                   <button className="ui basic button btnLearnMore" type="button">
-                    LEARN MORE
+                    {t("index.learnMoreBtn")}
                   </button>
                 </Link>
               </div>
@@ -176,11 +90,8 @@ class Index extends Component {
                         alt="SmallWorld Venture"
                       />
                       <div className="shadowIndex">
-                        <h4>Startup Community</h4>
-                        <p>
-                          SmallWorld Ventures is committed to becoming the number one
-                          catalyst for funding and assisting startups in Cambodia.
-                        </p>
+                        <h4>{t("index.startupCommunity")}</h4>
+                        <p>{t("index.committed")}</p>
                         <br />
                         <br />
                         <br />
@@ -199,11 +110,8 @@ class Index extends Component {
                         className="imageIndex"
                       />
                       <div className="shadowIndex">
-                        <h4>Seed Equity Investments</h4>
-                        <p>
-                          Seed Equity Investments are provided to promising startup
-                          teams with projects ranging between 5,000 to 25,000 USD.
-                        </p>
+                        <h4>{t("index.seedEquityInvestments")}</h4>
+                        <p>{t("index.seedInvestments")}</p>
                         <br />
                         <br />
                         <br />
@@ -221,12 +129,8 @@ class Index extends Component {
                         alt="SmallWorld Venture"
                       />
                       <div className="shadowIndex">
-                        <h4>Venture Building</h4>
-                        <p>
-                          Smallworld Ventures has built an internal team of
-                          technicians engaged in research and development projects
-                          with an aim to spin off new ventures.
-                        </p>
+                        <h4>{t("index.ventureBuilding")}</h4>
+                        <p>{t("index.internalTeam")}</p>
                         <br />
                         <br />
                         <br />
@@ -243,13 +147,8 @@ class Index extends Component {
                         alt="SmallWorld Venture"
                       />
                       <div className="shadowIndex">
-                        <h4>Ecovillage Development </h4>
-                        <p>
-                          At our rural ecovillage project, we're building a hands-on
-                          learning, working, and living environment with a balance
-                          among the natural world, education, economics, and
-                          sustainable living practices.
-                        </p>
+                        <h4>{t("index.ecovillageDev")}</h4>
+                        <p>{t("index.ecovillage")}</p>
                         <br />
                         <br />
                       </div>
@@ -263,23 +162,14 @@ class Index extends Component {
             <div className="ui container">
               <div className="ui stackable two column grid">
                 <div className="column">
-                  <h1>Have some ideas for new venture?</h1>
-                  <p>
-                    We're looking for new approaches to problem solving and creating
-                    business.Do you have an innovative idea for a startup venture?
-                  </p>
-                  <p>
-                    Or maybe you have a skillset in mind that you want to develop as
-                    you work within our existing SmallWorld venture.
-                  </p>
-                  <p>
-                    We're open to discussing your own startup ideas, however
-                    unconventional, regardless of age, gender, or nationality.
-                  </p>
-                  <p>Send us a message!</p>
+                  <h1>{t("index.ventureIdeas")}</h1>
+                  <p>{t("index.problemSolving")}</p>
+                  <p>{t("index.skillset")}</p>
+                  <p>{t("index.openStartup")}</p>
+                  <p>{t("index.sendMsg")}</p>
                   <Link to="/contact-us">
                     <button className="ui basic button btnInformation" type="button">
-                      CONTACT US
+                      {t("index.contact")}
                     </button>
                   </Link>
                 </div>
@@ -288,7 +178,7 @@ class Index extends Component {
           </div>
           <div className="ui container margin-buttons">
             <h2 className="newsAndEvent" style={{ marginTop: "60px" }}>
-              Community Update
+              {t("index.communityUpdate")}
             </h2>
             <div className="ui stackable three column equal height stretched grid">
               {smallworld.slice(0, 3).map((data) => {
@@ -339,7 +229,7 @@ class Index extends Component {
             </div>
           </div>
           <div className="ui container margin-buttons">
-            <h2 className="newsAndEvent">KOOMPI News</h2>
+            <h2 className="newsAndEvent">{t("index.koompiNews")}</h2>
             <div className="ui stackable three column equal height stretched grid">
               {koompi.slice(0, 3).map((data) => {
                 return (
@@ -378,4 +268,4 @@ class Index extends Component {
   }
 }
 
-export default Index
+export default withTranslation()(Index)

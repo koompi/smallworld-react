@@ -51,18 +51,14 @@ const AboutPage = () => {
                   <img src="/images/banner-4.png" alt="SmallWorld Venture" />
                 </div>
                 <div className="descTitle">
-                  <h1>Venture Building</h1>
-                  <p>Add logo of startup, such as KOOMPI, Grood, Zeetomic</p>
+                  <h1>{t("about.ventureBuilding")}</h1>
+                  <p>{t("about.logoStartup")}</p>
                 </div>
               </div>
               <div className="column">
                 <div className="descTitle1">
-                  <h1>Portfolios</h1>
-                  <p>
-                    We began experimenting with equity investment partnerships in
-                    2013, and since then we've listed a few startup teams we're proud
-                    to be partnered with from their inception.
-                  </p>
+                  <h1>{t("about.portfolios")}</h1>
+                  <p>{t("about.experimenting")}</p>
                   <div className="ui three column grid">
                     {Portfolio.map((res) => {
                       return (
@@ -93,11 +89,8 @@ const AboutPage = () => {
         <div className="backMember">
           <div className="ui container">
             <center>
-              <h1>Board of Directors</h1>
-              <p className="member_p">
-                We're honored to have courageous and insightful business and
-                community leaders to serve on our Board of Directors.
-              </p>
+              <h1>{t("about.boardDirectors")}</h1>
+              <p className="member_p">{t("about.directorIntroMessage")}</p>
               <div className="ui stackable five column grid">
                 {Member.map((data) => {
                   return (
@@ -121,11 +114,8 @@ const AboutPage = () => {
         <div className="investorfooter">
           <div className="ui container">
             <center>
-              <h1>Strategic Partners</h1>
-              <p className="member_p">
-                We're especially pleased to have built strategic partnerships with
-                forward thinking leaders in the business world.
-              </p>
+              <h1>{t("about.strategicPartners")}</h1>
+              <p className="member_p">{t("about.strategicPartnersMsg")}</p>
               <div className="logome">
                 <div className="ui three column grid">
                   {Partner.map((data) => {

@@ -19,7 +19,6 @@ class Navbar extends Component {
 
   render() {
     const { toggleMenu } = this.state
-
     return (
       <>
         <LanguageToggle />
