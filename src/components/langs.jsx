@@ -9,10 +9,10 @@ function LanguageToggle() {
 
   return (
     <div>
-      <button onClick={() => changeLanguage("kh")} type="button">
+      <button onClick={() => changeLanguage("kh")} type="button" className="item">
         Khmer
       </button>
-      <button onClick={() => changeLanguage("en")} type="button">
+      <button onClick={() => changeLanguage("en")} type="button" className="item">
         English
       </button>
     </div>

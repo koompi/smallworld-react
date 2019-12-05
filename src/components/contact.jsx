@@ -1,8 +1,7 @@
+/* eslint-disable react/prop-types */
 import React, { Component } from "react"
 import { Helmet } from "react-helmet"
 import { withTranslation } from "react-i18next"
-import Navbar from "./layouts/navbar"
-import Footer from "./layouts/footer"
 
 class Contact extends Component {
   constructor(props) {
@@ -17,7 +16,6 @@ class Contact extends Component {
         <Helmet>
           <title>{t("contact.contactTitle")}</title>
         </Helmet>
-        <Navbar />
         <div>
           <div className="backcontact">
             <div className="ui container">
@@ -135,7 +133,6 @@ class Contact extends Component {
             </div>
           </div>
         </div>
-        <Footer />
       </>
     )
   }

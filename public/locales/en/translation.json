@@ -51,15 +51,18 @@
     "skillset": "Or maybe you have a skillset in mind that you want to develop asyou work within our existing SmallWorld venture.",
     "openStartup": "We're open to discussing your own startup ideas, however unconventional, regardless of age, gender, or nationality.",
     "sendMsg": "Send us a message!",
-    "contact": "CONTACT US",
-    "communityUpdate": "Community Update",
-    "koompiNews": "KOOMPI News"
+    "contact": "CONTACT US"
   },
-  "navbar": {},
+  "navbar": {
+    "about": "About",
+    "works": "Works",
+    "news": "News",
+    "contact": "Contact"
+  },
   "news": {
     "newsAndEvents": "News and Events",
     "communityUpdate": "Community Update",
-    "loadMore": "Load More",
+    "loadMoreBtn": "Load More",
     "koompiNews": "KOOMPI News"
   },
   "whatWeCanDo": {

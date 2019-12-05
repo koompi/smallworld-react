@@ -51,15 +51,18 @@
     "skillset": "**KH** translation is WIP",
     "openStartup": "**KH** translation is WIP",
     "sendMsg": "**KH** translation is WIP",
-    "contact": "**KH** translation is WIP",
-    "communityUpdate": "**KH** translation is WIP",
-    "koompiNews": "**KH** translation is WIP"
+    "contact": "**KH** translation is WIP"
   },
-  "navbar": {},
+  "navbar": {
+    "about": "**KH** translation is WIP",
+    "works": "**KH** translation is WIP",
+    "news": "**KH** translation is WIP",
+    "contact": "**KH** translation is WIP"
+  },
   "news": {
     "newsAndEvents": "**KH** translation is WIP",
     "communityUpdate": "**KH** translation is WIP",
-    "loadMore": "**KH** translation is WIP",
+    "loadMoreBtn": "**KH** translation is WIP",
     "koompiNews": "**KH** translation is WIP"
   },
   "whatWeCanDo": {

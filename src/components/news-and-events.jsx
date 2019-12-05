@@ -2,8 +2,6 @@ import React, { Component } from "react"
 import axios from "axios"
 import { Helmet } from "react-helmet"
 import { withTranslation } from "react-i18next"
-import Footer from "./layouts/footer"
-import Navbar from "./layouts/navbar"
 
 function stripHtmlTags(str) {
   if (str === null || str === "") return false
@@ -48,7 +46,6 @@ class News extends Component {
           <meta name="description" content="Community Update, KOOMPI News" />
         </Helmet>
         <div>
-          <Navbar />
           <br />
           <br />
           <div className="ui container margin-buttons">
@@ -111,7 +108,7 @@ class News extends Component {
                   className="ui button floated positive btnSubmit"
                   type="submit"
                 >
-                  {t("news.loadMore")}
+                  {t("news.loadMoreBtn")}
                 </button>
               </a>
             </center>
@@ -159,13 +156,12 @@ class News extends Component {
                   className="ui button floated positive btnSubmit"
                   type="submit"
                 >
-                  {t("news.loadMore")}
+                  {t("news.loadMoreBtn")}
                 </button>
               </a>
             </center>
           </div>
         </div>
-        <Footer />
       </div>
     )
   }

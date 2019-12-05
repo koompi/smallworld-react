@@ -5,11 +5,14 @@ import AboutPage from "./components/about"
 import WhatWeCanDo from "./components/what-we-can-do"
 import Contact from "./components/contact"
 import NewsComponent from "./components/news-and-events"
+import Navbar from "./components/layouts/navbar"
+import Footer from "./components/layouts/footer"
 
 function App() {
   return (
     <Suspense fallback="loading">
       <Router>
+        <Navbar />
         <Switch>
           <Route exact path="/" component={Index} />
           <Route path="/about-us" component={AboutPage} />
@@ -18,6 +21,7 @@ function App() {
           <Route path="/contact-us" component={Contact} />
           <Redirect to="/" component={Index} />
         </Switch>
+        <Footer />
       </Router>
     </Suspense>
   )

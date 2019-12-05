@@ -1,8 +1,6 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 import { useTranslation } from "react-i18next"
-import Navbar from "./layouts/navbar"
-import Footer from "./layouts/footer"
 
 // data
 import Member from "../data/member.json"
@@ -20,7 +18,6 @@ const AboutPage = () => {
           content="Founded in 2011 as SmallWorld Cambodia, we created a shared professional workspace where progressive young business minds could explore and pursue their aspirations while transforming ideas into reality."
         />
       </Helmet>
-      <Navbar />
       <div>
         <div className="aboutsmall">
           <div className="ui container">
@@ -137,7 +134,6 @@ const AboutPage = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   )
 }

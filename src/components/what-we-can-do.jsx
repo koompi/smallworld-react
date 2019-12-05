@@ -1,8 +1,6 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 import { useTranslation } from "react-i18next"
-import Navbar from "./layouts/navbar"
-import Footer from "./layouts/footer"
 
 const WhatWeCanDo = () => {
   const { t } = useTranslation()
@@ -15,7 +13,6 @@ const WhatWeCanDo = () => {
           content="Startup Community, Seed Equity Investments, Venture Building, Research and Development, Environmental Stewardship"
         />
       </Helmet>
-      <Navbar />
       <div>
         <div className="backAbout">
           <br />
@@ -120,7 +117,6 @@ const WhatWeCanDo = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   )
 }
