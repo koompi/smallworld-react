@@ -53,6 +53,9 @@ const WhatWeCanDo = () => {
                 <div className="descTitle1">
                   <h1>{t("whatWeCanDo.seedEquity")}</h1>
                   <p>{t("whatWeCanDo.seedEquityText")}</p>
+                  <p>{t("whatWeCanDo.seedFormative")}</p>
+                  <p>{t("whatWeCanDo.seedFund")}</p>
+                  <p>{t("whatWeCanDo.seedPartication")}</p>
                 </div>
                 <div className="mobileimg1">
                   <img
@@ -71,9 +74,14 @@ const WhatWeCanDo = () => {
               <div className="column nine wide">
                 <div className="descTitle1">
                   <h1>{t("whatWeCanDo.ventureBuilding")}</h1>
-                  <p>{t("whatWeCanDo.ventureBuildingText")}</p>
+                  <p>{t("whatWeCanDo.ventureKoompi")}</p>
+                  <p>{t("whatWeCanDo.ventureProduct")}</p>
+                  <p>{t("whatWeCanDo.ventureDescProduct")}</p>
+                  <p>{t("whatWeCanDo.ventureKoompiGoal")}</p>
                   <h1>{t("whatWeCanDo.researchDev")}</h1>
                   <p>{t("whatWeCanDo.researchDevText")}</p>
+                  <p>{t("whatWeCanDo.researchEngagment")}</p>
+                  <p>{t("whatWeCanDo.researchFundamentals")}</p>
                 </div>
               </div>
               <div className="column seven wide">
@@ -103,7 +111,11 @@ const WhatWeCanDo = () => {
               <div className="column nine wide">
                 <div className="descTitle1">
                   <h1>{t("whatWeCanDo.envStewardship")}</h1>
-                  <p>{t("whatWeCanDo.envStewardshipText")}</p>
+                  <p>{t("whatWeCanDo.envIntro")}</p>
+                  <p>{t("whatWeCanDo.envStrive")}</p>
+                  <p>{t("whatWeCanDo.envVitamineAir")}</p>
+                  <p>{t("whatWeCanDo.envVitamineAirProject")}</p>
+                  <p>{t("whatWeCanDo.envAdditionalItems")}</p>
                 </div>
                 <div className="mobileimg1">
                   <img
