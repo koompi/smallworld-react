@@ -7,14 +7,13 @@ exports[`About component about renders 1`] = `
     encodeSpecialCharacters={true}
   >
     <title>
-      About Us
+      about.aboutTitle
     </title>
     <meta
       content="Founded in 2011 as SmallWorld Cambodia, we created a shared professional workspace where progressive young business minds could explore and pursue their aspirations while transforming ideas into reality."
       name="description"
     />
   </HelmetWrapper>
-  <Navbar />
   <div>
     <div
       className="aboutsmall"
@@ -29,16 +28,16 @@ exports[`About component about renders 1`] = `
             className="column"
           >
             <h1>
-              What is SmallWorld?
+              about.whatIsSmallworld
             </h1>
             <p>
-              Founded in 2011 as SmallWorld Cambodia, we created a shared professional workspace where progressive young business minds could explore and pursue their aspirations while transforming ideas into reality.
+              about.founded
             </p>
             <p>
-              After five years of steady growth, SmallWorld Cambodia reorganized into SmallWorld Ventures to focus on venture building, information technologies, and the environment.
+              about.fiveYears
             </p>
             <p>
-              Through equity investment partnerships, we're building a land-based technical, business, and academic community based on natural philosophy and ecologically sensitive practices.
+              about.equityInvestment
             </p>
           </div>
           <div
@@ -81,10 +80,10 @@ exports[`About component about renders 1`] = `
               className="descTitle"
             >
               <h1>
-                Venture Building
+                about.ventureBuilding
               </h1>
               <p>
-                Add logo of startup, such as KOOMPI, Grood, Zeetomic
+                about.logoStartup
               </p>
             </div>
           </div>
@@ -95,10 +94,10 @@ exports[`About component about renders 1`] = `
               className="descTitle1"
             >
               <h1>
-                Portfolios
+                about.portfolios
               </h1>
               <p>
-                We began experimenting with equity investment partnerships in 2013, and since then we've listed a few startup teams we're proud to be partnered with from their inception.
+                about.experimenting
               </p>
               <div
                 className="ui three column grid"
@@ -221,12 +220,12 @@ exports[`About component about renders 1`] = `
       >
         <center>
           <h1>
-            Board of Directors
+            about.boardDirectors
           </h1>
           <p
             className="member_p"
           >
-            We're honored to have courageous and insightful business and community leaders to serve on our Board of Directors.
+            about.directorIntroMessage
           </p>
           <div
             className="ui stackable five column grid"
@@ -341,12 +340,12 @@ exports[`About component about renders 1`] = `
       >
         <center>
           <h1>
-            Strategic Partners
+            about.strategicPartners
           </h1>
           <p
             className="member_p"
           >
-            We're especially pleased to have built strategic partnerships with forward thinking leaders in the business world.
+            about.strategicPartnersMsg
           </p>
           <div
             className="logome"
@@ -402,6 +401,5 @@ exports[`About component about renders 1`] = `
       </div>
     </div>
   </div>
-  <Footer />
 </Fragment>
 `;

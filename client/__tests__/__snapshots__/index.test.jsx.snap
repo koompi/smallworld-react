@@ -7,7 +7,7 @@ exports[`Index component Index renders without crashing 1`] = `
     encodeSpecialCharacters={true}
   >
     <title>
-      SmallWorld Venture | Homegrown startup community based in Phnom Penh
+      index.smallworldTitle
     </title>
     <meta
       content="Homegrown Startup Community. We began in 2011 by providing a collaborative workspace environment for entrepreneurs, and then quickly moved forward raising investment capital to fund new startup projects."
@@ -24,119 +24,6 @@ exports[`Index component Index renders without crashing 1`] = `
         }
       }
     >
-      <div>
-        <div
-          className=""
-        >
-          <div
-            className="ui left demo vertical inverted labeled icon sidebar menu overlay visible mobile only slideOut"
-            style={Object {}}
-          >
-            <Link
-              className="item"
-              to="/about-us"
-            >
-              About
-            </Link>
-            <Link
-              className="item"
-              to="/what-we-do"
-            >
-              Works
-            </Link>
-            <Link
-              className="item"
-              to="/news-and-events"
-            >
-              News
-            </Link>
-            <Link
-              className="item"
-              to="/contact-us"
-            >
-              Contact
-            </Link>
-          </div>
-        </div>
-        <div
-          className="hd"
-        >
-          <div
-            className="ui secondary container menu mobile only"
-          >
-            <div
-              className="menu left"
-            >
-              <Link
-                to="/"
-              >
-                <img
-                  alt="SmallWorld Venture"
-                  className="logonav"
-                  src="/images/logo/sw-green.png"
-                />
-              </Link>
-            </div>
-            <div
-              className="menu right asize"
-            >
-              <img
-                alt=""
-                className="menu-icons"
-                height="30px"
-                onClick={[Function]}
-                role="presentation"
-                src="/images/menu.svg"
-              />
-            </div>
-          </div>
-          <div
-            className="ui secondary container menu mobile hidden"
-          >
-            <div
-              className="menu left"
-            >
-              <Link
-                to="/"
-              >
-                <img
-                  alt="SmallWorld Venture"
-                  className="logonav"
-                  src="/images/logo/sw-green.png"
-                />
-              </Link>
-            </div>
-            <div
-              className="menu right asize"
-            >
-              <Link
-                className="item"
-                to="/about-us"
-              >
-                About
-              </Link>
-              <Link
-                className="item"
-                to="/what-we-do"
-              >
-                Works
-              </Link>
-              <Link
-                className="item"
-                to="/news-and-events"
-              >
-                News
-              </Link>
-              <Link
-                className="item"
-                to="/contact-us"
-              >
-                Contact
-              </Link>
-            </div>
-          </div>
-        </div>
-      </div>
       <div
         className="ui container"
       >
@@ -147,9 +34,7 @@ exports[`Index component Index renders without crashing 1`] = `
             <span>
               &lt;
             </span>
-             
-            Homegrown Startup Community
-             
+            index.indexTitle
             <span>
               /&gt;
             </span>
@@ -157,12 +42,12 @@ exports[`Index component Index renders without crashing 1`] = `
           <p
             className="paragraph"
           >
-            We began in 2011 by providing a collaborative workspace environment for entrepreneurs, and then quickly moved forward raising investment capital to fund new startup projects.
+            index.providing
           </p>
           <p
             className="paragraph"
           >
-            With a variety of research and development projects in motion today, we're involved in startup venture building through community supported seed equity investments, together with rural ecovillage development and long-term land management.
+            index.varietyResearchDev
           </p>
           <Link
             to="/about-us"
@@ -171,7 +56,7 @@ exports[`Index component Index renders without crashing 1`] = `
               className="ui basic button btnLearnMore"
               type="button"
             >
-              LEARN MORE
+              index.learnMoreBtn
             </button>
           </Link>
         </div>
@@ -202,10 +87,10 @@ exports[`Index component Index renders without crashing 1`] = `
                   className="shadowIndex"
                 >
                   <h4>
-                    Startup Community
+                    index.startupCommunity
                   </h4>
                   <p>
-                    SmallWorld Ventures is committed to becoming the number one catalyst for funding and assisting startups in Cambodia.
+                    index.committed
                   </p>
                   <br />
                   <br />
@@ -231,10 +116,10 @@ exports[`Index component Index renders without crashing 1`] = `
                   className="shadowIndex"
                 >
                   <h4>
-                    Seed Equity Investments
+                    index.seedEquityInvestments
                   </h4>
                   <p>
-                    Seed Equity Investments are provided to promising startup teams with projects ranging between 5,000 to 25,000 USD.
+                    index.seedInvestments
                   </p>
                   <br />
                   <br />
@@ -260,10 +145,10 @@ exports[`Index component Index renders without crashing 1`] = `
                   className="shadowIndex"
                 >
                   <h4>
-                    Venture Building
+                    index.ventureBuilding
                   </h4>
                   <p>
-                    Smallworld Ventures has built an internal team of technicians engaged in research and development projects with an aim to spin off new ventures.
+                    index.internalTeam
                   </p>
                   <br />
                   <br />
@@ -288,10 +173,10 @@ exports[`Index component Index renders without crashing 1`] = `
                   className="shadowIndex"
                 >
                   <h4>
-                    Ecovillage Development 
+                    index.ecovillageDev
                   </h4>
                   <p>
-                    At our rural ecovillage project, we're building a hands-on learning, working, and living environment with a balance among the natural world, education, economics, and sustainable living practices.
+                    index.ecovillage
                   </p>
                   <br />
                   <br />
@@ -315,19 +200,19 @@ exports[`Index component Index renders without crashing 1`] = `
             className="column"
           >
             <h1>
-              Have some ideas for new venture?
+              index.ventureIdeas
             </h1>
             <p>
-              We're looking for new approaches to problem solving and creating business.Do you have an innovative idea for a startup venture?
+              index.problemSolving
             </p>
             <p>
-              Or maybe you have a skillset in mind that you want to develop as you work within our existing SmallWorld venture.
+              index.skillset
             </p>
             <p>
-              We're open to discussing your own startup ideas, however unconventional, regardless of age, gender, or nationality.
+              index.openStartup
             </p>
             <p>
-              Send us a message!
+              index.sendMsg
             </p>
             <Link
               to="/contact-us"
@@ -336,43 +221,14 @@ exports[`Index component Index renders without crashing 1`] = `
                 className="ui basic button btnInformation"
                 type="button"
               >
-                CONTACT US
+                index.contact
               </button>
             </Link>
           </div>
         </div>
       </div>
     </div>
-    <div
-      className="ui container margin-buttons"
-    >
-      <h2
-        className="newsAndEvent"
-        style={
-          Object {
-            "marginTop": "60px",
-          }
-        }
-      >
-        Community Update
-      </h2>
-      <div
-        className="ui stackable three column equal height stretched grid"
-      />
-    </div>
-    <div
-      className="ui container margin-buttons"
-    >
-      <h2
-        className="newsAndEvent"
-      >
-        KOOMPI News
-      </h2>
-      <div
-        className="ui stackable three column equal height stretched grid"
-      />
-    </div>
+    <withI18nextTranslation(News) />
   </div>
-  <Footer />
 </div>
 `;

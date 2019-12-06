@@ -1,82 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`News component News renders without crashing 1`] = `
-<div>
-  <HelmetWrapper
-    defer={true}
-    encodeSpecialCharacters={true}
-  >
-    <title>
-      News and Events
-    </title>
-    <meta
-      content="Community Update, KOOMPI News"
-      name="description"
-    />
-  </HelmetWrapper>
-  <div>
-    <Navbar />
-    <br />
-    <br />
-    <div
-      className="ui container margin-buttons"
-    >
-      <h2
-        className="newsAndEvent"
-      >
-        Community Update
-      </h2>
-      <div
-        className="ui stackable three column equal height stretched grid"
-      />
-      <br />
-       
-      <br />
-      <center>
-        <a
-          href="https://medium.com/@smallworldventure"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <button
-            className="ui button floated positive btnSubmit"
-            type="submit"
-          >
-            Load More
-          </button>
-        </a>
-      </center>
-    </div>
-    <div
-      className="ui container margin-buttons"
-    >
-      <h2
-        className="newsAndEvent"
-      >
-        KOOMPI News
-      </h2>
-      <div
-        className="ui stackable three column equal height stretched grid"
-      />
-      <br />
-       
-      <br />
-      <center>
-        <a
-          href="https://medium.com/@koompi"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <button
-            className="ui button floated positive btnSubmit"
-            type="submit"
-          >
-            Load More
-          </button>
-        </a>
-      </center>
-    </div>
-  </div>
-  <Footer />
-</div>
+<News
+  i18n={Object {}}
+  t={[Function]}
+  tReady={false}
+/>
 `;

@@ -5,6 +5,7 @@ exports[`App component App renders without crashing 1`] = `
   fallback="loading"
 >
   <BrowserRouter>
+    <withI18nextTranslation(Navbar) />
     <Switch>
       <Route
         component={[Function]}
@@ -32,6 +33,7 @@ exports[`App component App renders without crashing 1`] = `
         to="/"
       />
     </Switch>
+    <Footer />
   </BrowserRouter>
 </Suspense>
 `;
