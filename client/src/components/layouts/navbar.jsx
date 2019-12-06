@@ -1,5 +1,7 @@
 import React, { Component } from "react"
 import { Link, NavLink } from "react-router-dom"
+import { withTranslation } from "react-i18next"
+import LanguageToggle from "../langs"
 
 class Navbar extends Component {
   constructor(props) {
@@ -9,18 +11,17 @@ class Navbar extends Component {
     }
   }
 
-  toggleMenuState() {
+  toggleMenuState = () => {
     const { toggleMenu } = this.state
-    this.setState({
-      toggleMenu: !toggleMenu
-    })
+    this.setState({ toggleMenu: !toggleMenu })
   }
 
   render() {
     const { toggleMenu } = this.state
+    const { t } = this.props
     return (
       <>
-        <div>
+        <div className="nav">
           <div className={toggleMenu ? "phone-background-navbar" : ""}>
             <div
               className={
@@ -28,20 +29,20 @@ class Navbar extends Component {
                   ? "ui left demo vertical inverted labeled icon sidebar menu overlay visible mobile only slideIn"
                   : "ui left demo vertical inverted labeled icon sidebar menu overlay visible mobile only slideOut"
               }
-              style={{}}
             >
-              <Link to="/about-us" className="item">
-                About
-              </Link>
-              <Link to="/what-we-do" className="item">
-                Works
-              </Link>
-              <Link to="/news-and-events" className="item">
-                News
-              </Link>
-              <Link to="/contact-us" className="item">
-                Contact
-              </Link>
+              <NavLink to="/about-us" className="item">
+                {t("navbar.about")}
+              </NavLink>
+              <NavLink to="/what-we-do" className="item">
+                {t("navbar.works")}
+              </NavLink>
+              <NavLink to="/news-and-events" className="item">
+                {t("navbar.news")}
+              </NavLink>
+              <NavLink to="/contact-us" className="item">
+                {t("navbar.contact")}
+              </NavLink>
+              <LanguageToggle />
             </div>
           </div>
           <div className="navbar-menu">
@@ -81,29 +82,30 @@ class Navbar extends Component {
             </div>
             <div className="menu right asize">
               <NavLink to="/about-us" activeClassName="item active" className="item">
-                About
+                {t("navbar.about")}
               </NavLink>
               <NavLink
                 to="/what-we-do"
                 activeClassName="item active"
                 className="item"
               >
-                Works
+                {t("navbar.works")}
               </NavLink>
               <NavLink
                 to="/news-and-events"
                 activeClassName="item active"
                 className="item"
               >
-                News
+                {t("navbar.news")}
               </NavLink>
               <NavLink
                 to="/contact-us"
                 activeClassName="item active"
                 className="item"
               >
-                Contact
+                {t("navbar.contact")}
               </NavLink>
+              <LanguageToggle />
             </div>
           </div>
         </div>
@@ -112,4 +114,4 @@ class Navbar extends Component {
   }
 }
 
-export default Navbar
+export default withTranslation()(Navbar)
