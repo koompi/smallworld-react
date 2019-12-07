@@ -31,15 +31,15 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## Contributors
 
-- [San Vuthy](https://github.com/san-vuthy)
-- [Claire Bun](https://github.com/cbun097)
+-   [San Vuthy](https://github.com/san-vuthy)
+-   [Claire Bun](https://github.com/cbun097)
 
 ## Community
 
-- Join us with Smallworld on [Telegram](https://t.me/smallworldventure)
-- Join us with Koompi on [Telegram](https://t.me/koompi)
+-   Join us with Smallworld on [Telegram](https://t.me/smallworldventure)
+-   Join us with Koompi on [Telegram](https://t.me/koompi)
 
 ## License
 
-- [MIT license](LICENSE)
-- Copyright 2019 © [Smallworld](http://smallworldventure.com/)
+-   [MIT license](LICENSE)
+-   Copyright 2019 © [Smallworld](http://smallworldventure.com/)

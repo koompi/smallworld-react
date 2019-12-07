@@ -1,8 +1,10 @@
 import React from "react"
 import { Link } from "react-router-dom"
+import { useTranslation } from "react-i18next"
 import SocialLink from "../../data/socialLinks.json"
 
 const Footer = () => {
+  const { t } = useTranslation()
   return (
     <>
       <div className="ft-background">
@@ -12,16 +14,16 @@ const Footer = () => {
               <div className="column">
                 <div className="ftsize">
                   <Link to="/news-and-events">
-                    <p>About</p>
+                    <p>{t("footer.about")}</p>
                   </Link>
                   <Link to="/what-we-do">
-                    <p>Works</p>
+                    <p>{t("footer.work")}</p>
                   </Link>
                   <Link to="/news-and-events">
-                    <p>News</p>
+                    <p>{t("footer.news")}</p>
                   </Link>
                   <Link to="/contact-us">
-                    <p>Contact</p>
+                    <p>{t("footer.contact")}</p>
                   </Link>
                 </div>
               </div>

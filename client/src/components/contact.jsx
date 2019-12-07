@@ -1,10 +1,9 @@
-import React, { useEffect } from "react"
+import React from "react"
 import { Helmet } from "react-helmet"
-import Navbar from "./layouts/navbar"
-import Footer from "./layouts/footer"
 import useForm from "react-hook-form"
 import Swal from "sweetalert2"
 import axios from "axios"
+import { useTranslation } from "react-i18next"
 
 const Toast = Swal.mixin({
   toast: true,
@@ -19,7 +18,7 @@ const Toast = Swal.mixin({
 })
 
 const Contact = () => {
-  const { register, handleSubmit, watch, errors, reset } = useForm()
+  const { register, handleSubmit, errors, reset } = useForm()
 
   const onSubmit = (data) => {
     // console.log(data);
@@ -33,21 +32,21 @@ const Contact = () => {
     reset()
   }
 
+  const { t } = useTranslation()
   return (
     <>
       <Helmet>
-        <title>Contac Us | SmallWorld Venture</title>
+        <title>{t("contact.contactTitle")}</title>
       </Helmet>
-      <Navbar />
       <div>
         <div className="backcontact">
           <div className="ui container">
             <div className="ui stackable two column grid contact">
               <div className="column marginInformation">
-                <h2>Inquiries Request</h2>
+                <h2>{t("contact.inquiries")}</h2>
                 <form className="ui form" onSubmit={handleSubmit(onSubmit)}>
                   <div className="field">
-                    <label>Full Name</label>
+                    <label>{t("contact.name")}</label>
                     <input
                       type="text"
                       name="fullname"
@@ -55,25 +54,27 @@ const Contact = () => {
                     />
                     {errors.fullname && (
                       <span className="ui text-danger">
-                        Full Name field is required
+                        {t("contact.nameErrorMsg")}
                       </span>
                     )}
                   </div>
 
                   <div className="field">
-                    <label>Email</label>
+                    <label>{t("contact.email")}</label>
                     <input
                       type="email"
                       name="email"
                       ref={register({ required: true })}
                     />
                     {errors.email && (
-                      <span className="ui text-danger">Email field is required</span>
+                      <span className="ui text-danger">
+                        {t("contact.emailErrorMsg")}
+                      </span>
                     )}
                   </div>
 
                   <div className="field">
-                    <label>Message</label>
+                    <label>{t("contact.message")}</label>
                     <textarea
                       cols="20"
                       rows="10"
@@ -82,18 +83,21 @@ const Contact = () => {
                     />
                     {errors.message && (
                       <span className="ui text-danger">
-                        Message field is required
+                        {t("contact.messageErrorMsg")}
                       </span>
                     )}
                   </div>
 
-                  <button className="ui button floated positive btnSubmit">
-                    Submit
+                  <button
+                    className="ui button floated positive btnSubmit"
+                    type="submit"
+                  >
+                    {t("contact.submitBtn")}
                   </button>
                 </form>
               </div>
               <div className="column marginInformation">
-                <h2>Our Office</h2>
+                <h2>{t("contact.ourOffice")}</h2>
                 <div className="ui grid">
                   <div className="two wide column">
                     <center>
@@ -161,21 +165,9 @@ const Contact = () => {
                   <div className="column" />
                   <div className="column">
                     <div className="paddingsize">
-                      <h2>Trigon Startup Village</h2>
-                      <p>
-                        We look forward to welcome you at any working hour. Though,
-                        most of the time there are someone at SmallWorld. There are
-                        several startups in the same building, so make sure you know
-                        who you are looking for. Otherwise, be prepare for a little
-                        adventure.
-                      </p>
-                      <p>
-                        Look at the map, between the street 600, 602, and 313! We
-                        have a crazy idea. Maybe not too crazy, but we plan to
-                        nurture to be a cozy little startup village, called TK
-                        Trigon. Want to help us make it happen? Come walk around and
-                        feel it yourself.
-                      </p>
+                      <h2>{t("contact.trigonStartup")}</h2>
+                      <p>{t("contact.trigonMessage")}</p>
+                      <p>{t("contact.locationTrigon")}</p>
                     </div>
                   </div>
                 </div>
@@ -191,7 +183,6 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   )
 }

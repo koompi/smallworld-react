@@ -2,6 +2,7 @@
 
 exports[`Navbar component Navbar renders without crashing 1`] = `
 <Fragment>
+  <withI18nextTranslation(LanguageToggle) />
   <div>
     <div
       className=""
