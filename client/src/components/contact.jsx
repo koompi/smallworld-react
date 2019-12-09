@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React, { useEffect, useState } from "react"
 import { Helmet } from "react-helmet"
 import Navbar from "./layouts/navbar"
 import Footer from "./layouts/footer"
@@ -20,11 +20,16 @@ const Toast = Swal.mixin({
 
 const Contact = () => {
   const { register, handleSubmit, watch, errors, reset } = useForm()
+  const [loading, setLoading] = useState(false)
 
-  const onSubmit = (data) => {
+  const onSubmit = async (data) => {
     // console.log(data);
     // https://mail.getgrood.com/api/form
-    axios.post("http://localhost:4041/api/form", { ...data }).then(() => {
+    await setTimeout(() => {
+      setLoading(false)
+    }, 3000)
+
+    await axios.post("http://localhost:4041/api/form", { ...data }).then(() => {
       Toast.fire({
         icon: "success",
         title: "Your message has been sent."
@@ -46,7 +51,7 @@ const Contact = () => {
               <div className="column marginInformation">
                 <h2>Inquiries Request</h2>
                 <form className="ui form" onSubmit={handleSubmit(onSubmit)}>
-                  <div className="field">
+                  <div className={errors.fullname ? "field error" : "field"}>
                     <label>Full Name</label>
                     <input
                       type="text"
@@ -60,7 +65,7 @@ const Contact = () => {
                     )}
                   </div>
 
-                  <div className="field">
+                  <div className={errors.fullname ? "field error" : "field"}>
                     <label>Email</label>
                     <input
                       type="email"
@@ -72,7 +77,7 @@ const Contact = () => {
                     )}
                   </div>
 
-                  <div className="field">
+                  <div className={errors.fullname ? "field error" : "field"}>
                     <label>Message</label>
                     <textarea
                       cols="20"
@@ -87,8 +92,15 @@ const Contact = () => {
                     )}
                   </div>
 
-                  <button className="ui button floated positive btnSubmit">
-                    Submit
+                  <button
+                    className="ui button floated positive btnSubmit"
+                    disabled={
+                      errors.fullname || errors.email || errors.message || loading
+                        ? true
+                        : false
+                    }
+                  >
+                    {loading ? "Loading ..." : "Submit"}
                   </button>
                 </form>
               </div>

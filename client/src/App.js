@@ -6,6 +6,7 @@ import AboutPage from "./components/about"
 import WhatWeCanDo from "./components/what-we-can-do"
 import Contact from "./components/contact"
 import News from "./components/news-and-events"
+import "./App.css"
 
 class App extends Component {
   render() {

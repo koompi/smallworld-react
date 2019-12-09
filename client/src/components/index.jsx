@@ -3,6 +3,9 @@ import Footer from "./layouts/footer"
 import { Link } from "react-router-dom"
 import { Helmet } from "react-helmet"
 import axios from "axios"
+import Navbar from "./layouts/navbar"
+
+import SmallWorldMission from "../data/mission.json"
 
 function strip_html_tags(str) {
   if (str === null || str === "") return false
@@ -67,84 +70,7 @@ class Index extends Component {
               height: "54vw"
             }}
           >
-            <div>
-              <div
-                className={this.state.toggleMenu ? "phone-background-navbar" : ""}
-              >
-                <div
-                  className={
-                    this.state.toggleMenu
-                      ? "ui left demo vertical inverted labeled icon sidebar menu overlay visible mobile only slideIn"
-                      : "ui left demo vertical inverted labeled icon sidebar menu overlay visible mobile only slideOut"
-                  }
-                  style={{}}
-                >
-                  <Link to="/about-us" className="item">
-                    About
-                  </Link>
-                  <Link to="/what-we-do" className="item">
-                    Works
-                  </Link>
-                  <Link to="/news-and-events" className="item">
-                    News
-                  </Link>
-                  <Link to="/contact-us" className="item">
-                    Contact
-                  </Link>
-                </div>
-              </div>
-              <div className="hd">
-                <div className="ui secondary container menu mobile only">
-                  <div className="menu left">
-                    <Link to="/">
-                      <img
-                        src="/images/logo/sw-green.png"
-                        className="logonav"
-                        alt="SmallWorld Venture"
-                      />
-                    </Link>
-                  </div>
-                  <div className="menu right asize">
-                    <img
-                      src={
-                        this.state.toggleMenu
-                          ? "/images/close.png"
-                          : "/images/menu.svg"
-                      }
-                      className="menu-icons"
-                      height="30px"
-                      alt=""
-                      onClick={this.toggleMenuState}
-                    />
-                  </div>
-                </div>
-                <div className="ui secondary container menu mobile hidden">
-                  <div className="menu left">
-                    <Link to="/">
-                      <img
-                        src="/images/logo/sw-green.png"
-                        className="logonav"
-                        alt="SmallWorld Venture"
-                      />
-                    </Link>
-                  </div>
-                  <div className="menu right asize">
-                    <Link to="/about-us" className="item">
-                      About
-                    </Link>
-                    <Link to="/what-we-do" className="item">
-                      Works
-                    </Link>
-                    <Link to="/news-and-events" className="item">
-                      News
-                    </Link>
-                    <Link to="/contact-us" className="item">
-                      Contact
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <Navbar />
             <div className="ui container">
               <div className="bannerContent">
                 <h3>
@@ -172,88 +98,27 @@ class Index extends Component {
           </div>
           <div className="cvcolor">
             <div className="ui container margin-top">
-              <div className="ui four column doubling stackable grid">
-                <div className="column ">
-                  <center>
-                    <div className="newsDetailo">
-                      <img
-                        src="/images/blurb-1.png"
-                        className="imageIndex"
-                        alt="SmallWorld Venture"
-                      />
-                      <div className="shadowIndex">
-                        <h4>Startup Community</h4>
-                        <p>
-                          SmallWorld Ventures is committed to becoming the number one
-                          catalyst for funding and assisting startups in Cambodia.
-                        </p>
+              <div className="ui stackable four column equal height stretched grid">
+                {/* Loop SmallWorld Mission from mission.json */}
+                {SmallWorldMission.map((data) => {
+                  return (
+                    <div className="column" key={data.id}>
+                      <div className="newsDetailo">
+                        <center>
+                          <img
+                            src={data.image}
+                            className="imageIndex"
+                            alt={data.title}
+                          />
+                        </center>
+                        <div className="shadowIndex">
+                          <h4>{data.title}</h4>
+                          <p>{data.desc}</p>
+                        </div>
                       </div>
                     </div>
-                  </center>
-                </div>
-
-                <div className="column">
-                  <center>
-                    <div className="newsDetailo">
-                      <img
-                        src="/images/blurb-2.png"
-                        alt="SmallWorld Venture"
-                        className="imageIndex"
-                      />
-                      <div className="shadowIndex">
-                        <h4>Seed Equity Investments</h4>
-                        <p>
-                          Seed Equity Investments are provided to promising startup
-                          teams with projects ranging between 5,000 to 25,000 USD.
-                        </p>
-                      </div>
-                    </div>
-                  </center>
-                </div>
-                <div className="column">
-                  <center>
-                    <div className="newsDetailo">
-                      <img
-                        src="/images/blurb-3.png"
-                        className="imageIndex"
-                        alt="SmallWorld Venture"
-                      />
-                      <div className="shadowIndex">
-                        <h4>Venture Building</h4>
-                        <p>
-                          Smallworld Ventures has built an internal team of
-                          technicians engaged in research and development projects
-                          with an aim to spin off new ventures.
-                        </p>
-                        <br />
-                        <br />
-                        <br />
-                      </div>
-                    </div>
-                  </center>
-                </div>
-                <div className="column">
-                  <center>
-                    <div className="newsDetailo">
-                      <img
-                        src="/images/blurb-4.png"
-                        className="imageIndex"
-                        alt="SmallWorld Venture"
-                      />
-                      <div className="shadowIndex">
-                        <h4>Ecovillage Development </h4>
-                        <p>
-                          At our rural ecovillage project, we're building a hands-on
-                          learning, working, and living environment with a balance
-                          among the natural world, education, economics, and
-                          sustainable living practices.
-                        </p>
-                        <br />
-                        <br />
-                      </div>
-                    </div>
-                  </center>
-                </div>
+                  )
+                })}
               </div>
             </div>
           </div>

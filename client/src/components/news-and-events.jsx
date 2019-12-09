@@ -101,7 +101,7 @@ class News extends Component {
             <br /> <br />
             <center>
               <a
-                href="https://medium.com/@smallworldventure"
+                href="https://medium.com/@smallworldvc"
                 rel="noopener noreferrer"
                 target="_blank"
               >

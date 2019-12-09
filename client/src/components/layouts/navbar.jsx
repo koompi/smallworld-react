@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import { Link, NavLink } from "react-router-dom"
+import NavbarData from "../../data/navbar.json"
 
 class Navbar extends Component {
   constructor(props) {
@@ -7,6 +8,7 @@ class Navbar extends Component {
     this.state = {
       toggleMenu: false
     }
+    this.toggleMenuState = this.toggleMenuState.bind(this)
   }
 
   toggleMenuState() {
@@ -21,28 +23,33 @@ class Navbar extends Component {
     return (
       <>
         <div>
-          <div className={toggleMenu ? "phone-background-navbar" : ""}>
-            <div
-              className={
-                toggleMenu
-                  ? "ui left demo vertical inverted labeled icon sidebar menu overlay visible mobile only slideIn"
-                  : "ui left demo vertical inverted labeled icon sidebar menu overlay visible mobile only slideOut"
-              }
-              style={{}}
-            >
-              <Link to="/about-us" className="item">
-                About
-              </Link>
-              <Link to="/what-we-do" className="item">
-                Works
-              </Link>
-              <Link to="/news-and-events" className="item">
-                News
-              </Link>
-              <Link to="/contact-us" className="item">
-                Contact
-              </Link>
-            </div>
+          <dvi
+            className={toggleMenu ? "mobile_background" : ""}
+            onClick={() => {
+              this.setState({ toggleClick: false })
+            }}
+          ></dvi>
+          <div
+            className={
+              toggleMenu
+                ? "ui left demo vertical inverted labeled icon sidebar menu overlay visible mobile only slideIn"
+                : "ui left demo vertical inverted labeled icon sidebar menu overlay visible mobile only slideOut"
+            }
+          >
+            <dvi className="navbar_slider">
+              {NavbarData.map((data) => {
+                return (
+                  <NavLink
+                    to={data.link}
+                    activeClassName="item active"
+                    className="item"
+                    key={data.id}
+                  >
+                    {data.title}
+                  </NavLink>
+                )
+              })}
+            </dvi>
           </div>
           <div className="navbar-menu">
             <div className="ui secondary container menu mobile only mobile-navbar">
@@ -68,7 +75,15 @@ class Navbar extends Component {
             </div>
           </div>
         </div>
-        <div className="hd sw-navbar mobile hidden">
+
+        <div
+          className="hd sw-navbar mobile hidden"
+          style={
+            window.location.pathname === "/"
+              ? { backgroundColor: "#015e9800" }
+              : { backgroundColor: "#015e98" }
+          }
+        >
           <div className="ui secondary container menu">
             <div className="menu left">
               <NavLink to="/">
@@ -80,30 +95,18 @@ class Navbar extends Component {
               </NavLink>
             </div>
             <div className="menu right asize">
-              <NavLink to="/about-us" activeClassName="item active" className="item">
-                About
-              </NavLink>
-              <NavLink
-                to="/what-we-do"
-                activeClassName="item active"
-                className="item"
-              >
-                Works
-              </NavLink>
-              <NavLink
-                to="/news-and-events"
-                activeClassName="item active"
-                className="item"
-              >
-                News
-              </NavLink>
-              <NavLink
-                to="/contact-us"
-                activeClassName="item active"
-                className="item"
-              >
-                Contact
-              </NavLink>
+              {NavbarData.map((data) => {
+                return (
+                  <NavLink
+                    to={data.link}
+                    activeClassName="item active"
+                    className="item"
+                    key={data.id}
+                  >
+                    {data.title}
+                  </NavLink>
+                )
+              })}
             </div>
           </div>
         </div>
