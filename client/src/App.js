@@ -4,9 +4,11 @@ import Index from "./components/index"
 import AboutPage from "./components/about"
 import WhatWeCanDo from "./components/what-we-can-do"
 import Contact from "./components/contact"
+import News from "./components/news-and-events"
+import "./App.css"
 import NewsComponent from "./components/news-and-events"
 import Navbar from "./components/layouts/navbar"
-import Footer from "./components/layouts/footer"
+import Footer from "./components/layouts/footer"\
 
 function App() {
   return (

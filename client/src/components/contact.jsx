@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import { Helmet } from "react-helmet"
 import useForm from "react-hook-form"
 import Swal from "sweetalert2"
@@ -18,12 +18,18 @@ const Toast = Swal.mixin({
 })
 
 const Contact = () => {
+  const { register, handleSubmit, watch, errors, reset } = useForm()
+  const [loading, setLoading] = useState(false)
   const { register, handleSubmit, errors, reset } = useForm()
 
-  const onSubmit = (data) => {
+  const onSubmit = async (data) => {
     // console.log(data);
     // https://mail.getgrood.com/api/form
-    axios.post("http://localhost:4041/api/form", { ...data }).then(() => {
+    await setTimeout(() => {
+      setLoading(false)
+    }, 3000)
+
+    await axios.post("http://localhost:4041/api/form", { ...data }).then(() => {
       Toast.fire({
         icon: "success",
         title: "Your message has been sent."
@@ -45,8 +51,8 @@ const Contact = () => {
               <div className="column marginInformation">
                 <h2>{t("contact.inquiries")}</h2>
                 <form className="ui form" onSubmit={handleSubmit(onSubmit)}>
-                  <div className="field">
-                    <label>{t("contact.name")}</label>
+                  <div className={errors.fullname ? "field error" : "field"}>
+                    <label>Full Name</label>
                     <input
                       type="text"
                       name="fullname"
@@ -58,9 +64,8 @@ const Contact = () => {
                       </span>
                     )}
                   </div>
-
-                  <div className="field">
-                    <label>{t("contact.email")}</label>
+                  <div className={errors.fullname ? "field error" : "field"}>
+                    <label>Email</label>
                     <input
                       type="email"
                       name="email"
@@ -72,9 +77,8 @@ const Contact = () => {
                       </span>
                     )}
                   </div>
-
-                  <div className="field">
-                    <label>{t("contact.message")}</label>
+                  <div className={errors.fullname ? "field error" : "field"}>
+                    <label>Message</label>
                     <textarea
                       cols="20"
                       rows="10"
@@ -90,9 +94,15 @@ const Contact = () => {
 
                   <button
                     className="ui button floated positive btnSubmit"
+                    disabled={
+                      errors.fullname || errors.email || errors.message || loading
+                        ? true
+                        : false
+                    }
+                  >
+                    {loading ? "Loading ..." : "Submit"}
                     type="submit"
                   >
-                    {t("contact.submitBtn")}
                   </button>
                 </form>
               </div>

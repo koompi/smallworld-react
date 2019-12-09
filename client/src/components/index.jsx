@@ -2,6 +2,10 @@ import React from "react"
 import { Link } from "react-router-dom"
 import { useTranslation } from "react-i18next"
 import { Helmet } from "react-helmet"
+import axios from "axios"
+import Navbar from "./layouts/navbar"
+
+import SmallWorldMission from "../data/mission.json"
 import News from "./news-and-events"
 
 const Index = () => {
@@ -16,6 +20,72 @@ const Index = () => {
         />
       </Helmet>
       <div>
+        <Helmet>
+          <title>
+            SmallWorld Venture | Homegrown startup community based in Phnom Penh
+          </title>
+          <meta
+            name="description"
+            content="Homegrown Startup Community. We began in 2011 by providing a collaborative workspace environment for entrepreneurs, and then quickly moved forward raising investment capital to fund new startup projects."
+          />
+        </Helmet>
+        <div>
+          <div
+            className="backBanner"
+            style={{
+              backgroundImage: 'url("/images/banner.png")',
+              height: "54vw"
+            }}
+          >
+            <Navbar />
+            <div className="ui container">
+              <div className="bannerContent">
+                <h3>
+                  <span>{"<"}</span> {"Homegrown Startup Community"}{" "}
+                  <span>{"/>"}</span>
+                </h3>
+                <p className="paragraph">
+                  We began in 2011 by providing a collaborative workspace environment
+                  for entrepreneurs, and then quickly moved forward raising
+                  investment capital to fund new startup projects.
+                </p>
+                <p className="paragraph">
+                  With a variety of research and development projects in motion
+                  today, we're involved in startup venture building through community
+                  supported seed equity investments, together with rural ecovillage
+                  development and long-term land management.
+                </p>
+                <Link to="/about-us">
+                  <button className="ui basic button btnLearnMore">
+                    LEARN MORE
+                  </button>
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div className="cvcolor">
+            <div className="ui container margin-top">
+              <div className="ui stackable four column equal height stretched grid">
+                {/* Loop SmallWorld Mission from mission.json */}
+                {SmallWorldMission.map((data) => {
+                  return (
+                    <div className="column" key={data.id}>
+                      <div className="newsDetailo">
+                        <center>
+                          <img
+                            src={data.image}
+                            className="imageIndex"
+                            alt={data.title}
+                          />
+                        </center>
+                        <div className="shadowIndex">
+                          <h4>{data.title}</h4>
+                          <p>{data.desc}</p>
+                        </div>
+                      </div>
+                    </div>
+                  )
+                })}
         <div
           className="backBanner"
           style={{

@@ -1,0 +1,22 @@
+[
+  {
+    "id": 0,
+    "title": "About",
+    "link": "/about-us"
+  },
+  {
+    "id": 1,
+    "title": "Works",
+    "link": "/what-we-do"
+  },
+  {
+    "id": 2,
+    "title": "News",
+    "link": "/news-and-events"
+  },
+  {
+    "id": 3,
+    "title": "Contact",
+    "link": "/contact-us"
+  }
+]

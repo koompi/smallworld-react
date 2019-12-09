@@ -528,6 +528,9 @@ button.ui.button.right.floated.positive {
   text-transform: capitalize;
   color: #015e98 !important;
   line-height: 28px;
+  box-shadow: 0 28px 40px 0 hsla(149, 7%, 68%, 0.2);
+  padding: 10px;
+  border-radius: 0 0 10px 10px;
 }
 .newsDetailo p {
   text-align: center;
