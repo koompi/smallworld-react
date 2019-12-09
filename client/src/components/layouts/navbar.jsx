@@ -1,6 +1,8 @@
 import React, { Component } from "react"
 import { Link, NavLink } from "react-router-dom"
 import NavbarData from "../../data/navbar.json"
+import { withTranslation } from "react-i18next"
+import i18n from "../../i18n"
 
 class Navbar extends Component {
   constructor(props) {
@@ -11,15 +13,23 @@ class Navbar extends Component {
     this.toggleMenuState = this.toggleMenuState.bind(this)
   }
 
-  toggleMenuState() {
+  changeLanguage = (lng) => {
+    i18n.changeLanguage(lng)
+  }
+
+  toggleMenuState = () => {
     const { toggleMenu } = this.state
-    this.setState({
-      toggleMenu: !toggleMenu
-    })
+    this.setState({ toggleMenu: !toggleMenu })
+  }
+
+  langState = (lang) => {
+    this.changeLanguage(lang)
+    this.toggleMenuState()
   }
 
   render() {
     const { toggleMenu } = this.state
+    const { t } = this.props
     return (
       <>
         <div>
@@ -50,6 +60,64 @@ class Navbar extends Component {
                 )
               })}
             </dvi>
+        <div className="nav">
+          <div className={toggleMenu ? "phone-background-navbar" : ""}>
+            <div
+              className={
+                toggleMenu
+                  ? "ui left demo vertical inverted labeled icon sidebar menu overlay visible mobile only slideIn"
+                  : "ui left demo vertical inverted labeled icon sidebar menu overlay visible mobile only slideOut"
+              }
+            >
+              <NavLink
+                to="/about-us"
+                className="item"
+                onClick={this.toggleMenuState}
+              >
+                {t("navbar.about")}
+              </NavLink>
+              <NavLink
+                to="/what-we-do"
+                className="item"
+                onClick={this.toggleMenuState}
+              >
+                {t("navbar.works")}
+              </NavLink>
+              <NavLink
+                to="/news-and-events"
+                className="item"
+                onClick={this.toggleMenuState}
+              >
+                {t("navbar.news")}
+              </NavLink>
+              <NavLink
+                to="/contact-us"
+                className="item"
+                onClick={this.toggleMenuState}
+              >
+                {t("navbar.contact")}
+              </NavLink>
+              {/* <button
+                onClick={() => {
+                  this.langState("kh")
+                }}
+                type="button"
+                className="item"
+                alt="khmer lang"
+              >
+                Khmer
+              </button>
+              <button
+                onClick={() => {
+                  this.langState("en")
+                }}
+                type="button"
+                className="item"
+                atl="eng lang"
+              >
+                English
+              </button> */}
+            </div>
           </div>
           <div className="navbar-menu">
             <div className="ui secondary container menu mobile only mobile-navbar">
@@ -107,6 +175,44 @@ class Navbar extends Component {
                   </NavLink>
                 )
               })}
+              <NavLink to="/about-us" activeClassName="item active" className="item">
+                {t("navbar.about")}
+              </NavLink>
+              <NavLink
+                to="/what-we-do"
+                activeClassName="item active"
+                className="item"
+              >
+                {t("navbar.works")}
+              </NavLink>
+              <NavLink
+                to="/news-and-events"
+                activeClassName="item active"
+                className="item"
+              >
+                {t("navbar.news")}
+              </NavLink>
+              <NavLink
+                to="/contact-us"
+                activeClassName="item active"
+                className="item"
+              >
+                {t("navbar.contact")}
+              </NavLink>
+              {/* <button
+                onClick={() => this.changeLanguage("kh")}
+                type="button"
+                className="item"
+              >
+                Khmer
+              </button>
+              <button
+                onClick={() => this.changeLanguage("en")}
+                type="button"
+                className="item"
+              >
+                English
+              </button> */}
             </div>
           </div>
         </div>
@@ -115,4 +221,4 @@ class Navbar extends Component {
   }
 }
 
-export default Navbar
+export default withTranslation()(Navbar)

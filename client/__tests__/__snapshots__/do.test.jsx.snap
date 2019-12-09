@@ -1,0 +1,238 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`What we can do component What we can do renders without crashing 1`] = `
+<Fragment>
+  <HelmetWrapper
+    defer={true}
+    encodeSpecialCharacters={true}
+  >
+    <title>
+      whatWeCanDo.whatWeCanDoTitle
+    </title>
+    <meta
+      content="Startup Community, Seed Equity Investments, Venture Building, Research and Development, Environmental Stewardship"
+      name="description"
+    />
+  </HelmetWrapper>
+  <div>
+    <div
+      className="backAbout"
+    >
+      <br />
+      <br />
+      <div
+        className="ui container"
+      >
+        <div
+          className="ui stackable two column grid centerme"
+        >
+          <div
+            className="column nine wide"
+          >
+            <div
+              className="descTitle1"
+            >
+              <h1>
+                whatWeCanDo.startupCommunity
+              </h1>
+              <p>
+                whatWeCanDo.smallworldVision
+              </p>
+            </div>
+          </div>
+          <div
+            className="column seven wide"
+          >
+            <div
+              className="mobile"
+            >
+              <img
+                alt="SmallWorld Venture"
+                className="ui image fluid"
+                src="/images/startup-com.png"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="backAbout"
+    >
+      <div
+        className="ui container"
+      >
+        <div
+          className="ui stackable two column grid centerme"
+        >
+          <div
+            className="column seven wide"
+          >
+            <div
+              className="mobileimg"
+            >
+              <img
+                alt="SmallWorld Venture"
+                className=" imageCenter"
+                src="/images/investment.png"
+              />
+            </div>
+          </div>
+          <div
+            className="column nine wide"
+          >
+            <div
+              className="descTitle1"
+            >
+              <h1>
+                whatWeCanDo.seedEquity
+              </h1>
+              <p>
+                whatWeCanDo.seedEquityText
+              </p>
+              <p>
+                whatWeCanDo.seedFormative
+              </p>
+              <p>
+                whatWeCanDo.seedFund
+              </p>
+              <p>
+                whatWeCanDo.seedPartication
+              </p>
+            </div>
+            <div
+              className="mobileimg1"
+            >
+              <img
+                alt="SmallWorld Venture"
+                className=" imageCenter"
+                src="/images/investment.png"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="backAbout"
+    >
+      <div
+        className="ui container"
+      >
+        <div
+          className="ui stackable two column grid centerme"
+        >
+          <div
+            className="column nine wide"
+          >
+            <div
+              className="descTitle1"
+            >
+              <h1>
+                whatWeCanDo.ventureBuilding
+              </h1>
+              <p>
+                whatWeCanDo.ventureKoompi
+              </p>
+              <p>
+                whatWeCanDo.ventureProduct
+              </p>
+              <p>
+                whatWeCanDo.ventureDescProduct
+              </p>
+              <p>
+                whatWeCanDo.ventureKoompiGoal
+              </p>
+              <h1>
+                whatWeCanDo.researchDev
+              </h1>
+              <p>
+                whatWeCanDo.researchDevText
+              </p>
+              <p>
+                whatWeCanDo.researchEngagment
+              </p>
+              <p>
+                whatWeCanDo.researchFundamentals
+              </p>
+            </div>
+          </div>
+          <div
+            className="column seven wide"
+          >
+            <div
+              className="mobile"
+            >
+              <img
+                alt="SmallWorld Venture"
+                className=" imageCenter"
+                src="/images/venture-building.png"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="backAbout"
+    >
+      <div
+        className="ui container"
+      >
+        <div
+          className="ui stackable two column grid centerme"
+        >
+          <div
+            className="column seven wide"
+          >
+            <div
+              className="mobileimg"
+            >
+              <img
+                alt="SmallWorld Venture"
+                className=" imageCenter"
+                src="/images/reforest.png"
+              />
+            </div>
+          </div>
+          <div
+            className="column nine wide"
+          >
+            <div
+              className="descTitle1"
+            >
+              <h1>
+                whatWeCanDo.envStewardship
+              </h1>
+              <p>
+                whatWeCanDo.envIntro
+              </p>
+              <p>
+                whatWeCanDo.envStrive
+              </p>
+              <p>
+                whatWeCanDo.envVitamineAir
+              </p>
+              <p>
+                whatWeCanDo.envVitamineAirProject
+              </p>
+              <p>
+                whatWeCanDo.envAdditionalItems
+              </p>
+            </div>
+            <div
+              className="mobileimg1"
+            >
+              <img
+                alt="SmallWorld Venture"
+                className="imageCenter"
+                src="/images/reforest.png"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</Fragment>
+`;
