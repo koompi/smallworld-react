@@ -7,10 +7,9 @@ exports[`Contact component Contact renders 1`] = `
     encodeSpecialCharacters={true}
   >
     <title>
-      Contac Us | SmallWorld Venture
+      contact.contactTitle
     </title>
   </HelmetWrapper>
-  <Navbar />
   <div>
     <div
       className="backcontact"
@@ -25,18 +24,20 @@ exports[`Contact component Contact renders 1`] = `
             className="column marginInformation"
           >
             <h2>
-              Inquiries Request
+              contact.inquiries
             </h2>
             <form
               className="ui form"
+              onSubmit={[Function]}
             >
               <div
                 className="field"
               >
                 <label>
-                  Name
+                  contact.name
                 </label>
                 <input
+                  name="fullname"
                   type="text"
                 />
               </div>
@@ -44,9 +45,10 @@ exports[`Contact component Contact renders 1`] = `
                 className="field"
               >
                 <label>
-                  Email
+                  contact.email
                 </label>
                 <input
+                  name="email"
                   type="email"
                 />
               </div>
@@ -54,10 +56,11 @@ exports[`Contact component Contact renders 1`] = `
                 className="field"
               >
                 <label>
-                  Message
+                  contact.message
                 </label>
                 <textarea
                   cols="20"
+                  name="message"
                   rows="10"
                 />
               </div>
@@ -65,7 +68,7 @@ exports[`Contact component Contact renders 1`] = `
                 className="ui button floated positive btnSubmit"
                 type="submit"
               >
-                Submit
+                contact.submitBtn
               </button>
             </form>
           </div>
@@ -73,7 +76,7 @@ exports[`Contact component Contact renders 1`] = `
             className="column marginInformation"
           >
             <h2>
-              Our Office
+              contact.ourOffice
             </h2>
             <div
               className="ui grid"
@@ -185,13 +188,13 @@ exports[`Contact component Contact renders 1`] = `
                   className="paddingsize"
                 >
                   <h2>
-                    Trigon Startup Village
+                    contact.trigonStartup
                   </h2>
                   <p>
-                    We look forward to welcome you at any working hour. Though, most of the time there are someone at SmallWorld. There are several startups in the same building, so make sure you know who you are looking for. Otherwise, be prepare for a little adventure.
+                    contact.trigonMessage
                   </p>
                   <p>
-                    Look at the map, between the street 600, 602, and 313! We have a crazy idea. Maybe not too crazy, but we plan to nurture to be a cozy little startup village, called TK Trigon. Want to help us make it happen? Come walk around and feel it yourself.
+                    contact.locationTrigon
                   </p>
                 </div>
               </div>
@@ -216,6 +219,5 @@ exports[`Contact component Contact renders 1`] = `
       </div>
     </div>
   </div>
-  <Footer />
 </Fragment>
 `;

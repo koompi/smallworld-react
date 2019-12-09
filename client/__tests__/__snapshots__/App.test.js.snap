@@ -1,37 +1,39 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`App component App renders without crashing 1`] = `
-<BrowserRouter>
-  <Switch>
-    <Route
-      component={[Function]}
-      exact={true}
-      path="/"
-    />
-    <Route
-      component={[Function]}
-      exact={true}
-      path="/about-us"
-    />
-    <Route
-      component={[Function]}
-      exact={true}
-      path="/what-we-do"
-    />
-    <Route
-      component={[Function]}
-      exact={true}
-      path="/news-and-events"
-    />
-    <Route
-      component={[Function]}
-      exact={true}
-      path="/contact-us"
-    />
-    <Redirect
-      component={[Function]}
-      to="/"
-    />
-  </Switch>
-</BrowserRouter>
+<Suspense
+  fallback="loading"
+>
+  <BrowserRouter>
+    <withI18nextTranslation(Navbar) />
+    <Switch>
+      <Route
+        component={[Function]}
+        exact={true}
+        path="/"
+      />
+      <Route
+        component={[Function]}
+        path="/about-us"
+      />
+      <Route
+        component={[Function]}
+        path="/what-we-do"
+      />
+      <Route
+        component={[Function]}
+        path="/news-and-events"
+      />
+      <Route
+        component={[Function]}
+        path="/contact-us"
+      />
+      <Redirect
+        component={[Function]}
+        to="/"
+      />
+    </Switch>
+    <Footer />
+  </BrowserRouter>
+</Suspense>
 `;

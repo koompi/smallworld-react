@@ -1,5 +1,7 @@
 import React, { Component } from "react"
 import { Link, NavLink } from "react-router-dom"
+import { withTranslation } from "react-i18next"
+import i18n from "../../i18n"
 
 class Navbar extends Component {
   constructor(props) {
@@ -7,20 +9,29 @@ class Navbar extends Component {
     this.state = {
       toggleMenu: false
     }
+    this.toggleMenuState = this.toggleMenuState.bind(this)
   }
 
-  toggleMenuState() {
+  changeLanguage = (lng) => {
+    i18n.changeLanguage(lng)
+  }
+
+  toggleMenuState = () => {
     const { toggleMenu } = this.state
-    this.setState({
-      toggleMenu: !toggleMenu
-    })
+    this.setState({ toggleMenu: !toggleMenu })
+  }
+
+  langState = (lang) => {
+    this.changeLanguage(lang)
+    this.toggleMenuState()
   }
 
   render() {
     const { toggleMenu } = this.state
+    const { t } = this.props
     return (
       <>
-        <div>
+        <div className="nav">
           <div className={toggleMenu ? "phone-background-navbar" : ""}>
             <div
               className={
@@ -28,20 +39,55 @@ class Navbar extends Component {
                   ? "ui left demo vertical inverted labeled icon sidebar menu overlay visible mobile only slideIn"
                   : "ui left demo vertical inverted labeled icon sidebar menu overlay visible mobile only slideOut"
               }
-              style={{}}
             >
-              <Link to="/about-us" className="item">
-                About
-              </Link>
-              <Link to="/what-we-do" className="item">
-                Works
-              </Link>
-              <Link to="/news-and-events" className="item">
-                News
-              </Link>
-              <Link to="/contact-us" className="item">
-                Contact
-              </Link>
+              <NavLink
+                to="/about-us"
+                className="item"
+                onClick={this.toggleMenuState}
+              >
+                {t("navbar.about")}
+              </NavLink>
+              <NavLink
+                to="/what-we-do"
+                className="item"
+                onClick={this.toggleMenuState}
+              >
+                {t("navbar.works")}
+              </NavLink>
+              <NavLink
+                to="/news-and-events"
+                className="item"
+                onClick={this.toggleMenuState}
+              >
+                {t("navbar.news")}
+              </NavLink>
+              <NavLink
+                to="/contact-us"
+                className="item"
+                onClick={this.toggleMenuState}
+              >
+                {t("navbar.contact")}
+              </NavLink>
+              {/* <button
+                onClick={() => {
+                  this.langState("kh")
+                }}
+                type="button"
+                className="item"
+                alt="khmer lang"
+              >
+                Khmer
+              </button>
+              <button
+                onClick={() => {
+                  this.langState("en")
+                }}
+                type="button"
+                className="item"
+                atl="eng lang"
+              >
+                English
+              </button> */}
             </div>
           </div>
           <div className="navbar-menu">
@@ -81,29 +127,43 @@ class Navbar extends Component {
             </div>
             <div className="menu right asize">
               <NavLink to="/about-us" activeClassName="item active" className="item">
-                About
+                {t("navbar.about")}
               </NavLink>
               <NavLink
                 to="/what-we-do"
                 activeClassName="item active"
                 className="item"
               >
-                Works
+                {t("navbar.works")}
               </NavLink>
               <NavLink
                 to="/news-and-events"
                 activeClassName="item active"
                 className="item"
               >
-                News
+                {t("navbar.news")}
               </NavLink>
               <NavLink
                 to="/contact-us"
                 activeClassName="item active"
                 className="item"
               >
-                Contact
+                {t("navbar.contact")}
               </NavLink>
+              {/* <button
+                onClick={() => this.changeLanguage("kh")}
+                type="button"
+                className="item"
+              >
+                Khmer
+              </button>
+              <button
+                onClick={() => this.changeLanguage("en")}
+                type="button"
+                className="item"
+              >
+                English
+              </button> */}
             </div>
           </div>
         </div>
@@ -112,4 +172,4 @@ class Navbar extends Component {
   }
 }
 
-export default Navbar
+export default withTranslation()(Navbar)
