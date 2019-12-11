@@ -408,7 +408,7 @@ app.post("/api/form", (req, res) => {
 
   // Step 2
   const mailOptions = {
-    from: "koompi.com@gmail.com", // sender address
+    from: "smallworldventure@gmail.com", // sender address
     to: `${req.body.email}`, // list of receivers
     subject: "Congratulations", // Subject line
     html: output // html body
@@ -423,5 +423,7 @@ app.post("/api/form", (req, res) => {
 const port = 5000;
 
 app.listen(port, () => {
+  console.log(process.env.PASSWORD);
+
   console.log(`App listening on port ${port}!`);
 });
