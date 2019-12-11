@@ -6,9 +6,7 @@ import WhatWeCanDo from "./components/what-we-can-do"
 import Contact from "./components/contact"
 import News from "./components/news-and-events"
 import "./App.css"
-import NewsComponent from "./components/news-and-events"
-import Navbar from "./components/layouts/navbar"
-import Footer from "./components/layouts/footer"\
+import Realty from "./components/realty"
 
 function App() {
   return (
@@ -17,10 +15,11 @@ function App() {
         <Navbar />
         <Switch>
           <Route exact path="/" component={Index} />
-          <Route path="/about-us" component={AboutPage} />
-          <Route path="/what-we-do" component={WhatWeCanDo} />
-          <Route path="/news-and-events" component={NewsComponent} />
-          <Route path="/contact-us" component={Contact} />
+          <Route exact path="/about-us" component={AboutPage} />
+          <Route exact path="/what-we-do" component={WhatWeCanDo} />
+          <Route exact path="/news-and-events" component={News} />
+          <Route exact path="/contact-us" component={Contact} />
+          <Route exact path="/sw-realty" component={Realty} />
           <Redirect to="/" component={Index} />
         </Switch>
         <Footer />

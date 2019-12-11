@@ -33,12 +33,12 @@ class Navbar extends Component {
     return (
       <>
         <div>
-          <dvi
+          <div
             className={toggleMenu ? "mobile_background" : ""}
             onClick={() => {
               this.setState({ toggleClick: false })
             }}
-          ></dvi>
+          ></div>
           <div
             className={
               toggleMenu
@@ -46,7 +46,7 @@ class Navbar extends Component {
                 : "ui left demo vertical inverted labeled icon sidebar menu overlay visible mobile only slideOut"
             }
           >
-            <dvi className="navbar_slider">
+            <div className="navbar_slider">
               {NavbarData.map((data) => {
                 return (
                   <NavLink
@@ -59,64 +59,6 @@ class Navbar extends Component {
                   </NavLink>
                 )
               })}
-            </dvi>
-        <div className="nav">
-          <div className={toggleMenu ? "phone-background-navbar" : ""}>
-            <div
-              className={
-                toggleMenu
-                  ? "ui left demo vertical inverted labeled icon sidebar menu overlay visible mobile only slideIn"
-                  : "ui left demo vertical inverted labeled icon sidebar menu overlay visible mobile only slideOut"
-              }
-            >
-              <NavLink
-                to="/about-us"
-                className="item"
-                onClick={this.toggleMenuState}
-              >
-                {t("navbar.about")}
-              </NavLink>
-              <NavLink
-                to="/what-we-do"
-                className="item"
-                onClick={this.toggleMenuState}
-              >
-                {t("navbar.works")}
-              </NavLink>
-              <NavLink
-                to="/news-and-events"
-                className="item"
-                onClick={this.toggleMenuState}
-              >
-                {t("navbar.news")}
-              </NavLink>
-              <NavLink
-                to="/contact-us"
-                className="item"
-                onClick={this.toggleMenuState}
-              >
-                {t("navbar.contact")}
-              </NavLink>
-              {/* <button
-                onClick={() => {
-                  this.langState("kh")
-                }}
-                type="button"
-                className="item"
-                alt="khmer lang"
-              >
-                Khmer
-              </button>
-              <button
-                onClick={() => {
-                  this.langState("en")
-                }}
-                type="button"
-                className="item"
-                atl="eng lang"
-              >
-                English
-              </button> */}
             </div>
           </div>
           <div className="navbar-menu">

@@ -51,7 +51,7 @@ p {
 .cvcolor {
   background-color: whitesmoke;
 }
-.cvcolor .container{
+.cvcolor .container {
   width: 70% !important;
 }
 .backAbout a {
@@ -230,7 +230,7 @@ p {
   padding-bottom: 3%;
   color: #959494;
 }
-.investorfooter h1{
+.investorfooter h1 {
   padding: 40px 0px 20px 0;
   margin: 0;
   font-size: 28px;
@@ -296,7 +296,7 @@ p {
   color: #015e98;
   padding: 0px;
 }
-.descTitle1 h1{
+.descTitle1 h1 {
   font-weight: 600;
   font-size: 26px;
   text-transform: uppercase;
@@ -347,10 +347,10 @@ button.ui.button.right.floated.positive {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-.backMember h3{
+.backMember h3 {
   color: #015e98;
-    font-weight: 600;
-    letter-spacing: 1px;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 .backMember span {
   color: #919090;
@@ -361,7 +361,7 @@ button.ui.button.right.floated.positive {
 .backMember p {
   padding-bottom: 30px;
 }
-.member_p{
+.member_p {
   width: 55%;
 }
 .teams {
@@ -528,6 +528,9 @@ button.ui.button.right.floated.positive {
   text-transform: capitalize;
   color: #015e98 !important;
   line-height: 28px;
+  box-shadow: 0 28px 40px 0 hsla(149, 7%, 68%, 0.2);
+  padding: 10px;
+  border-radius: 0 0 10px 10px;
 }
 .newsDetailo p {
   text-align: center;
@@ -593,7 +596,7 @@ button.ui.button.right.floated.positive {
 p {
   font-size: 18px !important;
 }
-.backgroundEvent p{
+.backgroundEvent p {
   color: #616161;
   font-size: 16px !important;
 }
@@ -673,6 +676,10 @@ img.imgfooter {
 .contactIcon {
   height: 30px !important;
   width: 30px !important;
+}
+
+.ui.text-danger {
+  color: red;
 }
 
 @media only screen and (max-width: 1920px) {
@@ -882,6 +889,9 @@ img.imgfooter {
   }
   .descTitle1 h1 {
     margin-top: 0px;
+  }
+  .cvcolor .container {
+    width: 100% !important;
   }
 }
 
