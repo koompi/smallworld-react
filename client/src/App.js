@@ -1,5 +1,4 @@
-/* eslint-disable react/prefer-stateless-function */
-import React, { Component } from "react"
+import React, { Suspense } from "react"
 import { BrowserRouter as Router, Switch, Redirect, Route } from "react-router-dom"
 import Index from "./components/index"
 import AboutPage from "./components/about"
@@ -9,10 +8,11 @@ import News from "./components/news-and-events"
 import "./App.css"
 import Realty from "./components/realty"
 
-class App extends Component {
-  render() {
-    return (
+function App() {
+  return (
+    <Suspense fallback="loading">
       <Router>
+        <Navbar />
         <Switch>
           <Route exact path="/" component={Index} />
           <Route exact path="/about-us" component={AboutPage} />
@@ -22,9 +22,10 @@ class App extends Component {
           <Route exact path="/sw-realty" component={Realty} />
           <Redirect to="/" component={Index} />
         </Switch>
+        <Footer />
       </Router>
-    )
-  }
+    </Suspense>
+  )
 }
 
 export default App

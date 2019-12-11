@@ -1,0 +1,223 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Contact component Contact renders 1`] = `
+<Fragment>
+  <HelmetWrapper
+    defer={true}
+    encodeSpecialCharacters={true}
+  >
+    <title>
+      contact.contactTitle
+    </title>
+  </HelmetWrapper>
+  <div>
+    <div
+      className="backcontact"
+    >
+      <div
+        className="ui container"
+      >
+        <div
+          className="ui stackable two column grid contact"
+        >
+          <div
+            className="column marginInformation"
+          >
+            <h2>
+              contact.inquiries
+            </h2>
+            <form
+              className="ui form"
+              onSubmit={[Function]}
+            >
+              <div
+                className="field"
+              >
+                <label>
+                  contact.name
+                </label>
+                <input
+                  name="fullname"
+                  type="text"
+                />
+              </div>
+              <div
+                className="field"
+              >
+                <label>
+                  contact.email
+                </label>
+                <input
+                  name="email"
+                  type="email"
+                />
+              </div>
+              <div
+                className="field"
+              >
+                <label>
+                  contact.message
+                </label>
+                <textarea
+                  cols="20"
+                  name="message"
+                  rows="10"
+                />
+              </div>
+              <button
+                className="ui button floated positive btnSubmit"
+                type="submit"
+              >
+                contact.submitBtn
+              </button>
+            </form>
+          </div>
+          <div
+            className="column marginInformation"
+          >
+            <h2>
+              contact.ourOffice
+            </h2>
+            <div
+              className="ui grid"
+            >
+              <div
+                className="two wide column"
+              >
+                <center>
+                  <img
+                    alt="Address"
+                    className="ui image fluid"
+                    src="/images/socialMedia/address.png"
+                  />
+                </center>
+              </div>
+              <div
+                className="fourteen wide column"
+              >
+                <span
+                  className="contactFontSize"
+                >
+                  #92 E1K, St.19m Doun Penh, Phnom Penh, Cambodia
+                </span>
+              </div>
+            </div>
+            <div
+              className="ui grid"
+            >
+              <div
+                className="two wide column"
+              >
+                <center>
+                  <img
+                    alt="Address"
+                    className="ui image fluid contactIcon"
+                    src="/images/socialMedia/email.png"
+                  />
+                </center>
+              </div>
+              <div
+                className="twelve wide column"
+              >
+                <span
+                  className="contactFontSize"
+                >
+                  smallworldventure@gmail.com
+                </span>
+              </div>
+            </div>
+            <div
+              className="ui grid"
+            >
+              <div
+                className="two wide column"
+              >
+                <center>
+                  <img
+                    alt="Email"
+                    className="ui image fluid contactIcon"
+                    src="/images/socialMedia/telegram.png"
+                  />
+                </center>
+              </div>
+              <div
+                className="twelve wide column"
+              >
+                <span
+                  className="contactFontSize"
+                >
+                  <a
+                    href="https://t.me/smallworldventure"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                     
+                    <p
+                      className="contactFontSize"
+                    >
+                      t.me/smallworldventure
+                    </p>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div
+        className="mapsize"
+      >
+        <div
+          className="ui stackable two column grid"
+        >
+          <div
+            className="column backFineus"
+          >
+            <div
+              className="ui stackable two column grid"
+            >
+              <div
+                className="column"
+              />
+              <div
+                className="column"
+              >
+                <div
+                  className="paddingsize"
+                >
+                  <h2>
+                    contact.trigonStartup
+                  </h2>
+                  <p>
+                    contact.trigonMessage
+                  </p>
+                  <p>
+                    contact.locationTrigon
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="column mapone"
+          >
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.6815969291333!2d104.89086411397015!3d11.574668047118776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31095176305bf04b%3A0x5029dc78a50975a0!2sSmallWorld+Venture!5e0!3m2!1skm!2skh!4v1549694899483"
+              style={
+                Object {
+                  "border": "none",
+                  "height": "400px",
+                  "width": "100%",
+                }
+              }
+              title="SmallWorld Venture Map"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</Fragment>
+`;

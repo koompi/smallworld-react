@@ -1,7 +1,6 @@
 import React from "react"
 import { Helmet } from "react-helmet"
-import Navbar from "./layouts/navbar"
-import Footer from "./layouts/footer"
+import { useTranslation } from "react-i18next"
 
 // data
 import Member from "../data/member.json"
@@ -9,38 +8,25 @@ import Partner from "../data/partner.json"
 import Portfolio from "../data/portfolio.json"
 
 const AboutPage = () => {
+  const { t } = useTranslation()
   return (
     <>
       <Helmet>
-        <title>About Us</title>
+        <title>{t("about.aboutTitle")}</title>
         <meta
           name="description"
           content="Founded in 2011 as SmallWorld Cambodia, we created a shared professional workspace where progressive young business minds could explore and pursue their aspirations while transforming ideas into reality."
         />
       </Helmet>
-      <Navbar />
       <div>
         <div className="aboutsmall">
           <div className="ui container">
             <div className="ui stackable two column grid centerme">
               <div className="column">
-                <h1>What is SmallWorld?</h1>
-                <p>
-                  Founded in 2011 as SmallWorld Cambodia, we created a shared
-                  professional workspace where progressive young business minds could
-                  explore and pursue their aspirations while transforming ideas into
-                  reality.
-                </p>
-                <p>
-                  After five years of steady growth, SmallWorld Cambodia reorganized
-                  into SmallWorld Ventures to focus on venture building, information
-                  technologies, and the environment.
-                </p>
-                <p>
-                  Through equity investment partnerships, we're building a land-based
-                  technical, business, and academic community based on natural
-                  philosophy and ecologically sensitive practices.
-                </p>
+                <h1>{t("about.whatIsSmallworld")}</h1>
+                <p>{t("about.founded")}</p>
+                <p>{t("about.fiveYears")}</p>
+                <p>{t("about.equityInvestment")}</p>
               </div>
               <div className="column mobile hidden">
                 <div className="mobile">
@@ -62,18 +48,14 @@ const AboutPage = () => {
                   <img src="/images/banner-4.png" alt="SmallWorld Venture" />
                 </div>
                 <div className="descTitle">
-                  <h1>Venture Building</h1>
-                  <p>Add logo of startup, such as KOOMPI, Grood, Zeetomic</p>
+                  <h1>{t("about.ventureBuilding")}</h1>
+                  <p>{t("about.logoStartup")}</p>
                 </div>
               </div>
               <div className="column">
                 <div className="descTitle1">
-                  <h1>Portfolios</h1>
-                  <p>
-                    We began experimenting with equity investment partnerships in
-                    2013, and since then we've listed a few startup teams we're proud
-                    to be partnered with from their inception.
-                  </p>
+                  <h1>{t("about.portfolios")}</h1>
+                  <p>{t("about.experimenting")}</p>
                   <div className="ui three column grid">
                     {Portfolio.map((res) => {
                       return (
@@ -104,11 +86,8 @@ const AboutPage = () => {
         <div className="backMember">
           <div className="ui container">
             <center>
-              <h1>Board of Directors</h1>
-              <p className="member_p">
-                We're honored to have courageous and insightful business and
-                community leaders to serve on our Board of Directors.
-              </p>
+              <h1>{t("about.boardDirectors")}</h1>
+              <p className="member_p">{t("about.directorIntroMessage")}</p>
               <div className="ui stackable five column grid">
                 {Member.map((data) => {
                   return (
@@ -132,11 +111,8 @@ const AboutPage = () => {
         <div className="investorfooter">
           <div className="ui container">
             <center>
-              <h1>Strategic Partners</h1>
-              <p className="member_p">
-                We're especially pleased to have built strategic partnerships with
-                forward thinking leaders in the business world.
-              </p>
+              <h1>{t("about.strategicPartners")}</h1>
+              <p className="member_p">{t("about.strategicPartnersMsg")}</p>
               <div className="logome">
                 <div className="ui three column grid">
                   {Partner.map((data) => {
@@ -158,7 +134,6 @@ const AboutPage = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   )
 }

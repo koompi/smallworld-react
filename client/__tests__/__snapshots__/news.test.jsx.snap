@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`News component News renders without crashing 1`] = `
+<News
+  i18n={Object {}}
+  t={[Function]}
+  tReady={false}
+/>
+`;
