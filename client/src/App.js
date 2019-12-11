@@ -7,6 +7,7 @@ import WhatWeCanDo from "./components/what-we-can-do"
 import Contact from "./components/contact"
 import News from "./components/news-and-events"
 import "./App.css"
+import Realty from "./components/realty"
 
 class App extends Component {
   render() {
@@ -18,6 +19,7 @@ class App extends Component {
           <Route exact path="/what-we-do" component={WhatWeCanDo} />
           <Route exact path="/news-and-events" component={News} />
           <Route exact path="/contact-us" component={Contact} />
+          <Route exact path="/sw-realty" component={Realty} />
           <Redirect to="/" component={Index} />
         </Switch>
       </Router>

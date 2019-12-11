@@ -29,12 +29,14 @@ const Contact = () => {
       setLoading(false)
     }, 3000)
 
-    await axios.post("http://localhost:4041/api/form", { ...data }).then(() => {
-      Toast.fire({
-        icon: "success",
-        title: "Your message has been sent."
+    await axios
+      .post("https://mail.smallworldventure.com/api/form", { ...data })
+      .then(() => {
+        Toast.fire({
+          icon: "success",
+          title: "Your message has been sent."
+        })
       })
-    })
     reset()
   }
 
@@ -65,7 +67,7 @@ const Contact = () => {
                     )}
                   </div>
 
-                  <div className={errors.fullname ? "field error" : "field"}>
+                  <div className={errors.email ? "field error" : "field"}>
                     <label>Email</label>
                     <input
                       type="email"
@@ -77,7 +79,7 @@ const Contact = () => {
                     )}
                   </div>
 
-                  <div className={errors.fullname ? "field error" : "field"}>
+                  <div className={errors.message ? "field error" : "field"}>
                     <label>Message</label>
                     <textarea
                       cols="20"
@@ -118,7 +120,13 @@ const Contact = () => {
                   </div>
                   <div className="fourteen wide column">
                     <span className="contactFontSize">
-                      #92 E1K, St.19m Doun Penh, Phnom Penh, Cambodia
+                      <a
+                        href="https://goo.gl/maps/9qBKccPdT81iKQYa9"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        #92 E1K, St.19m Doun Penh, Phnom Penh, Cambodia
+                      </a>
                     </span>
                   </div>
                 </div>
@@ -134,7 +142,13 @@ const Contact = () => {
                   </div>
                   <div className="twelve wide column">
                     <span className="contactFontSize">
-                      smallworldventure@gmail.com
+                      <a
+                        href="mailto:smallworldventure@gmail.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        smallworldventure@gmail.com
+                      </a>
                     </span>
                   </div>
                 </div>

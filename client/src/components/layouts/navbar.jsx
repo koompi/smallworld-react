@@ -23,12 +23,12 @@ class Navbar extends Component {
     return (
       <>
         <div>
-          <dvi
+          <div
             className={toggleMenu ? "mobile_background" : ""}
             onClick={() => {
               this.setState({ toggleClick: false })
             }}
-          ></dvi>
+          ></div>
           <div
             className={
               toggleMenu
@@ -36,7 +36,7 @@ class Navbar extends Component {
                 : "ui left demo vertical inverted labeled icon sidebar menu overlay visible mobile only slideOut"
             }
           >
-            <dvi className="navbar_slider">
+            <div className="navbar_slider">
               {NavbarData.map((data) => {
                 return (
                   <NavLink
@@ -49,7 +49,7 @@ class Navbar extends Component {
                   </NavLink>
                 )
               })}
-            </dvi>
+            </div>
           </div>
           <div className="navbar-menu">
             <div className="ui secondary container menu mobile only mobile-navbar">
