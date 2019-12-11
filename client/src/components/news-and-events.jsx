@@ -1,7 +1,8 @@
 import React, { Component } from "react"
 import axios from "axios"
 import { Helmet } from "react-helmet"
-import { withTranslation } from "react-i18next"
+import Footer from "./layouts/footer"
+import Navbar from "./layouts/navbar"
 
 function stripHtmlTags(str) {
   if (str === null || str === "") return false
@@ -38,18 +39,18 @@ class News extends Component {
 
   render() {
     const { smallworld, koompi } = this.state
-    const { t } = this.props
     return (
       <div>
         <Helmet>
-          <title>{t("news.newsAndEvents")}</title>
+          <title>News and Events</title>
           <meta name="description" content="Community Update, KOOMPI News" />
         </Helmet>
         <div>
+          <Navbar />
           <br />
           <br />
           <div className="ui container margin-buttons">
-            <h2 className="newsAndEvent">{t("news.communityUpdate")}</h2>
+            <h2 className="newsAndEvent">Community Update</h2>
             <div className="ui stackable three column equal height stretched grid">
               {smallworld.slice(0, 6).map((data) => {
                 return (
@@ -108,13 +109,13 @@ class News extends Component {
                   className="ui button floated positive btnSubmit"
                   type="submit"
                 >
-                  {t("news.loadMoreBtn")}
+                  Load More
                 </button>
               </a>
             </center>
           </div>
           <div className="ui container margin-buttons">
-            <h2 className="newsAndEvent">{t("news.koompiNews")}</h2>
+            <h2 className="newsAndEvent">KOOMPI News</h2>
             <div className="ui stackable three column equal height stretched grid">
               {koompi.slice(0, 6).map((data) => {
                 return (
@@ -156,15 +157,16 @@ class News extends Component {
                   className="ui button floated positive btnSubmit"
                   type="submit"
                 >
-                  {t("news.loadMoreBtn")}
+                  Load More
                 </button>
               </a>
             </center>
           </div>
         </div>
+        <Footer />
       </div>
     )
   }
 }
 
-export default withTranslation()(News)
+export default News

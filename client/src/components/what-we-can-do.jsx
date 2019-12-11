@@ -1,18 +1,19 @@
 import React from "react"
 import { Helmet } from "react-helmet"
-import { useTranslation } from "react-i18next"
+import Navbar from "./layouts/navbar"
+import Footer from "./layouts/footer"
 
 const WhatWeCanDo = () => {
-  const { t } = useTranslation()
   return (
     <>
       <Helmet>
-        <title>{t("whatWeCanDo.whatWeCanDoTitle")}</title>
+        <title>What We Do | SmallWorld Venture</title>
         <meta
           name="description"
           content="Startup Community, Seed Equity Investments, Venture Building, Research and Development, Environmental Stewardship"
         />
       </Helmet>
+      <Navbar />
       <div>
         <div className="backAbout">
           <br />
@@ -21,8 +22,14 @@ const WhatWeCanDo = () => {
             <div className="ui stackable two column grid centerme">
               <div className="column nine wide">
                 <div className="descTitle1">
-                  <h1>{t("whatWeCanDo.startupCommunity")}</h1>
-                  <p>{t("whatWeCanDo.smallworldVision")}</p>
+                  <h1>Startup Community</h1>
+                  <p>
+                    Since 2011, SmallWorld has remained focused on their vision of
+                    building a vibrant startup community in Phnom Penh through
+                    partnering with other area workspace groups to offer greater
+                    value and accessibility to early stage startup teams and
+                    entrepreneurs.
+                  </p>
                 </div>
               </div>
               <div className="column seven wide">
@@ -51,11 +58,22 @@ const WhatWeCanDo = () => {
               </div>
               <div className="column nine wide">
                 <div className="descTitle1">
-                  <h1>{t("whatWeCanDo.seedEquity")}</h1>
-                  <p>{t("whatWeCanDo.seedEquityText")}</p>
-                  <p>{t("whatWeCanDo.seedFormative")}</p>
-                  <p>{t("whatWeCanDo.seedFund")}</p>
-                  <p>{t("whatWeCanDo.seedPartication")}</p>
+                  <h1>Seed Equity Investments</h1>
+                  <p>
+                    Seed Equity Investments are used to form equity investment
+                    partnerships which serve as the foundation for building a strong
+                    startup community. <br />
+                    <br /> During our formative years we&aposve gained insightful
+                    experience by working with dozens of innovative startups and we
+                    now provide Seed Equity Investments for five new startup teams
+                    each year. <br />
+                    <br /> With a funding range between 5,000 to 25,000 USD per team,
+                    our Seed Equity Investments are not loans, but equity based
+                    investments. <br />
+                    <br /> Local co-investor equity participation is encouraged and
+                    generated through seminars and presentations within the greater
+                    Phnom Penh business community.
+                  </p>
                 </div>
                 <div className="mobileimg1">
                   <img
@@ -73,15 +91,37 @@ const WhatWeCanDo = () => {
             <div className="ui stackable two column grid centerme">
               <div className="column nine wide">
                 <div className="descTitle1">
-                  <h1>{t("whatWeCanDo.ventureBuilding")}</h1>
-                  <p>{t("whatWeCanDo.ventureKoompi")}</p>
-                  <p>{t("whatWeCanDo.ventureProduct")}</p>
-                  <p>{t("whatWeCanDo.ventureDescProduct")}</p>
-                  <p>{t("whatWeCanDo.ventureKoompiGoal")}</p>
-                  <h1>{t("whatWeCanDo.researchDev")}</h1>
-                  <p>{t("whatWeCanDo.researchDevText")}</p>
-                  <p>{t("whatWeCanDo.researchEngagment")}</p>
-                  <p>{t("whatWeCanDo.researchFundamentals")}</p>
+                  <h1>Venture Building</h1>
+                  <p>
+                    Our branded KOOMPI system is one among several exciting ventures
+                    in our portfolio. <br /> <br />
+                    We&aposve produced a practical, affordable, and effective
+                    entry-level notebook designed for future engineers, inventors,
+                    organizers, developers, and freethinkers. <br />
+                    <br />
+                    The KOOMPI notebook computer is a slim, elegant, high-end,
+                    portable, personal productivity environment designed to perform
+                    well at work, school, or with managing any small business. <br />
+                    <br />
+                    Powering the KOOMPI notebook is KOSMOS, which is our own version
+                    of the popular open-source Linux operating system, with KramaOS
+                    specifically tailored for the Cambodian marketplace.
+                  </p>
+                  <h1>Research and Development</h1>
+                  <p>
+                    The cornerstone of SmallWorld Ventures is to promote Venture
+                    Building with a key focus on Research and Development (R&D).{" "}
+                    <br />
+                    <br />
+                    We&aposre engaged in both hardware and software R&D projects
+                    related to decentralized peer-to-peer applications, tokenization,
+                    robotics, artificial intelligence, and automation. <br />
+                    <br />
+                    Beyond hardware and software, we&aposre building an all natural
+                    outdoor learning, living, work, and play environment using
+                    industrial hemp and bamboo design as the fundamental basis for
+                    production.
+                  </p>
                 </div>
               </div>
               <div className="column seven wide">
@@ -110,12 +150,33 @@ const WhatWeCanDo = () => {
               </div>
               <div className="column nine wide">
                 <div className="descTitle1">
-                  <h1>{t("whatWeCanDo.envStewardship")}</h1>
-                  <p>{t("whatWeCanDo.envIntro")}</p>
-                  <p>{t("whatWeCanDo.envStrive")}</p>
-                  <p>{t("whatWeCanDo.envVitamineAir")}</p>
-                  <p>{t("whatWeCanDo.envVitamineAirProject")}</p>
-                  <p>{t("whatWeCanDo.envAdditionalItems")}</p>
+                  <h1>Environmental Stewardship</h1>
+                  <p>
+                    Environmental stewardship means the responsible use and
+                    protection of our natural resources through conservation and
+                    sustainable practice. <br />
+                    <br />
+                    We strive to be aware and knowledgeable of the natural world
+                    around us and to do as little as possible to negatively impact
+                    that world.
+                    <br />
+                    <br />
+                    VitaminAir is our planned ecovillage project located on 100+
+                    hectares of rural land 100 kilometers east of Phnom Penh beneath
+                    Phnom Pich Nil near the base of the Dâmrei Mountains.
+                    <br />
+                    <br />
+                    At our VitaminAir project and the surrounding protected areas, we
+                    are directly engaged in small scale agriculture and
+                    reforestation, along with nature and wildlife preservation
+                    programs.
+                    <br />
+                    <br />
+                    In addition, we are creating a hands-on learning, working and
+                    living environment with an appropriate balance among economic
+                    opportunity, environmental protection, and sustainable living
+                    practices.
+                  </p>
                 </div>
                 <div className="mobileimg1">
                   <img
@@ -129,8 +190,8 @@ const WhatWeCanDo = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   )
 }
-
 export default WhatWeCanDo
