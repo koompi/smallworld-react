@@ -10,7 +10,7 @@ import Realty from "./components/realty"
 
 function App() {
   return (
-    <Suspense fallback="loading">
+    <Suspense fallback="Loading ...">
       <Router>
         <Switch>
           <Route exact path="/" component={Index} />
