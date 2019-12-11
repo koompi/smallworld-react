@@ -347,18 +347,14 @@ app.post("/api/form", (req, res) => {
                           >
                             <tr>
                               <td>
-                                <b><h2>The Product Information</h2></b>
-                                <p>
-                                    Thank you for your order with KOOMPI.
-                                </p>
-                                <p>Your pre-order details are shown below for your reference:</p>
+                                <b><h4>Message Recieved From ${request.fullname}</h4></b>
+                                <p>You have recieved the message. Someone has reaching out!</p>
                                 <p>Name: <b>${request.fullname}</b></p>
                                 <p>Email: <b>${request.email}</b></p>
                                 <p>Message: <b>${request.message}</b></p>
                                 <br/>
-                                <p>Our team will contact you soon!</p>
-                                <p>Thanks</p>
-                                <p>Love, KOOMPI TEAM</p>
+                                <p>They waiting for your response.</p>
+                                <p>Love, SmallWorld</p>
                               </td>
                             </tr>
                           </table>
@@ -409,8 +405,8 @@ app.post("/api/form", (req, res) => {
   // Step 2
   const mailOptions = {
     from: "smallworldventure@gmail.com", // sender address
-    to: `${req.body.email}`, // list of receivers
-    subject: "Congratulations", // Subject line
+    to: `smallworldventure@gmail.com, rithy@procambodia.com`, // list of receivers
+    subject: "New email from SmallWorld", // Subject line
     html: output // html body
   };
   // Step 3
@@ -420,7 +416,7 @@ app.post("/api/form", (req, res) => {
   });
 });
 
-const port = 5000;
+const port = 5505;
 
 app.listen(port, () => {
   console.log(process.env.PASSWORD);

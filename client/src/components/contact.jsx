@@ -20,21 +20,22 @@ const Toast = Swal.mixin({
 
 const Contact = () => {
   const { register, handleSubmit, watch, errors, reset } = useForm()
-  const [loading, setLoading] = useState(false)
+  const [subLoading, setSubLoading] = useState(false)
 
   const onSubmit = async (data) => {
     // console.log(data);
-    // https://mail.getgrood.com/api/form
+    // https://mail.smallworldventure.com/api/form
+    await setSubLoading(true)
     await setTimeout(() => {
-      setLoading(false)
+      setSubLoading(false)
     }, 3000)
 
-    await axios
+    axios
       .post("https://mail.smallworldventure.com/api/form", { ...data })
       .then(() => {
         Toast.fire({
           icon: "success",
-          title: "Your message has been sent."
+          title: "We have recieved your message. Thank you for reaching out!"
         })
       })
     reset()
@@ -97,12 +98,12 @@ const Contact = () => {
                   <button
                     className="ui button floated positive btnSubmit"
                     disabled={
-                      errors.fullname || errors.email || errors.message || loading
+                      errors.fullname || errors.email || errors.message || subLoading
                         ? true
                         : false
                     }
                   >
-                    {loading ? "Loading ..." : "Submit"}
+                    {subLoading ? "Loading ..." : "Submit"}
                   </button>
                 </form>
               </div>
@@ -187,20 +188,18 @@ const Contact = () => {
                   <div className="column" />
                   <div className="column">
                     <div className="paddingsize">
-                      <h2>Trigon Startup Village</h2>
+                      <h2>SmallWorld</h2>
                       <p>
                         We look forward to welcome you at any working hour. Though,
                         most of the time there are someone at SmallWorld. There are
                         several startups in the same building, so make sure you know
-                        who you are looking for. Otherwise, be prepare for a little
-                        adventure.
+                        who you are looking for. We will surely direct you to the
+                        right person!
                       </p>
                       <p>
-                        Look at the map, between the street 600, 602, and 313! We
-                        have a crazy idea. Maybe not too crazy, but we plan to
-                        nurture to be a cozy little startup village, called TK
-                        Trigon. Want to help us make it happen? Come walk around and
-                        feel it yourself.
+                        Look at the map, 2F-01, Raintree, #299 Preah Ang Duong,
+                        Sangkat Wat Phnom, Khan Daun Penh! Come walk around and feel
+                        it yourself.
                       </p>
                     </div>
                   </div>
@@ -208,7 +207,7 @@ const Contact = () => {
               </div>
               <div className="column mapone">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.6815969291333!2d104.89086411397015!3d11.574668047118776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31095176305bf04b%3A0x5029dc78a50975a0!2sSmallWorld+Venture!5e0!3m2!1skm!2skh!4v1549694899483"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.7182637245687!2d104.91695171526824!3d11.57204344716677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310951c496f2d0dd%3A0x4b66e87f6ff3eca4!2sSmallWorld%20Realty%20(Raintree)!5e0!3m2!1sen!2skh!4v1576049171896!5m2!1sen!2skh"
                   style={{ width: "100%", height: "400px", border: "none" }}
                   title="SmallWorld Venture Map"
                 />
