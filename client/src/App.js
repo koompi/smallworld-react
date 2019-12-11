@@ -12,7 +12,6 @@ function App() {
   return (
     <Suspense fallback="loading">
       <Router>
-        <Navbar />
         <Switch>
           <Route exact path="/" component={Index} />
           <Route exact path="/about-us" component={AboutPage} />
@@ -22,7 +21,6 @@ function App() {
           <Route exact path="/sw-realty" component={Realty} />
           <Redirect to="/" component={Index} />
         </Switch>
-        <Footer />
       </Router>
     </Suspense>
   )
