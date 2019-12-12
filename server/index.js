@@ -347,14 +347,15 @@ app.post("/api/form", (req, res) => {
                           >
                             <tr>
                               <td>
-                                <b><h4>Message Recieved From ${request.fullname}</h4></b>
-                                <p>You have recieved the message. Someone has reaching out!</p>
+                                <b><h4>Greeting from SmallWorld!</h4></b>
+                                <p>Thank you for reaching out. Your message below: </p>
                                 <p>Name: <b>${request.fullname}</b></p>
                                 <p>Email: <b>${request.email}</b></p>
                                 <p>Message: <b>${request.message}</b></p>
                                 <br/>
-                                <p>They waiting for your response.</p>
-                                <p>Love, SmallWorld</p>
+                                <p>Our team will reach out to you within 48 hours.</p>
+                                <p>Love,</p>
+                                <p><b>SmallWorld</b></p>
                               </td>
                             </tr>
                           </table>
@@ -376,7 +377,7 @@ app.post("/api/form", (req, res) => {
                       >
                         <tr>
                           <td class="content-block">
-                            <span class="apple-link">Power by KOOMPI TEAM</span>
+                            <span class="apple-link">Powered by KOOMPI</span>
                           </td>
                         </tr>
                       </table>
@@ -405,8 +406,8 @@ app.post("/api/form", (req, res) => {
   // Step 2
   const mailOptions = {
     from: "smallworldventure@gmail.com", // sender address
-    to: `smallworldventure@gmail.com, rithy@procambodia.com`, // list of receivers
-    subject: "New email from SmallWorld", // Subject line
+    to: `${request.email}, smallworldventure@gmail.com, rithy@procambodia.com`, // list of receivers
+    subject: "Thank you for reaching out to SmallWorld", // Subject line
     html: output // html body
   };
   // Step 3
