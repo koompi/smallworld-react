@@ -7,10 +7,12 @@ import Contact from "./components/contact"
 import News from "./components/news-and-events"
 import "./App.css"
 import Realty from "./components/realty"
+import SnowStorm from "react-snowstorm"
 
 function App() {
   return (
     <Suspense fallback="Loading ...">
+      <SnowStorm />
       <Router>
         <Switch>
           <Route exact path="/" component={Index} />
@@ -19,6 +21,7 @@ function App() {
           <Route exact path="/news-and-events" component={News} />
           <Route exact path="/contact-us" component={Contact} />
           <Route exact path="/sw-realty" component={Realty} />
+          <Route exact path="/spaces" component={Realty} />
           <Redirect to="/" component={Index} />
         </Switch>
       </Router>

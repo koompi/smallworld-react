@@ -348,7 +348,7 @@ app.post("/api/form", (req, res) => {
                             <tr>
                               <td>
                                 <b><h4>Greeting from SmallWorld!</h4></b>
-                                <p>Thank you for reaching out. Your message below: </p>
+                                <p>Thank you for reaching out. You have messaged us; </p>
                                 <p>Name: <b>${request.fullname}</b></p>
                                 <p>Email: <b>${request.email}</b></p>
                                 <p>Message: <b>${request.message}</b></p>
@@ -407,7 +407,7 @@ app.post("/api/form", (req, res) => {
   const mailOptions = {
     from: "smallworldventure@gmail.com", // sender address
     to: `${request.email}, smallworldventure@gmail.com, rithy@procambodia.com`, // list of receivers
-    subject: "Thank you for reaching out to SmallWorld", // Subject line
+    subject: "New email from SmallWorld", // Subject line
     html: output // html body
   };
   // Step 3

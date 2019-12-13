@@ -713,6 +713,49 @@ img.imgfooter {
   color: #f56565c4;
 }
 
+.spacesSectionOneTitle {
+  font-size: 40px;
+  padding: 50px 0px;
+  font-weight: 700 !important;
+}
+.bannerSection {
+  padding: 60px 0px;
+  position: relative;
+}
+.bannerSection .startFrom {
+  font-size: 20px !important;
+  color: #ec0a5a;
+}
+.bannerSection .btnPrice {
+  font-size: 20px !important;
+  color: #f0f1f3;
+  background-color: #ec0a5a;
+  padding: 15px 40px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+.bannerSection img {
+  margin-top: 40px;
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+.arrow_down {
+  height: 50px;
+  position: relative;
+  top: 60px;
+}
+.aboutSpaceHeight {
+  margin: 100px 0px;
+}
+.space-map {
+  margin-bottom: -6%;
+}
 @media only screen and (max-width: 1920px) {
   .descTitle {
     display: none;

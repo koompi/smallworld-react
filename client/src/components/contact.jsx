@@ -35,7 +35,7 @@ const Contact = () => {
       .then(() => {
         Toast.fire({
           icon: "success",
-          title: "We have recieved your message. Thank you for reaching out!"
+          title: "Thank you for reaching out. Please check your email."
         })
       })
     reset()
