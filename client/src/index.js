@@ -8,7 +8,7 @@ import * as serviceWorker from "./serviceWorker"
 
 ReactDOM.render(
   <I18nextProvider i18n={i18n}>
-    <App />,
+    <App />
   </I18nextProvider>,
   document.getElementById("root")
 )
