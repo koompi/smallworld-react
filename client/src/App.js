@@ -12,7 +12,7 @@ import SnowStorm from "react-snowstorm"
 function App() {
   return (
     <Suspense fallback="Loading ...">
-      <SnowStorm />
+      {/* <SnowStorm /> */}
       <Router>
         <Switch>
           <Route exact path="/" component={Index} />

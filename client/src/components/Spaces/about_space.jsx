@@ -10,14 +10,19 @@ function AboutSpaces() {
           </div>
           <div className="twelve wide column">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipiscing elit porttitor porta
-              pretium ornare, bibendum feugiat habitasse imperdiet rutrum hendrerit
-              maecenas lobortis velit. Nascetur proin cubilia elementum imperdiet
-              lacus ut montes laoreet parturient donec, condimentum neque augue
-              lobortis pellentesque eget justo taciti ante, dictumst litora sagittis
-              duis curae netus enim et blandit. Egestas per ut vulputate inceptos
-              penatibus taciti lobortis hendrerit nisl sodales velit, eleifend erat
-              ac tellus nibh parturient posuere pulvinar sed bibendum.
+              SmallWorld provides professional shared workspace and business
+              accelerator space where freelancers, newly forming and existing
+              enterprises can collaborate in a professional, productive, flexible and
+              innovative workspace with established experts.
+              <br />
+              <br />
+              SmallWorld Realty spaces are located and designed to be an integral hub
+              for the Southeast Asian business and startup community offering the
+              benefits you have come to expect from a full service provider.
+              <br />
+              <br />
+              We are all tied together with a professional scene that gives you
+              unlimited opportunities.
             </p>
           </div>
         </div>

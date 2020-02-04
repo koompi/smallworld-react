@@ -16,6 +16,11 @@
   },
   {
     "id": 4,
+    "title": "Spaces",
+    "link": "/spaces"
+  },
+  {
+    "id": 5,
     "title": "Contact",
     "link": "/contact-us"
   }
