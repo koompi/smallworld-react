@@ -1278,3 +1278,10 @@ img.imgfooter {
     display: none !important;
   }
 }
+/* select {
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -ms-appearance: none; 
+} */

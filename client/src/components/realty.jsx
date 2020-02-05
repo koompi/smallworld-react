@@ -98,12 +98,12 @@ function Realty() {
       <section>
         <Whysmallworldrealty />
       </section>
-      <section>
+      {/* <section>
         <Smallworldraintry />
       </section>
       <section>
         <SmallworldPteasBoran />
-      </section>
+      </section> */}
       {/* <section className="space-map">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.7182637245687!2d104.91695171526824!3d11.57204344716677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310951c496f2d0dd%3A0x4b66e87f6ff3eca4!2sSmallWorld%20Realty%20(Raintree)!5e0!3m2!1sen!2skh!4v1576049171896!5m2!1sen!2skh"

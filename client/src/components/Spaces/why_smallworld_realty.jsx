@@ -5,10 +5,10 @@ function WorkingSpace() {
     <div className="ui container">
       <div className="aboutSpaceHeight">
         <div class="ui stackable two column grid">
-          <div className="four wide column">
+          <div className="five wide column">
             <h1>Why SmallWorld Realty? </h1>
           </div>
-          <div className="twelve wide column">
+          <div className="eleven wide column">
             <p>
               We spent approximately one-third of our day at work. What defines a
               good work space and what are the factors that contribute to
