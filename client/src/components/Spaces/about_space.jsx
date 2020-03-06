@@ -28,7 +28,7 @@ function AboutSpaces() {
               class="ui dropdown"
             >
               <option value="about">About Smallworld</option>
-              <option value="smallworld-raintree">Smallworld Raintree</option>
+              <option value="SmallWorld-Realty">SmallWorld Realty</option>
               <option value="smallWorld-pteasboran">Smallworld PteasBoran</option>
             </select>
           </div>
@@ -52,7 +52,7 @@ function AboutSpaces() {
                 </p>
               </React.Fragment>
             ) : null}
-            {change.value === "smallworld-raintree" ? (
+            {change.value === "SmallWorld-Realty" ? (
               <React.Fragment>
                 <p>
                   If you are looking for a professional, corporate-style work space
