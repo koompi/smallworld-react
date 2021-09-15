@@ -20,7 +20,7 @@
     "react-snowstorm": "0.0.3",
     "react-transition-group": "^4.3.0",
     "serve": "^11.2.0",
-    "set-value": "^3.0.1",
+    "set-value": "^4.0.1",
     "sweetalert2": "^9.4.3"
   },
   "scripts": {
